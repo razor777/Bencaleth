@@ -69,9 +69,8 @@ namespace PantallaInicio
                 intentosActuales++;
                 NombreBlock = user;
 
-            }//hola mundo   
-        }//como estas bien
-        //estas bien
+            }  
+        }
 
         public static string Block(string user)
         {
