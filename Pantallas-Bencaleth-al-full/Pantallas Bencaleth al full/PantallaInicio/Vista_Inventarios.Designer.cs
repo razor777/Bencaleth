@@ -55,7 +55,7 @@
             this.Cbb_Mantenimiento.FormattingEnabled = true;
             this.Cbb_Mantenimiento.Items.AddRange(new object[] {
             "Donaciones",
-            "Terapia Fisica"});
+            "Terapia Física"});
             this.Cbb_Mantenimiento.Location = new System.Drawing.Point(110, 23);
             this.Cbb_Mantenimiento.Name = "Cbb_Mantenimiento";
             this.Cbb_Mantenimiento.Size = new System.Drawing.Size(157, 21);
@@ -72,7 +72,7 @@
             this.btn_Menu.Name = "btn_Menu";
             this.btn_Menu.Size = new System.Drawing.Size(150, 45);
             this.btn_Menu.TabIndex = 17;
-            this.btn_Menu.Text = "Menu";
+            this.btn_Menu.Text = "Menú";
             this.btn_Menu.UseVisualStyleBackColor = false;
             this.btn_Menu.Click += new System.EventHandler(this.btn_Menu_Click);
             // 
@@ -96,6 +96,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
             this.ClientSize = new System.Drawing.Size(1276, 733);
+            this.ControlBox = false;
             this.Controls.Add(this.btn_back);
             this.Controls.Add(this.btn_Menu);
             this.Controls.Add(this.dataGridView1);
@@ -103,7 +104,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Vista_Inventarios";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Vista_Inventarios";
+            this.Text = "Vista de Inventarios";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Vista_Inventarios_FormClosed);
             this.Load += new System.EventHandler(this.Vista_Inventarios_Load);

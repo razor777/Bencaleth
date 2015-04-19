@@ -36,6 +36,10 @@ namespace PantallaInicio
             tblAdptEmp.Fill(dtset.SelectTerapiaFisica);
 
             dtgrdvw.DataSource = dtset.SelectTerapiaFisica.DefaultView;
+            dtgrdvw.Columns[0].HeaderText = "ID";
+            dtgrdvw.Columns[1].HeaderText = "Descripción";
+            dtgrdvw.Columns[2].HeaderText = "Cantidad";
+            dtgrdvw.Columns[3].HeaderText = "Responsable";
             dtgrdvw.Update();
         }
     }

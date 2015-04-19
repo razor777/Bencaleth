@@ -171,6 +171,11 @@ namespace PantallaInicio
             }
 
             dtgrdvw.DataSource = dtset.BuscarSelect_Alcancias.DefaultView;
+            dtgrdvw.Columns[0].HeaderText = "ID";
+            dtgrdvw.Columns[1].HeaderText = "Dirección";
+            dtgrdvw.Columns[2].HeaderText = "Descripción";
+            dtgrdvw.Columns[3].HeaderText = "Fecha";
+            dtgrdvw.Columns[4].HeaderText = "Recurrencia";
             dtgrdvw.Update();
         }
 

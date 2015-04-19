@@ -47,7 +47,7 @@ namespace PantallaInicio
             dtgrdvw.DataSource = dtset.GetRecurrenciaAlcancia.DefaultView;
             dtgrdvw.Update();
             foreach(DataGridViewRow fila in dtgrdvw.Rows){
-                pendientes.Add(new EventoANotificar("Recoger " + tipo + "mente", fila.Cells[1].Value.ToString(), "Alcancia", fila.Cells[0].Value.ToString(), fila.Cells[2].Value.ToString(),Herramientas.Alcancias));
+                pendientes.Add(new EventoANotificar("Recoger " + tipo + "mente", fila.Cells[1].Value.ToString(), "Alcancía", fila.Cells[0].Value.ToString(), fila.Cells[2].Value.ToString(),Herramientas.Alcancias));
             }
         }
 

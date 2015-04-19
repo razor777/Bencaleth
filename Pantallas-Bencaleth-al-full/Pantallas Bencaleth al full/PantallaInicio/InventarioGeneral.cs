@@ -37,6 +37,10 @@ namespace PantallaInicio
             tblAdptEmp.Fill(dtset.SelectDonaciones);
 
             dtgrdvw.DataSource = dtset.SelectDonaciones.DefaultView;
+            dtgrdvw.Columns[0].HeaderText = "ID";
+            dtgrdvw.Columns[1].HeaderText = "Descripción";
+            dtgrdvw.Columns[2].HeaderText = "Cantidad";
+            dtgrdvw.Columns[3].HeaderText = "Donante";
             dtgrdvw.Update();
         }
     }

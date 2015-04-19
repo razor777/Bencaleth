@@ -304,6 +304,16 @@ namespace PantallaInicio
             }
 
             dtgrdvw.DataSource = dtset.BuscarSelect_Voluntarios.DefaultView;
+            dtgrdvw.Columns[0].HeaderText = "ID";
+            dtgrdvw.Columns[1].HeaderText = "Nombre";
+            dtgrdvw.Columns[2].HeaderText = "Apellidos";
+            dtgrdvw.Columns[3].HeaderText = "Género";
+            dtgrdvw.Columns[4].HeaderText = "Fecha de Nacimiento";
+            dtgrdvw.Columns[5].HeaderText = "Fecha de Inicio";
+            dtgrdvw.Columns[6].HeaderText = "Teléfono";
+            dtgrdvw.Columns[7].HeaderText = "Correo Electrónico";
+            dtgrdvw.Columns[8].HeaderText = "Horas";
+            dtgrdvw.Columns[9].HeaderText = "Información";
             dtgrdvw.Update();
         }
 

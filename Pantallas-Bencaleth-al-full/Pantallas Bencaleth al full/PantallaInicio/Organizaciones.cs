@@ -261,6 +261,15 @@ namespace PantallaInicio
             }
 
             dtgrdvw.DataSource = dtset.BuscarSelect_Empresas.DefaultView;
+            dtgrdvw.Columns[0].HeaderText = "ID";
+            dtgrdvw.Columns[1].HeaderText = "Nombre";
+            dtgrdvw.Columns[2].HeaderText = "Tipo de Empresa";
+            dtgrdvw.Columns[3].HeaderText = "Dirección";
+            dtgrdvw.Columns[4].HeaderText = "Contacto";
+            dtgrdvw.Columns[5].HeaderText = "Teléfono 1";
+            dtgrdvw.Columns[6].HeaderText = "Teléfono 2";
+            dtgrdvw.Columns[7].HeaderText = "País";
+            dtgrdvw.Columns[8].HeaderText = "Correo Electrónico";
             dtgrdvw.Update();
         }
 

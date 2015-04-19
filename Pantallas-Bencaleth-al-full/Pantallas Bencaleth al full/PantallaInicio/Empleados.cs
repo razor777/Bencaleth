@@ -239,6 +239,16 @@ namespace PantallaInicio
             }
 
             dtgrdvw.DataSource = dtset.BuscarSelect_Empleados.DefaultView;
+            dtgrdvw.Columns[0].HeaderText = "ID";
+            dtgrdvw.Columns[1].HeaderText = "Nombre";
+            dtgrdvw.Columns[2].HeaderText = "Apellidos";
+            dtgrdvw.Columns[3].HeaderText = "Fecha de Nacimiento";
+            dtgrdvw.Columns[4].HeaderText = "Fecha de Contratación";
+            dtgrdvw.Columns[5].HeaderText = "Dirección";
+            dtgrdvw.Columns[6].HeaderText = "Teléfono";
+            dtgrdvw.Columns[7].HeaderText = "Cargo";
+            dtgrdvw.Columns[8].HeaderText = "Correo Electrónico";
+            //dtgrdvw.Columns[9].HeaderText = "Género";
             dtgrdvw.Update();
         }
 

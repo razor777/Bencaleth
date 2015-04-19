@@ -48,7 +48,7 @@
             this.Cbb_Mantenimiento.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.Cbb_Mantenimiento.FormattingEnabled = true;
             this.Cbb_Mantenimiento.Items.AddRange(new object[] {
-            "Alcancias",
+            "Alcancías",
             "Empleados",
             "Empresas",
             "Niños",
@@ -109,10 +109,10 @@
             this.rdbtnID.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.rdbtnID.Location = new System.Drawing.Point(283, 74);
             this.rdbtnID.Name = "rdbtnID";
-            this.rdbtnID.Size = new System.Drawing.Size(37, 20);
+            this.rdbtnID.Size = new System.Drawing.Size(39, 20);
             this.rdbtnID.TabIndex = 8;
             this.rdbtnID.Tag = "id";
-            this.rdbtnID.Text = "Id";
+            this.rdbtnID.Text = "ID";
             this.rdbtnID.UseVisualStyleBackColor = true;
             this.rdbtnID.CheckedChanged += new System.EventHandler(this.rdbtnID_CheckedChanged);
             // 
@@ -124,11 +124,11 @@
             this.radioButton7.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.radioButton7.Location = new System.Drawing.Point(343, 74);
             this.radioButton7.Name = "radioButton7";
-            this.radioButton7.Size = new System.Drawing.Size(75, 20);
+            this.radioButton7.Size = new System.Drawing.Size(161, 20);
             this.radioButton7.TabIndex = 10;
             this.radioButton7.TabStop = true;
             this.radioButton7.Tag = "nombre";
-            this.radioButton7.Text = "Nombre";
+            this.radioButton7.Text = "Nombre o Descripción";
             this.radioButton7.UseVisualStyleBackColor = true;
             this.radioButton7.CheckedChanged += new System.EventHandler(this.radioButton7_CheckedChanged);
             // 
@@ -178,7 +178,7 @@
             this.btn_menu.Name = "btn_menu";
             this.btn_menu.Size = new System.Drawing.Size(150, 45);
             this.btn_menu.TabIndex = 16;
-            this.btn_menu.Text = "Menu";
+            this.btn_menu.Text = "Menú";
             this.btn_menu.UseVisualStyleBackColor = false;
             this.btn_menu.Click += new System.EventHandler(this.btn_menu_Click);
             // 

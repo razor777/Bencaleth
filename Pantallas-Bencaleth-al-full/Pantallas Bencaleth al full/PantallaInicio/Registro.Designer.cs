@@ -97,7 +97,7 @@
             this.btn_menu.Name = "btn_menu";
             this.btn_menu.Size = new System.Drawing.Size(150, 45);
             this.btn_menu.TabIndex = 12;
-            this.btn_menu.Text = "Menu";
+            this.btn_menu.Text = "Menú";
             this.btn_menu.UseVisualStyleBackColor = false;
             this.btn_menu.Click += new System.EventHandler(this.btn_menu_Click);
             // 
@@ -139,7 +139,7 @@
             this.btn_alcancias.Name = "btn_alcancias";
             this.btn_alcancias.Size = new System.Drawing.Size(150, 45);
             this.btn_alcancias.TabIndex = 9;
-            this.btn_alcancias.Text = "Alcancias";
+            this.btn_alcancias.Text = "Alcancías";
             this.btn_alcancias.UseVisualStyleBackColor = false;
             this.btn_alcancias.Click += new System.EventHandler(this.btn_alcancias_Click);
             // 
@@ -190,6 +190,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1276, 733);
+            this.ControlBox = false;
             this.Controls.Add(this.splitContainer1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Registro";

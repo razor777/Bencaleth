@@ -194,6 +194,13 @@ namespace PantallaInicio
             }
 
             dtgrdvw.DataSource = dtset.BuscarSelect_Ninos.DefaultView;
+            dtgrdvw.Columns[0].HeaderText = "Identidad";
+            dtgrdvw.Columns[1].HeaderText = "Nombre";
+            dtgrdvw.Columns[2].HeaderText = "Apellidos";
+            dtgrdvw.Columns[3].HeaderText = "Género";
+            dtgrdvw.Columns[4].HeaderText = "Fecha de Nacimiento";
+            dtgrdvw.Columns[5].HeaderText = "Fecha de Ingreso";
+            dtgrdvw.Columns[6].HeaderText = "Encargado";
             dtgrdvw.Update();
         }
 

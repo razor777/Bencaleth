@@ -152,9 +152,9 @@
             this.label7.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label7.Location = new System.Drawing.Point(364, 240);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(81, 24);
+            this.label7.Size = new System.Drawing.Size(84, 24);
             this.label7.TabIndex = 89;
-            this.label7.Text = "cantidad";
+            this.label7.Text = "Cantidad";
             // 
             // label8
             // 
@@ -165,11 +165,12 @@
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(110, 24);
             this.label8.TabIndex = 88;
-            this.label8.Text = "Descripcion";
+            this.label8.Text = "Descripción";
             // 
             // txt_Can_Invd
             // 
             this.txt_Can_Invd.Location = new System.Drawing.Point(468, 244);
+            this.txt_Can_Invd.MaxLength = 8;
             this.txt_Can_Invd.Name = "txt_Can_Invd";
             this.txt_Can_Invd.Size = new System.Drawing.Size(68, 20);
             this.txt_Can_Invd.TabIndex = 87;
@@ -178,6 +179,7 @@
             // txt_Des_Invd
             // 
             this.txt_Des_Invd.Location = new System.Drawing.Point(468, 198);
+            this.txt_Des_Invd.MaxLength = 30;
             this.txt_Des_Invd.Name = "txt_Des_Invd";
             this.txt_Des_Invd.Size = new System.Drawing.Size(157, 20);
             this.txt_Des_Invd.TabIndex = 86;
@@ -197,6 +199,7 @@
             // txt_Id_Invd
             // 
             this.txt_Id_Invd.Location = new System.Drawing.Point(468, 154);
+            this.txt_Id_Invd.MaxLength = 30;
             this.txt_Id_Invd.Name = "txt_Id_Invd";
             this.txt_Id_Invd.Size = new System.Drawing.Size(82, 20);
             this.txt_Id_Invd.TabIndex = 84;
@@ -271,9 +274,9 @@
             this.label4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label4.Location = new System.Drawing.Point(367, 243);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(81, 24);
+            this.label4.Size = new System.Drawing.Size(84, 24);
             this.label4.TabIndex = 83;
-            this.label4.Text = "cantidad";
+            this.label4.Text = "Cantidad";
             // 
             // label3
             // 
@@ -284,11 +287,12 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(110, 24);
             this.label3.TabIndex = 82;
-            this.label3.Text = "Descripcion";
+            this.label3.Text = "Descripción";
             // 
             // txt_Can_Invf
             // 
             this.txt_Can_Invf.Location = new System.Drawing.Point(471, 247);
+            this.txt_Can_Invf.MaxLength = 8;
             this.txt_Can_Invf.Name = "txt_Can_Invf";
             this.txt_Can_Invf.Size = new System.Drawing.Size(68, 20);
             this.txt_Can_Invf.TabIndex = 80;
@@ -297,6 +301,7 @@
             // txt_Des_Invf
             // 
             this.txt_Des_Invf.Location = new System.Drawing.Point(471, 202);
+            this.txt_Des_Invf.MaxLength = 30;
             this.txt_Des_Invf.Name = "txt_Des_Invf";
             this.txt_Des_Invf.Size = new System.Drawing.Size(157, 20);
             this.txt_Des_Invf.TabIndex = 79;
@@ -316,6 +321,7 @@
             // txt_id_InvF
             // 
             this.txt_id_InvF.Location = new System.Drawing.Point(471, 158);
+            this.txt_id_InvF.MaxLength = 30;
             this.txt_id_InvF.Name = "txt_id_InvF";
             this.txt_id_InvF.Size = new System.Drawing.Size(82, 20);
             this.txt_id_InvF.TabIndex = 76;
@@ -331,7 +337,7 @@
             this.btn_Home.Name = "btn_Home";
             this.btn_Home.Size = new System.Drawing.Size(150, 45);
             this.btn_Home.TabIndex = 6;
-            this.btn_Home.Text = "Menu";
+            this.btn_Home.Text = "Menú";
             this.btn_Home.UseVisualStyleBackColor = false;
             this.btn_Home.Click += new System.EventHandler(this.btn_Home_Click);
             // 
