@@ -62,6 +62,7 @@
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(480, 232);
+            this.textBox1.MaxLength = 30;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(200, 20);
             this.textBox1.TabIndex = 100;
@@ -70,6 +71,7 @@
             // txtbDes
             // 
             this.txtbDes.Location = new System.Drawing.Point(480, 330);
+            this.txtbDes.MaxLength = 30;
             this.txtbDes.Name = "txtbDes";
             this.txtbDes.Size = new System.Drawing.Size(200, 20);
             this.txtbDes.TabIndex = 95;
@@ -78,6 +80,7 @@
             // txtbDir
             // 
             this.txtbDir.Location = new System.Drawing.Point(480, 278);
+            this.txtbDir.MaxLength = 30;
             this.txtbDir.Name = "txtbDir";
             this.txtbDir.Size = new System.Drawing.Size(200, 20);
             this.txtbDir.TabIndex = 94;
@@ -103,7 +106,7 @@
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(90, 24);
             this.label8.TabIndex = 92;
-            this.label8.Text = "Direccion";
+            this.label8.Text = "Dirección";
             // 
             // label7
             // 

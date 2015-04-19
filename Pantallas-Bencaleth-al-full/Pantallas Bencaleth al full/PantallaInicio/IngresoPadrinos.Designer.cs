@@ -90,6 +90,7 @@
             // txt_Mens_Padrinos
             // 
             this.txt_Mens_Padrinos.Location = new System.Drawing.Point(476, 540);
+            this.txt_Mens_Padrinos.MaxLength = 10;
             this.txt_Mens_Padrinos.Name = "txt_Mens_Padrinos";
             this.txt_Mens_Padrinos.Size = new System.Drawing.Size(157, 20);
             this.txt_Mens_Padrinos.TabIndex = 83;
@@ -98,7 +99,7 @@
             // txt_Tel_Padrinos
             // 
             this.txt_Tel_Padrinos.Location = new System.Drawing.Point(476, 448);
-            this.txt_Tel_Padrinos.MaxLength = 32;
+            this.txt_Tel_Padrinos.MaxLength = 15;
             this.txt_Tel_Padrinos.Name = "txt_Tel_Padrinos";
             this.txt_Tel_Padrinos.Size = new System.Drawing.Size(157, 20);
             this.txt_Tel_Padrinos.TabIndex = 82;
@@ -118,7 +119,7 @@
             // txt_iden_padrinos
             // 
             this.txt_iden_padrinos.Location = new System.Drawing.Point(476, 411);
-            this.txt_iden_padrinos.MaxLength = 32;
+            this.txt_iden_padrinos.MaxLength = 30;
             this.txt_iden_padrinos.Name = "txt_iden_padrinos";
             this.txt_iden_padrinos.Size = new System.Drawing.Size(157, 20);
             this.txt_iden_padrinos.TabIndex = 79;
@@ -133,7 +134,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(168, 24);
             this.label2.TabIndex = 78;
-            this.label2.Text = "Correo Electronico";
+            this.label2.Text = "Correo Electrónico";
             // 
             // txt_Id_Padrinos
             // 
@@ -147,7 +148,7 @@
             // txt_Email_Padrinos
             // 
             this.txt_Email_Padrinos.Location = new System.Drawing.Point(476, 495);
-            this.txt_Email_Padrinos.MaxLength = 100;
+            this.txt_Email_Padrinos.MaxLength = 30;
             this.txt_Email_Padrinos.Name = "txt_Email_Padrinos";
             this.txt_Email_Padrinos.Size = new System.Drawing.Size(157, 20);
             this.txt_Email_Padrinos.TabIndex = 76;
@@ -165,7 +166,7 @@
             // txt_apellido_padrinos
             // 
             this.txt_apellido_padrinos.Location = new System.Drawing.Point(476, 231);
-            this.txt_apellido_padrinos.MaxLength = 50;
+            this.txt_apellido_padrinos.MaxLength = 30;
             this.txt_apellido_padrinos.Name = "txt_apellido_padrinos";
             this.txt_apellido_padrinos.Size = new System.Drawing.Size(157, 20);
             this.txt_apellido_padrinos.TabIndex = 71;
@@ -174,7 +175,7 @@
             // txt_Nom_padrinos
             // 
             this.txt_Nom_padrinos.Location = new System.Drawing.Point(476, 191);
-            this.txt_Nom_padrinos.MaxLength = 50;
+            this.txt_Nom_padrinos.MaxLength = 30;
             this.txt_Nom_padrinos.Name = "txt_Nom_padrinos";
             this.txt_Nom_padrinos.Size = new System.Drawing.Size(157, 20);
             this.txt_Nom_padrinos.TabIndex = 70;
@@ -222,7 +223,7 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(74, 24);
             this.label6.TabIndex = 66;
-            this.label6.Text = "Genero";
+            this.label6.Text = "Género";
             // 
             // label5
             // 
@@ -244,7 +245,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(85, 24);
             this.label4.TabIndex = 64;
-            this.label4.Text = "Telefono";
+            this.label4.Text = "Teléfono";
             // 
             // label3
             // 

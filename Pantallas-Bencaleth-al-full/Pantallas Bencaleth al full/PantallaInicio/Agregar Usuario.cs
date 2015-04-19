@@ -41,18 +41,18 @@ namespace PantallaInicio
 
         private void txt_Nom_Adduser_TextChanged(object sender, EventArgs e)
         {
-            txt_Nom_Adduser.Text = Herramientas.NingunCaracterEspecial(txt_Nom_Adduser);
+            txt_Nom_Adduser.Text = Herramientas.NingunEspacioEnBlanco(txt_Nom_Adduser);
 
         }
 
         private void txt_Pass_Adduser_TextChanged(object sender, EventArgs e)
         {
-            txt_Pass_Adduser.Text = Herramientas.NingunCaracterEspecial(txt_Pass_Adduser);
+            txt_Pass_Adduser.Text = Herramientas.NingunEspacioEnBlanco(txt_Pass_Adduser);
         }
 
         private void txt_Confir_Adduser_TextChanged(object sender, EventArgs e)
         {
-            txt_Confir_Adduser.Text = Herramientas.NingunCaracterEspecial(txt_Confir_Adduser);
+            txt_Confir_Adduser.Text = Herramientas.NingunEspacioEnBlanco(txt_Confir_Adduser);
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -83,6 +83,28 @@ namespace PantallaInicio
         private void btn_Cancel_Adduser_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void txt_Confir_Adduser_Leave(object sender, EventArgs e)
+        {
+            if (!Herramientas.cumpleCaracterMinimos(txt_Confir_Adduser, 8)){
+                MessageBox.Show("Se ocupa un minimo de 8 caracteres para una contraseña válida");
+            }
+        }
+
+        private void txt_Pass_Adduser_Leave(object sender, EventArgs e)
+        {
+            if (!Herramientas.cumpleCaracterMinimos(txt_Pass_Adduser, 8)){
+                MessageBox.Show("Se ocupa un minimo de 8 caracteres para una contraseña válida");
+            }
+        }
+
+        private void txt_Nom_Adduser_Leave(object sender, EventArgs e)
+        {
+            if (!Herramientas.cumpleCaracterMinimos(txt_Nom_Adduser, 8))
+            {
+                MessageBox.Show("Se ocupa un minimo de 8 caracteres para un usuario válido");
+            }
         }
     }
 }

@@ -62,5 +62,31 @@ namespace PantallaInicio
             }
             //termina
         }
+
+        private void txt_Newpassw_TextChanged_1(object sender, EventArgs e)
+        {
+            Herramientas.NingunEspacioEnBlanco(txt_Newpassw);
+        }
+
+        private void txt_Confimpassw_TextChanged_1(object sender, EventArgs e)
+        {
+            Herramientas.NingunEspacioEnBlanco(txt_Confimpassw);
+        }
+
+        private void txt_Newpassw_Leave(object sender, EventArgs e)
+        {
+            if (Herramientas.cumpleCaracterMinimos(txt_Newpassw, 8))
+            {
+                MessageBox.Show("Se ocupa un minimo de 8 caracteres para una contraseña válida");
+            }
+        }
+
+        private void txt_Confimpassw_Leave(object sender, EventArgs e)
+        {
+            if (Herramientas.cumpleCaracterMinimos(txt_Confimpassw, 8))
+            {
+                MessageBox.Show("Se ocupa un minimo de 8 caracteres para una contraseña válida");
+            }
+        }
     }
 }

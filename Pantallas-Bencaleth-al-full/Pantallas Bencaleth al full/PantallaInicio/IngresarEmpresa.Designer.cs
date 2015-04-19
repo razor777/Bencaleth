@@ -77,6 +77,7 @@
             // txt_pasi_empresa
             // 
             this.txt_pasi_empresa.Location = new System.Drawing.Point(487, 336);
+            this.txt_pasi_empresa.MaxLength = 30;
             this.txt_pasi_empresa.Name = "txt_pasi_empresa";
             this.txt_pasi_empresa.Size = new System.Drawing.Size(157, 20);
             this.txt_pasi_empresa.TabIndex = 105;
@@ -85,6 +86,7 @@
             // txt_email_empresa
             // 
             this.txt_email_empresa.Location = new System.Drawing.Point(487, 411);
+            this.txt_email_empresa.MaxLength = 30;
             this.txt_email_empresa.Name = "txt_email_empresa";
             this.txt_email_empresa.Size = new System.Drawing.Size(157, 20);
             this.txt_email_empresa.TabIndex = 104;
@@ -100,11 +102,13 @@
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(45, 24);
             this.label10.TabIndex = 103;
-            this.label10.Text = "Pais";
+            this.label10.Text = "País";
+            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // txt_tel2_empresa
             // 
             this.txt_tel2_empresa.Location = new System.Drawing.Point(487, 493);
+            this.txt_tel2_empresa.MaxLength = 15;
             this.txt_tel2_empresa.Name = "txt_tel2_empresa";
             this.txt_tel2_empresa.Size = new System.Drawing.Size(157, 20);
             this.txt_tel2_empresa.TabIndex = 102;
@@ -119,11 +123,12 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(168, 24);
             this.label2.TabIndex = 101;
-            this.label2.Text = "Correo Electronico";
+            this.label2.Text = "Correo Electrónico";
             // 
             // txt_dire_empresa
             // 
             this.txt_dire_empresa.Location = new System.Drawing.Point(487, 297);
+            this.txt_dire_empresa.MaxLength = 30;
             this.txt_dire_empresa.Name = "txt_dire_empresa";
             this.txt_dire_empresa.Size = new System.Drawing.Size(157, 20);
             this.txt_dire_empresa.TabIndex = 99;
@@ -132,6 +137,7 @@
             // txt_nom_empresa
             // 
             this.txt_nom_empresa.Location = new System.Drawing.Point(487, 208);
+            this.txt_nom_empresa.MaxLength = 30;
             this.txt_nom_empresa.Name = "txt_nom_empresa";
             this.txt_nom_empresa.Size = new System.Drawing.Size(157, 20);
             this.txt_nom_empresa.TabIndex = 94;
@@ -168,7 +174,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(100, 24);
             this.label4.TabIndex = 88;
-            this.label4.Text = "Telefono 2";
+            this.label4.Text = "Teléfono 2";
             // 
             // label3
             // 
@@ -179,7 +185,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(90, 24);
             this.label3.TabIndex = 87;
-            this.label3.Text = "Direccion";
+            this.label3.Text = "Dirección";
             // 
             // label1
             // 
@@ -206,6 +212,7 @@
             // txt_contac_empresa
             // 
             this.txt_contac_empresa.Location = new System.Drawing.Point(487, 372);
+            this.txt_contac_empresa.MaxLength = 30;
             this.txt_contac_empresa.Name = "txt_contac_empresa";
             this.txt_contac_empresa.Size = new System.Drawing.Size(157, 20);
             this.txt_contac_empresa.TabIndex = 110;
@@ -220,11 +227,12 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(100, 24);
             this.label6.TabIndex = 111;
-            this.label6.Text = "Telefono 1";
+            this.label6.Text = "Teléfono 1";
             // 
             // txt_tel1_empresa
             // 
             this.txt_tel1_empresa.Location = new System.Drawing.Point(487, 450);
+            this.txt_tel1_empresa.MaxLength = 15;
             this.txt_tel1_empresa.Name = "txt_tel1_empresa";
             this.txt_tel1_empresa.Size = new System.Drawing.Size(157, 20);
             this.txt_tel1_empresa.TabIndex = 112;
@@ -245,6 +253,7 @@
             // 
             this.txt_id_empresa.Enabled = false;
             this.txt_id_empresa.Location = new System.Drawing.Point(487, 170);
+            this.txt_id_empresa.MaxLength = 30;
             this.txt_id_empresa.Name = "txt_id_empresa";
             this.txt_id_empresa.ReadOnly = true;
             this.txt_id_empresa.Size = new System.Drawing.Size(89, 20);

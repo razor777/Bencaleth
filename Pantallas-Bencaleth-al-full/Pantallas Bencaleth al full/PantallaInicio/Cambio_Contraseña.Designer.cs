@@ -81,16 +81,22 @@
             // txt_Newpassw
             // 
             this.txt_Newpassw.Location = new System.Drawing.Point(245, 146);
+            this.txt_Newpassw.MaxLength = 30;
             this.txt_Newpassw.Name = "txt_Newpassw";
             this.txt_Newpassw.Size = new System.Drawing.Size(157, 20);
             this.txt_Newpassw.TabIndex = 6;
+            this.txt_Newpassw.TextChanged += new System.EventHandler(this.txt_Newpassw_TextChanged_1);
+            this.txt_Newpassw.Leave += new System.EventHandler(this.txt_Newpassw_Leave);
             // 
             // txt_Confimpassw
             // 
             this.txt_Confimpassw.Location = new System.Drawing.Point(245, 203);
+            this.txt_Confimpassw.MaxLength = 30;
             this.txt_Confimpassw.Name = "txt_Confimpassw";
             this.txt_Confimpassw.Size = new System.Drawing.Size(157, 20);
             this.txt_Confimpassw.TabIndex = 7;
+            this.txt_Confimpassw.TextChanged += new System.EventHandler(this.txt_Confimpassw_TextChanged_1);
+            this.txt_Confimpassw.Leave += new System.EventHandler(this.txt_Confimpassw_Leave);
             // 
             // btn_Acep
             // 
@@ -166,7 +172,7 @@
             this.Name = "Cambio_Contraseña";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Cambio_Contraseña";
+            this.Text = "Cambio de Contraseña";
             this.Load += new System.EventHandler(this.Cambio_Contraseña_Load);
             ((System.ComponentModel.ISupportInitialize)(this.bencalethDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mostarUsuariosBindingSource)).EndInit();

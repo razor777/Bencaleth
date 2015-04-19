@@ -82,6 +82,7 @@
             // txt_Id_Voluntarios
             // 
             this.txt_Id_Voluntarios.Location = new System.Drawing.Point(485, 93);
+            this.txt_Id_Voluntarios.MaxLength = 30;
             this.txt_Id_Voluntarios.Name = "txt_Id_Voluntarios";
             this.txt_Id_Voluntarios.Size = new System.Drawing.Size(157, 20);
             this.txt_Id_Voluntarios.TabIndex = 53;
@@ -109,7 +110,7 @@
             // txt_Apelli_Voluntarios
             // 
             this.txt_Apelli_Voluntarios.Location = new System.Drawing.Point(485, 165);
-            this.txt_Apelli_Voluntarios.MaxLength = 48;
+            this.txt_Apelli_Voluntarios.MaxLength = 30;
             this.txt_Apelli_Voluntarios.Name = "txt_Apelli_Voluntarios";
             this.txt_Apelli_Voluntarios.Size = new System.Drawing.Size(157, 20);
             this.txt_Apelli_Voluntarios.TabIndex = 46;
@@ -169,7 +170,7 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(74, 24);
             this.label6.TabIndex = 41;
-            this.label6.Text = "Genero";
+            this.label6.Text = "Género";
             // 
             // label5
             // 
@@ -191,7 +192,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(85, 24);
             this.label4.TabIndex = 39;
-            this.label4.Text = "Telefono";
+            this.label4.Text = "Teléfono";
             // 
             // label3
             // 
@@ -225,11 +226,12 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(168, 24);
             this.label2.TabIndex = 54;
-            this.label2.Text = "Correo Electronico";
+            this.label2.Text = "Correo Electrónico";
             // 
             // txt_Tel_Voluntarios
             // 
             this.txt_Tel_Voluntarios.Location = new System.Drawing.Point(485, 329);
+            this.txt_Tel_Voluntarios.MaxLength = 15;
             this.txt_Tel_Voluntarios.Name = "txt_Tel_Voluntarios";
             this.txt_Tel_Voluntarios.Size = new System.Drawing.Size(157, 20);
             this.txt_Tel_Voluntarios.TabIndex = 55;
@@ -245,11 +247,12 @@
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(108, 24);
             this.label10.TabIndex = 56;
-            this.label10.Text = "Informacion";
+            this.label10.Text = "Información";
             // 
             // txt_Email_Voluntarios
             // 
             this.txt_Email_Voluntarios.Location = new System.Drawing.Point(485, 369);
+            this.txt_Email_Voluntarios.MaxLength = 30;
             this.txt_Email_Voluntarios.Name = "txt_Email_Voluntarios";
             this.txt_Email_Voluntarios.Size = new System.Drawing.Size(157, 20);
             this.txt_Email_Voluntarios.TabIndex = 58;
@@ -342,6 +345,7 @@
             // txtHoras
             // 
             this.txtHoras.Location = new System.Drawing.Point(485, 536);
+            this.txtHoras.MaxLength = 15;
             this.txtHoras.Name = "txtHoras";
             this.txtHoras.Size = new System.Drawing.Size(157, 20);
             this.txtHoras.TabIndex = 116;

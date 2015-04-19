@@ -303,5 +303,12 @@ namespace PantallaInicio
         public static int Ninos = 3;
         public static int Padrinos = 4;
         public static int Voluntarios = 5;
+
+        public static bool cumpleCaracterMinimos(TextBox txtbRevisar, int intMinCarateres) {
+            if (txtbRevisar.Text.Length >= intMinCarateres)
+                return true;
+            else
+                return false;
+        }
     }
 }

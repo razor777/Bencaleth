@@ -77,6 +77,7 @@
             // txt_apellido
             // 
             this.txt_apellido.Location = new System.Drawing.Point(463, 215);
+            this.txt_apellido.MaxLength = 30;
             this.txt_apellido.Name = "txt_apellido";
             this.txt_apellido.Size = new System.Drawing.Size(157, 20);
             this.txt_apellido.TabIndex = 28;
@@ -85,6 +86,7 @@
             // txt_nomniños
             // 
             this.txt_nomniños.Location = new System.Drawing.Point(463, 177);
+            this.txt_nomniños.MaxLength = 30;
             this.txt_nomniños.Name = "txt_nomniños";
             this.txt_nomniños.Size = new System.Drawing.Size(157, 20);
             this.txt_nomniños.TabIndex = 27;
@@ -132,7 +134,7 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(74, 24);
             this.label6.TabIndex = 23;
-            this.label6.Text = "Genero";
+            this.label6.Text = "Género";
             // 
             // label5
             // 
@@ -181,6 +183,7 @@
             // txt_idniños
             // 
             this.txt_idniños.Location = new System.Drawing.Point(463, 140);
+            this.txt_idniños.MaxLength = 30;
             this.txt_idniños.Name = "txt_idniños";
             this.txt_idniños.Size = new System.Drawing.Size(89, 20);
             this.txt_idniños.TabIndex = 35;

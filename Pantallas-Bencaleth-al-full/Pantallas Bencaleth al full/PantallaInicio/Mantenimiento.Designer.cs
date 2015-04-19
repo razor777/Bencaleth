@@ -114,6 +114,7 @@
             this.rdbtnID.Tag = "id";
             this.rdbtnID.Text = "Id";
             this.rdbtnID.UseVisualStyleBackColor = true;
+            this.rdbtnID.CheckedChanged += new System.EventHandler(this.rdbtnID_CheckedChanged);
             // 
             // radioButton7
             // 
@@ -129,6 +130,7 @@
             this.radioButton7.Tag = "nombre";
             this.radioButton7.Text = "Nombre";
             this.radioButton7.UseVisualStyleBackColor = true;
+            this.radioButton7.CheckedChanged += new System.EventHandler(this.radioButton7_CheckedChanged);
             // 
             // txtbABuscar
             // 
@@ -186,6 +188,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
             this.ClientSize = new System.Drawing.Size(1276, 733);
+            this.ControlBox = false;
             this.Controls.Add(this.btn_menu);
             this.Controls.Add(this.btn_Delete);
             this.Controls.Add(this.btn_Edit);

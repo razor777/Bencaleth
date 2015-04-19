@@ -75,6 +75,7 @@
             // txt_Dir_Emple
             // 
             this.txt_Dir_Emple.Location = new System.Drawing.Point(499, 515);
+            this.txt_Dir_Emple.MaxLength = 30;
             this.txt_Dir_Emple.Name = "txt_Dir_Emple";
             this.txt_Dir_Emple.Size = new System.Drawing.Size(179, 20);
             this.txt_Dir_Emple.TabIndex = 81;
@@ -83,6 +84,7 @@
             // txt_Email_Emple
             // 
             this.txt_Email_Emple.Location = new System.Drawing.Point(499, 475);
+            this.txt_Email_Emple.MaxLength = 30;
             this.txt_Email_Emple.Name = "txt_Email_Emple";
             this.txt_Email_Emple.Size = new System.Drawing.Size(179, 20);
             this.txt_Email_Emple.TabIndex = 80;
@@ -98,7 +100,7 @@
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(85, 24);
             this.label11.TabIndex = 79;
-            this.label11.Text = "Telefono";
+            this.label11.Text = "Teléfono";
             // 
             // label10
             // 
@@ -114,6 +116,7 @@
             // txt_Tel_Emple
             // 
             this.txt_Tel_Emple.Location = new System.Drawing.Point(499, 434);
+            this.txt_Tel_Emple.MaxLength = 15;
             this.txt_Tel_Emple.Name = "txt_Tel_Emple";
             this.txt_Tel_Emple.Size = new System.Drawing.Size(179, 20);
             this.txt_Tel_Emple.TabIndex = 77;
@@ -128,11 +131,12 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(168, 24);
             this.label2.TabIndex = 76;
-            this.label2.Text = "Correo Electronico";
+            this.label2.Text = "Correo Electrónico";
             // 
             // txt_Id_Emple
             // 
             this.txt_Id_Emple.Location = new System.Drawing.Point(499, 147);
+            this.txt_Id_Emple.MaxLength = 30;
             this.txt_Id_Emple.Name = "txt_Id_Emple";
             this.txt_Id_Emple.Size = new System.Drawing.Size(89, 20);
             this.txt_Id_Emple.TabIndex = 75;
@@ -152,6 +156,7 @@
             // txt_Apelli_Emple
             // 
             this.txt_Apelli_Emple.Location = new System.Drawing.Point(499, 222);
+            this.txt_Apelli_Emple.MaxLength = 30;
             this.txt_Apelli_Emple.Name = "txt_Apelli_Emple";
             this.txt_Apelli_Emple.Size = new System.Drawing.Size(179, 20);
             this.txt_Apelli_Emple.TabIndex = 69;
@@ -160,6 +165,7 @@
             // txt_Nom_Emple
             // 
             this.txt_Nom_Emple.Location = new System.Drawing.Point(499, 181);
+            this.txt_Nom_Emple.MaxLength = 30;
             this.txt_Nom_Emple.Name = "txt_Nom_Emple";
             this.txt_Nom_Emple.Size = new System.Drawing.Size(179, 20);
             this.txt_Nom_Emple.TabIndex = 68;
@@ -207,7 +213,7 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(74, 24);
             this.label6.TabIndex = 64;
-            this.label6.Text = "Genero";
+            this.label6.Text = "Género";
             // 
             // label5
             // 

@@ -98,26 +98,32 @@
             // txt_Nom_Adduser
             // 
             this.txt_Nom_Adduser.Location = new System.Drawing.Point(242, 77);
+            this.txt_Nom_Adduser.MaxLength = 30;
             this.txt_Nom_Adduser.Name = "txt_Nom_Adduser";
             this.txt_Nom_Adduser.Size = new System.Drawing.Size(157, 20);
             this.txt_Nom_Adduser.TabIndex = 5;
             this.txt_Nom_Adduser.TextChanged += new System.EventHandler(this.txt_Nom_Adduser_TextChanged);
+            this.txt_Nom_Adduser.Leave += new System.EventHandler(this.txt_Nom_Adduser_Leave);
             // 
             // txt_Pass_Adduser
             // 
             this.txt_Pass_Adduser.Location = new System.Drawing.Point(242, 127);
+            this.txt_Pass_Adduser.MaxLength = 30;
             this.txt_Pass_Adduser.Name = "txt_Pass_Adduser";
             this.txt_Pass_Adduser.Size = new System.Drawing.Size(157, 20);
             this.txt_Pass_Adduser.TabIndex = 6;
             this.txt_Pass_Adduser.TextChanged += new System.EventHandler(this.txt_Pass_Adduser_TextChanged);
+            this.txt_Pass_Adduser.Leave += new System.EventHandler(this.txt_Pass_Adduser_Leave);
             // 
             // txt_Confir_Adduser
             // 
             this.txt_Confir_Adduser.Location = new System.Drawing.Point(242, 176);
+            this.txt_Confir_Adduser.MaxLength = 30;
             this.txt_Confir_Adduser.Name = "txt_Confir_Adduser";
             this.txt_Confir_Adduser.Size = new System.Drawing.Size(157, 20);
             this.txt_Confir_Adduser.TabIndex = 7;
             this.txt_Confir_Adduser.TextChanged += new System.EventHandler(this.txt_Confir_Adduser_TextChanged);
+            this.txt_Confir_Adduser.Leave += new System.EventHandler(this.txt_Confir_Adduser_Leave);
             // 
             // btn_Cancel_Adduser
             // 
@@ -195,7 +201,7 @@
             this.MinimizeBox = false;
             this.Name = "Agregar_Usuario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Agregar_Usuario";
+            this.Text = "Agregar Usuario";
             this.Load += new System.EventHandler(this.Agregar_Usuario_Load);
             ((System.ComponentModel.ISupportInitialize)(this.bencalethDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mostarCargoBindingSource)).EndInit();

@@ -138,6 +138,7 @@ namespace PantallaInicio
 
         private void Cbb_Mantenimiento_SelectedIndexChanged(object sender, EventArgs e)
         {
+            txtbABuscar.Clear();
             SelectPantalla();
         }
 
@@ -209,6 +210,16 @@ namespace PantallaInicio
         private void btn_menu_Click(object sender, EventArgs e)
         {
             Herramientas.AbrirNuevoForm(new Menu());
+        }
+
+        private void radioButton7_CheckedChanged(object sender, EventArgs e)
+        {
+            txtbABuscar.Clear();
+        }
+
+        private void rdbtnID_CheckedChanged(object sender, EventArgs e)
+        {
+            txtbABuscar.Clear();
         }
 
       
