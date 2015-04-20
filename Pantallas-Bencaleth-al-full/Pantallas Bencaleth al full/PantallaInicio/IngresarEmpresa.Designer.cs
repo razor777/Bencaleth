@@ -80,7 +80,7 @@
             this.txt_pasi_empresa.MaxLength = 30;
             this.txt_pasi_empresa.Name = "txt_pasi_empresa";
             this.txt_pasi_empresa.Size = new System.Drawing.Size(157, 20);
-            this.txt_pasi_empresa.TabIndex = 105;
+            this.txt_pasi_empresa.TabIndex = 4;
             this.txt_pasi_empresa.TextChanged += new System.EventHandler(this.txt_pasi_empresa_TextChanged);
             // 
             // txt_email_empresa
@@ -89,7 +89,7 @@
             this.txt_email_empresa.MaxLength = 30;
             this.txt_email_empresa.Name = "txt_email_empresa";
             this.txt_email_empresa.Size = new System.Drawing.Size(157, 20);
-            this.txt_email_empresa.TabIndex = 104;
+            this.txt_email_empresa.TabIndex = 6;
             this.txt_email_empresa.TextChanged += new System.EventHandler(this.txt_email_empresa_TextChanged);
             this.txt_email_empresa.Leave += new System.EventHandler(this.txt_email_empresa_Leave);
             // 
@@ -111,7 +111,7 @@
             this.txt_tel2_empresa.MaxLength = 15;
             this.txt_tel2_empresa.Name = "txt_tel2_empresa";
             this.txt_tel2_empresa.Size = new System.Drawing.Size(157, 20);
-            this.txt_tel2_empresa.TabIndex = 102;
+            this.txt_tel2_empresa.TabIndex = 8;
             this.txt_tel2_empresa.TextChanged += new System.EventHandler(this.txt_tel2_empresa_TextChanged);
             // 
             // label2
@@ -131,7 +131,7 @@
             this.txt_dire_empresa.MaxLength = 30;
             this.txt_dire_empresa.Name = "txt_dire_empresa";
             this.txt_dire_empresa.Size = new System.Drawing.Size(157, 20);
-            this.txt_dire_empresa.TabIndex = 99;
+            this.txt_dire_empresa.TabIndex = 3;
             this.txt_dire_empresa.TextChanged += new System.EventHandler(this.txt_dire_empresa_TextChanged);
             // 
             // txt_nom_empresa
@@ -140,7 +140,7 @@
             this.txt_nom_empresa.MaxLength = 30;
             this.txt_nom_empresa.Name = "txt_nom_empresa";
             this.txt_nom_empresa.Size = new System.Drawing.Size(157, 20);
-            this.txt_nom_empresa.TabIndex = 94;
+            this.txt_nom_empresa.TabIndex = 1;
             this.txt_nom_empresa.TextChanged += new System.EventHandler(this.txt_nom_empresa_TextChanged);
             // 
             // label8
@@ -215,7 +215,7 @@
             this.txt_contac_empresa.MaxLength = 30;
             this.txt_contac_empresa.Name = "txt_contac_empresa";
             this.txt_contac_empresa.Size = new System.Drawing.Size(157, 20);
-            this.txt_contac_empresa.TabIndex = 110;
+            this.txt_contac_empresa.TabIndex = 5;
             this.txt_contac_empresa.TextChanged += new System.EventHandler(this.txt_contac_empresa_TextChanged);
             // 
             // label6
@@ -235,7 +235,7 @@
             this.txt_tel1_empresa.MaxLength = 15;
             this.txt_tel1_empresa.Name = "txt_tel1_empresa";
             this.txt_tel1_empresa.Size = new System.Drawing.Size(157, 20);
-            this.txt_tel1_empresa.TabIndex = 112;
+            this.txt_tel1_empresa.TabIndex = 7;
             this.txt_tel1_empresa.TextChanged += new System.EventHandler(this.txt_tel1_empresa_TextChanged);
             // 
             // label9
@@ -257,7 +257,7 @@
             this.txt_id_empresa.Name = "txt_id_empresa";
             this.txt_id_empresa.ReadOnly = true;
             this.txt_id_empresa.Size = new System.Drawing.Size(89, 20);
-            this.txt_id_empresa.TabIndex = 100;
+            this.txt_id_empresa.TabIndex = 0;
             this.txt_id_empresa.TextChanged += new System.EventHandler(this.txt_id_empresa_TextChanged);
             // 
             // btn_save_empresa
@@ -269,7 +269,7 @@
             this.btn_save_empresa.Location = new System.Drawing.Point(680, 544);
             this.btn_save_empresa.Name = "btn_save_empresa";
             this.btn_save_empresa.Size = new System.Drawing.Size(88, 35);
-            this.btn_save_empresa.TabIndex = 113;
+            this.btn_save_empresa.TabIndex = 9;
             this.btn_save_empresa.Text = "Guardar";
             this.btn_save_empresa.UseVisualStyleBackColor = false;
             this.btn_save_empresa.Click += new System.EventHandler(this.btn_save_empresa_Click);
@@ -308,7 +308,7 @@
             this.combobox_empresasComboBox.Location = new System.Drawing.Point(487, 252);
             this.combobox_empresasComboBox.Name = "combobox_empresasComboBox";
             this.combobox_empresasComboBox.Size = new System.Drawing.Size(157, 21);
-            this.combobox_empresasComboBox.TabIndex = 113;
+            this.combobox_empresasComboBox.TabIndex = 2;
             this.combobox_empresasComboBox.ValueMember = "Id";
             this.combobox_empresasComboBox.SelectedIndexChanged += new System.EventHandler(this.combobox_empresasComboBox_SelectedIndexChanged);
             // 

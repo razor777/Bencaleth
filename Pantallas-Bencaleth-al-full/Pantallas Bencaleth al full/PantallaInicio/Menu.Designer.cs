@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
             this.link_cambiarpas = new System.Windows.Forms.LinkLabel();
             this.link_logout = new System.Windows.Forms.LinkLabel();
@@ -48,7 +48,6 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -56,16 +55,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
             // link_cambiarpas
             // 
             this.link_cambiarpas.AutoSize = true;
+            this.link_cambiarpas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.link_cambiarpas.LinkColor = System.Drawing.Color.SteelBlue;
-            this.link_cambiarpas.Location = new System.Drawing.Point(1116, 98);
+            this.link_cambiarpas.Location = new System.Drawing.Point(1063, 130);
             this.link_cambiarpas.Name = "link_cambiarpas";
-            this.link_cambiarpas.Size = new System.Drawing.Size(102, 13);
+            this.link_cambiarpas.Size = new System.Drawing.Size(173, 20);
             this.link_cambiarpas.TabIndex = 1;
             this.link_cambiarpas.TabStop = true;
             this.link_cambiarpas.Text = "Cambiar Contraseña";
@@ -74,10 +73,11 @@
             // link_logout
             // 
             this.link_logout.AutoSize = true;
+            this.link_logout.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.link_logout.LinkColor = System.Drawing.Color.SteelBlue;
-            this.link_logout.Location = new System.Drawing.Point(1116, 123);
+            this.link_logout.Location = new System.Drawing.Point(1099, 614);
             this.link_logout.Name = "link_logout";
-            this.link_logout.Size = new System.Drawing.Size(80, 13);
+            this.link_logout.Size = new System.Drawing.Size(137, 20);
             this.link_logout.TabIndex = 3;
             this.link_logout.TabStop = true;
             this.link_logout.Text = "Finalizar Sesión";
@@ -87,11 +87,11 @@
             // 
             this.btn_registro.BackColor = System.Drawing.Color.SteelBlue;
             this.btn_registro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_registro.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_registro.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.btn_registro.Location = new System.Drawing.Point(1046, 245);
+            this.btn_registro.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_registro.ForeColor = System.Drawing.Color.White;
+            this.btn_registro.Location = new System.Drawing.Point(1027, 260);
             this.btn_registro.Name = "btn_registro";
-            this.btn_registro.Size = new System.Drawing.Size(150, 45);
+            this.btn_registro.Size = new System.Drawing.Size(209, 80);
             this.btn_registro.TabIndex = 5;
             this.btn_registro.Text = "Nuevo Registro";
             this.btn_registro.UseVisualStyleBackColor = false;
@@ -101,11 +101,11 @@
             // 
             this.btn_mantenimiento.BackColor = System.Drawing.Color.SteelBlue;
             this.btn_mantenimiento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_mantenimiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_mantenimiento.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.btn_mantenimiento.Location = new System.Drawing.Point(1046, 309);
+            this.btn_mantenimiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_mantenimiento.ForeColor = System.Drawing.Color.White;
+            this.btn_mantenimiento.Location = new System.Drawing.Point(1027, 371);
             this.btn_mantenimiento.Name = "btn_mantenimiento";
-            this.btn_mantenimiento.Size = new System.Drawing.Size(150, 45);
+            this.btn_mantenimiento.Size = new System.Drawing.Size(209, 80);
             this.btn_mantenimiento.TabIndex = 6;
             this.btn_mantenimiento.Text = "Mantenimiento";
             this.btn_mantenimiento.UseVisualStyleBackColor = false;
@@ -115,11 +115,11 @@
             // 
             this.btn_inv.BackColor = System.Drawing.Color.SteelBlue;
             this.btn_inv.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_inv.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_inv.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.btn_inv.Location = new System.Drawing.Point(1046, 376);
+            this.btn_inv.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_inv.ForeColor = System.Drawing.Color.White;
+            this.btn_inv.Location = new System.Drawing.Point(1027, 480);
             this.btn_inv.Name = "btn_inv";
-            this.btn_inv.Size = new System.Drawing.Size(150, 45);
+            this.btn_inv.Size = new System.Drawing.Size(209, 80);
             this.btn_inv.TabIndex = 7;
             this.btn_inv.Text = "Inventario";
             this.btn_inv.UseVisualStyleBackColor = false;
@@ -130,11 +130,11 @@
             this.groupBox1.BackColor = System.Drawing.Color.SteelBlue;
             this.groupBox1.Controls.Add(this.dataGridView2);
             this.groupBox1.Controls.Add(this.dataGridView1);
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.groupBox1.Location = new System.Drawing.Point(12, 18);
+            this.groupBox1.Location = new System.Drawing.Point(-1, 1);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(824, 659);
+            this.groupBox1.Size = new System.Drawing.Size(865, 736);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Notificaciones";
@@ -156,6 +156,7 @@
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Asunto,
@@ -164,12 +165,12 @@
             this.Fecha,
             this.ID});
             this.dataGridView1.GridColor = System.Drawing.Color.Gray;
-            this.dataGridView1.Location = new System.Drawing.Point(26, 64);
+            this.dataGridView1.Location = new System.Drawing.Point(47, 67);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.Size = new System.Drawing.Size(765, 577);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
@@ -212,10 +213,11 @@
             // link_Newuser
             // 
             this.link_Newuser.AutoSize = true;
+            this.link_Newuser.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.link_Newuser.LinkColor = System.Drawing.Color.SteelBlue;
-            this.link_Newuser.Location = new System.Drawing.Point(1113, 18);
+            this.link_Newuser.Location = new System.Drawing.Point(1073, 95);
             this.link_Newuser.Name = "link_Newuser";
-            this.link_Newuser.Size = new System.Drawing.Size(83, 13);
+            this.link_Newuser.Size = new System.Drawing.Size(140, 20);
             this.link_Newuser.TabIndex = 11;
             this.link_Newuser.TabStop = true;
             this.link_Newuser.Text = "Agregar Usuario";
@@ -224,9 +226,9 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(990, 376);
+            this.pictureBox4.Location = new System.Drawing.Point(918, 480);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(46, 45);
+            this.pictureBox4.Size = new System.Drawing.Size(80, 80);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 10;
             this.pictureBox4.TabStop = false;
@@ -234,9 +236,9 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(990, 309);
+            this.pictureBox3.Location = new System.Drawing.Point(918, 371);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(46, 45);
+            this.pictureBox3.Size = new System.Drawing.Size(80, 80);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 9;
             this.pictureBox3.TabStop = false;
@@ -244,9 +246,9 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(990, 245);
+            this.pictureBox2.Location = new System.Drawing.Point(918, 260);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(46, 45);
+            this.pictureBox2.Size = new System.Drawing.Size(80, 80);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 8;
             this.pictureBox2.TabStop = false;
@@ -254,31 +256,20 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(990, 18);
+            this.pictureBox1.Location = new System.Drawing.Point(886, 48);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(120, 118);
+            this.pictureBox1.Size = new System.Drawing.Size(155, 155);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(1193, 18);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(46, 45);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 12;
-            this.pictureBox5.TabStop = false;
             // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(1276, 733);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(1276, 732);
             this.ControlBox = false;
-            this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.link_Newuser);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
@@ -293,8 +284,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Menu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Menú";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Text = "BENCALETH";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Menu_FormClosed);
             this.Load += new System.EventHandler(this.Menu_Load);
             this.groupBox1.ResumeLayout(false);
@@ -304,7 +294,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -324,7 +313,6 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.LinkLabel link_Newuser;
-        private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Asunto;
         private System.Windows.Forms.DataGridViewTextBoxColumn Autor;

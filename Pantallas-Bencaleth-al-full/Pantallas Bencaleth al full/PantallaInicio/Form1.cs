@@ -73,5 +73,10 @@ namespace PantallaInicio
         {
             txt_user.Text = Herramientas.NingunCaracterEspecial(txt_user);
         }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

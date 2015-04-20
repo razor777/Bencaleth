@@ -78,7 +78,7 @@
             this.txt_Dir_Emple.MaxLength = 30;
             this.txt_Dir_Emple.Name = "txt_Dir_Emple";
             this.txt_Dir_Emple.Size = new System.Drawing.Size(179, 20);
-            this.txt_Dir_Emple.TabIndex = 81;
+            this.txt_Dir_Emple.TabIndex = 10;
             this.txt_Dir_Emple.TextChanged += new System.EventHandler(this.txt_Dir_Emple_TextChanged);
             // 
             // txt_Email_Emple
@@ -87,7 +87,7 @@
             this.txt_Email_Emple.MaxLength = 30;
             this.txt_Email_Emple.Name = "txt_Email_Emple";
             this.txt_Email_Emple.Size = new System.Drawing.Size(179, 20);
-            this.txt_Email_Emple.TabIndex = 80;
+            this.txt_Email_Emple.TabIndex = 9;
             this.txt_Email_Emple.TextChanged += new System.EventHandler(this.txt_Email_Emple_TextChanged);
             this.txt_Email_Emple.Leave += new System.EventHandler(this.txt_Email_Emple_Leave);
             // 
@@ -119,7 +119,7 @@
             this.txt_Tel_Emple.MaxLength = 15;
             this.txt_Tel_Emple.Name = "txt_Tel_Emple";
             this.txt_Tel_Emple.Size = new System.Drawing.Size(179, 20);
-            this.txt_Tel_Emple.TabIndex = 77;
+            this.txt_Tel_Emple.TabIndex = 8;
             this.txt_Tel_Emple.TextChanged += new System.EventHandler(this.txt_Tel_Emple_TextChanged);
             // 
             // label2
@@ -139,7 +139,7 @@
             this.txt_Id_Emple.MaxLength = 30;
             this.txt_Id_Emple.Name = "txt_Id_Emple";
             this.txt_Id_Emple.Size = new System.Drawing.Size(89, 20);
-            this.txt_Id_Emple.TabIndex = 75;
+            this.txt_Id_Emple.TabIndex = 0;
             this.txt_Id_Emple.TextChanged += new System.EventHandler(this.txt_Id_Emple_TextChanged);
             // 
             // date_FechN_Emple
@@ -149,7 +149,7 @@
             this.date_FechN_Emple.MinDate = new System.DateTime(1995, 1, 1, 0, 0, 0, 0);
             this.date_FechN_Emple.Name = "date_FechN_Emple";
             this.date_FechN_Emple.Size = new System.Drawing.Size(179, 20);
-            this.date_FechN_Emple.TabIndex = 70;
+            this.date_FechN_Emple.TabIndex = 5;
             this.date_FechN_Emple.ValueChanged += new System.EventHandler(this.date_FechN_Emple_ValueChanged);
             this.date_FechN_Emple.Leave += new System.EventHandler(this.date_FechN_Emple_Leave);
             // 
@@ -159,7 +159,7 @@
             this.txt_Apelli_Emple.MaxLength = 30;
             this.txt_Apelli_Emple.Name = "txt_Apelli_Emple";
             this.txt_Apelli_Emple.Size = new System.Drawing.Size(179, 20);
-            this.txt_Apelli_Emple.TabIndex = 69;
+            this.txt_Apelli_Emple.TabIndex = 2;
             this.txt_Apelli_Emple.TextChanged += new System.EventHandler(this.txt_Apelli_Emple_TextChanged);
             // 
             // txt_Nom_Emple
@@ -168,7 +168,7 @@
             this.txt_Nom_Emple.MaxLength = 30;
             this.txt_Nom_Emple.Name = "txt_Nom_Emple";
             this.txt_Nom_Emple.Size = new System.Drawing.Size(179, 20);
-            this.txt_Nom_Emple.TabIndex = 68;
+            this.txt_Nom_Emple.TabIndex = 1;
             this.txt_Nom_Emple.TextChanged += new System.EventHandler(this.txt_Nom_Emple_TextChanged);
             // 
             // label9
@@ -255,7 +255,7 @@
             this.Date_FechIn_Emple.MinDate = new System.DateTime(2015, 1, 1, 0, 0, 0, 0);
             this.Date_FechIn_Emple.Name = "Date_FechIn_Emple";
             this.Date_FechIn_Emple.Size = new System.Drawing.Size(179, 20);
-            this.Date_FechIn_Emple.TabIndex = 82;
+            this.Date_FechIn_Emple.TabIndex = 6;
             this.Date_FechIn_Emple.ValueChanged += new System.EventHandler(this.Date_FechIn_Emple_ValueChanged);
             // 
             // radio_fem_Emple
@@ -266,7 +266,7 @@
             this.radio_fem_Emple.Location = new System.Drawing.Point(592, 261);
             this.radio_fem_Emple.Name = "radio_fem_Emple";
             this.radio_fem_Emple.Size = new System.Drawing.Size(86, 20);
-            this.radio_fem_Emple.TabIndex = 91;
+            this.radio_fem_Emple.TabIndex = 4;
             this.radio_fem_Emple.Tag = "f";
             this.radio_fem_Emple.Text = "Femenino";
             this.radio_fem_Emple.UseVisualStyleBackColor = true;
@@ -280,7 +280,7 @@
             this.radio_mas_Emple.Location = new System.Drawing.Point(499, 261);
             this.radio_mas_Emple.Name = "radio_mas_Emple";
             this.radio_mas_Emple.Size = new System.Drawing.Size(87, 20);
-            this.radio_mas_Emple.TabIndex = 90;
+            this.radio_mas_Emple.TabIndex = 3;
             this.radio_mas_Emple.TabStop = true;
             this.radio_mas_Emple.Tag = "m";
             this.radio_mas_Emple.Text = "Masculino";
@@ -295,7 +295,7 @@
             this.btn_save_Emple.Location = new System.Drawing.Point(684, 559);
             this.btn_save_Emple.Name = "btn_save_Emple";
             this.btn_save_Emple.Size = new System.Drawing.Size(88, 35);
-            this.btn_save_Emple.TabIndex = 92;
+            this.btn_save_Emple.TabIndex = 11;
             this.btn_save_Emple.Text = "Guardar";
             this.btn_save_Emple.UseVisualStyleBackColor = false;
             this.btn_save_Emple.Click += new System.EventHandler(this.btn_save_Emple_Click);
@@ -340,7 +340,7 @@
             this.combobox_CargoTipoComboBox.Location = new System.Drawing.Point(499, 391);
             this.combobox_CargoTipoComboBox.Name = "combobox_CargoTipoComboBox";
             this.combobox_CargoTipoComboBox.Size = new System.Drawing.Size(179, 21);
-            this.combobox_CargoTipoComboBox.TabIndex = 94;
+            this.combobox_CargoTipoComboBox.TabIndex = 7;
             this.combobox_CargoTipoComboBox.ValueMember = "Empleado_Tipo";
             // 
             // errorProvider1

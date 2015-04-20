@@ -310,5 +310,25 @@ namespace PantallaInicio
                 voluntario.PagarMensualidad(txt_Id_Voluntarios);
             }
         }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radio_mas_Voluntarios_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radio_fem_Voluntarios_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label13_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

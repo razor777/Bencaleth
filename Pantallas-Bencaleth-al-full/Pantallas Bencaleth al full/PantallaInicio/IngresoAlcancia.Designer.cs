@@ -65,7 +65,7 @@
             this.textBox1.MaxLength = 30;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(200, 20);
-            this.textBox1.TabIndex = 100;
+            this.textBox1.TabIndex = 0;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // txtbDes
@@ -74,7 +74,7 @@
             this.txtbDes.MaxLength = 30;
             this.txtbDes.Name = "txtbDes";
             this.txtbDes.Size = new System.Drawing.Size(200, 20);
-            this.txtbDes.TabIndex = 95;
+            this.txtbDes.TabIndex = 2;
             this.txtbDes.TextChanged += new System.EventHandler(this.txtbDes_TextChanged);
             // 
             // txtbDir
@@ -83,7 +83,7 @@
             this.txtbDir.MaxLength = 30;
             this.txtbDir.Name = "txtbDir";
             this.txtbDir.Size = new System.Drawing.Size(200, 20);
-            this.txtbDir.TabIndex = 94;
+            this.txtbDir.TabIndex = 1;
             this.txtbDir.TextChanged += new System.EventHandler(this.txtbDir_TextChanged);
             // 
             // label9
@@ -139,7 +139,7 @@
             this.btn_save_Alcancias.Location = new System.Drawing.Point(683, 506);
             this.btn_save_Alcancias.Name = "btn_save_Alcancias";
             this.btn_save_Alcancias.Size = new System.Drawing.Size(88, 35);
-            this.btn_save_Alcancias.TabIndex = 114;
+            this.btn_save_Alcancias.TabIndex = 5;
             this.btn_save_Alcancias.Text = "Guardar";
             this.btn_save_Alcancias.UseVisualStyleBackColor = false;
             this.btn_save_Alcancias.Click += new System.EventHandler(this.btn_save_Alcancias_Click);
@@ -160,7 +160,7 @@
             this.dtpFecha.Location = new System.Drawing.Point(480, 381);
             this.dtpFecha.Name = "dtpFecha";
             this.dtpFecha.Size = new System.Drawing.Size(200, 20);
-            this.dtpFecha.TabIndex = 116;
+            this.dtpFecha.TabIndex = 3;
             // 
             // label3
             // 
@@ -202,7 +202,7 @@
             this.mostrarRecurenciasComboBox.Location = new System.Drawing.Point(480, 430);
             this.mostrarRecurenciasComboBox.Name = "mostrarRecurenciasComboBox";
             this.mostrarRecurenciasComboBox.Size = new System.Drawing.Size(200, 21);
-            this.mostrarRecurenciasComboBox.TabIndex = 118;
+            this.mostrarRecurenciasComboBox.TabIndex = 4;
             this.mostrarRecurenciasComboBox.ValueMember = "Id";
             this.mostrarRecurenciasComboBox.SelectedIndexChanged += new System.EventHandler(this.mostrarRecurenciasComboBox_SelectedIndexChanged);
             // 
