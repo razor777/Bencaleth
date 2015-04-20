@@ -120,5 +120,10 @@ namespace PantallaInicio
             txt_apellido.Text = Herramientas.SoloLetrasYEspaciosSec(txt_apellido);
             errorProvider3.Clear();
         }
+
+        private void radio_mas_Niños_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

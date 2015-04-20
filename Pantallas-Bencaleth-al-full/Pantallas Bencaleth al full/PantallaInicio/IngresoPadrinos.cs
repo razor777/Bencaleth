@@ -123,6 +123,10 @@ namespace PantallaInicio
             {
                 errorProvider7.SetError(txt_Mens_Padrinos, "Falta llenar Campo");
             }
+            if (string.IsNullOrEmpty(txtbDireccion.Text))
+            {
+                errorProvider8.SetError(txtbDireccion, "Falta llenar Campo");
+            }
             else
             {
                 if (boolModoActualizar)
@@ -149,6 +153,12 @@ namespace PantallaInicio
                 else
                     MessageBox.Show("No puede dejar una mensualidad en 0.00");
             }
+        }
+
+        private void txtbDireccion_TextChanged(object sender, EventArgs e)
+        {
+            txtbDireccion.Text = Herramientas.NingunEspacioInicial(txtbDireccion.Text);
+            errorProvider8.Clear();
         }
     }
 }

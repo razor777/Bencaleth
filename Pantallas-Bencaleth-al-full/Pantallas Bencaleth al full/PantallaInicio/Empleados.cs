@@ -125,6 +125,8 @@ namespace PantallaInicio
 
         private object ValueCombobox = null;
 
+        private string _strGenero;
+
         public override void ingresarDatos(Control controles) {
             this.Id = controles.Parent.Controls["txt_Id_Emple"].Text;
             this.Direccion = controles.Parent.Controls["txt_Dir_Emple"].Text;
@@ -135,14 +137,15 @@ namespace PantallaInicio
             this.Telefono= controles.Parent.Controls["txt_Tel_Emple"].Text;
             this.Correo= controles.Parent.Controls["txt_Email_Emple"].Text;
             this.Direccion= controles.Parent.Controls["txt_Dir_Emple"].Text;
-
+            this._strGenero = Herramientas.determinarCualRadioButtonEsGenero(controles);
+           
             string combo = ((ComboBox)controles.Parent.Controls["combobox_CargoTipoComboBox"]).SelectedValue.ToString();
 
             if (!Herramientas.HayCamposNull(controles))
             {
                 try
                 {
-                    BDPersonas.Insert_Empleados(this.Id, this.Nombre, _Apellido, Naci, Contra, Direccion, _Telefono, combo, Correo);
+                    BDPersonas.Insert_Empleados(this.Id, this.Nombre, _Apellido, Naci, Contra, Direccion, _Telefono, combo, Correo,this._strGenero);
                     MessageBox.Show("Ingresado");
 
                     controles.Parent.Controls["txt_Id_Emple"].Text = "";
@@ -178,6 +181,7 @@ namespace PantallaInicio
             this.Telefono = controles.Parent.Controls["txt_Tel_Emple"].Text;
             this.Correo = controles.Parent.Controls["txt_Email_Emple"].Text;
             this.Direccion = controles.Parent.Controls["txt_Dir_Emple"].Text;
+            this._strGenero = Herramientas.determinarCualRadioButtonEsGenero(controles);
 
             string combo = ((ComboBox)controles.Parent.Controls["combobox_CargoTipoComboBox"]).SelectedValue.ToString();
 
@@ -185,7 +189,7 @@ namespace PantallaInicio
             {
                 try
                 {
-                    BDPersonas.update_Empleados(this.Id, this.Nombre, _Apellido, Naci, Contra, Direccion, _Telefono, combo, Correo);
+                    BDPersonas.update_Empleados(this.Id, this.Nombre, _Apellido, Naci, Contra, Direccion, _Telefono, combo, Correo,this._strGenero);
                     MessageBox.Show("Actualizado");
                 }
                 catch (SqlException e)
@@ -242,12 +246,13 @@ namespace PantallaInicio
             dtgrdvw.Columns[0].HeaderText = "ID";
             dtgrdvw.Columns[1].HeaderText = "Nombre";
             dtgrdvw.Columns[2].HeaderText = "Apellidos";
-            dtgrdvw.Columns[3].HeaderText = "Fecha de Nacimiento";
-            dtgrdvw.Columns[4].HeaderText = "Fecha de Contratación";
-            dtgrdvw.Columns[5].HeaderText = "Dirección";
-            dtgrdvw.Columns[6].HeaderText = "Teléfono";
-            dtgrdvw.Columns[7].HeaderText = "Cargo";
-            dtgrdvw.Columns[8].HeaderText = "Correo Electrónico";
+            dtgrdvw.Columns[3].HeaderText = "Género";
+            dtgrdvw.Columns[4].HeaderText = "Fecha de Nacimiento";
+            dtgrdvw.Columns[5].HeaderText = "Fecha de Contratación";
+            dtgrdvw.Columns[6].HeaderText = "Dirección";
+            dtgrdvw.Columns[7].HeaderText = "Teléfono";
+            dtgrdvw.Columns[8].HeaderText = "Cargo";
+            dtgrdvw.Columns[9].HeaderText = "Correo Electrónico";
             //dtgrdvw.Columns[9].HeaderText = "Género";
             dtgrdvw.Update();
         }
@@ -260,6 +265,17 @@ namespace PantallaInicio
             controles.Parent.Controls["txt_Apelli_Emple"].Text = fila.Cells["Apellido"].Value.ToString();
             controles.Parent.Controls["txt_Tel_Emple"].Text = fila.Cells["Telefono"].Value.ToString();
             controles.Parent.Controls["txt_Email_Emple"].Text = fila.Cells["correo"].Value.ToString();
+
+            if (fila.Cells[3].Value.ToString() == "Femenino")
+            {
+                ((RadioButton)controles.Parent.Controls["radio_mas_Emple"]).Checked = false;
+                ((RadioButton)controles.Parent.Controls["radio_fem_Emple"]).Checked = true;
+            }
+            else
+            {
+                ((RadioButton)controles.Parent.Controls["radio_mas_Emple"]).Checked = true;
+                ((RadioButton)controles.Parent.Controls["radio_fem_Emple"]).Checked = false;
+            }
 
             controles.Parent.Controls["date_FechN_Emple"].Text = fila.Cells["Fecha_Nacimiento"].Value.ToString();
             controles.Parent.Controls["Date_FechIn_Emple"].Text = fila.Cells["Fecha_Contratacion"].Value.ToString();

@@ -26,13 +26,32 @@ namespace PantallaInicio
 
         private void btn_Acep_Adduseer_Click(object sender, EventArgs e)
         {
+            bool boolPuedeCambiar = true;
+            bool boolUsuarioValido = true;
             if (string.IsNullOrEmpty(txt_Nom_Adduser.Text) || string.IsNullOrEmpty(txt_Pass_Adduser.Text) || string.IsNullOrEmpty(txt_Confir_Adduser.Text))
             {
-                MessageBox.Show("No se pueden dejar campos vacios.");
+                MessageBox.Show("No se pueden dejar campos vacios."); 
+                boolPuedeCambiar = false;
             }
             else
             {
+                if (!Herramientas.cumpleCaracterMinimos(txt_Nom_Adduser, 8))
+                {
+                    MessageBox.Show("Se ocupa un minimo de 8 caracteres para un usuario válido");
+                    boolUsuarioValido = false;
+                    boolPuedeCambiar = false;
+                }
 
+                if ((!Herramientas.cumpleCaracterMinimos(txt_Confir_Adduser, 8)) && (!Herramientas.cumpleCaracterMinimos(txt_Pass_Adduser, 8)) && boolUsuarioValido)
+                {
+                    MessageBox.Show("Se ocupa un minimo de 8 caracteres para una contraseña válida");
+                    boolPuedeCambiar = false;
+                }
+                
+            }
+
+            if (boolPuedeCambiar)
+            {
                 MessageBox.Show(Log.IngresoUsuario(txt_Nom_Adduser.Text, txt_Pass_Adduser.Text, txt_Confir_Adduser.Text, Convert.ToInt32(mostarCargoComboBox.SelectedValue)));
                 if (Log.aprobado == 1)
                 { this.Close(); Log.aprobado = 0; }
@@ -87,24 +106,17 @@ namespace PantallaInicio
 
         private void txt_Confir_Adduser_Leave(object sender, EventArgs e)
         {
-            if (!Herramientas.cumpleCaracterMinimos(txt_Confir_Adduser, 8)){
-                MessageBox.Show("Se ocupa un minimo de 8 caracteres para una contraseña válida");
-            }
+            
         }
 
         private void txt_Pass_Adduser_Leave(object sender, EventArgs e)
         {
-            if (!Herramientas.cumpleCaracterMinimos(txt_Pass_Adduser, 8)){
-                MessageBox.Show("Se ocupa un minimo de 8 caracteres para una contraseña válida");
-            }
+            
         }
 
         private void txt_Nom_Adduser_Leave(object sender, EventArgs e)
         {
-            if (!Herramientas.cumpleCaracterMinimos(txt_Nom_Adduser, 8))
-            {
-                MessageBox.Show("Se ocupa un minimo de 8 caracteres para un usuario válido");
-            }
+            
         }
     }
 }

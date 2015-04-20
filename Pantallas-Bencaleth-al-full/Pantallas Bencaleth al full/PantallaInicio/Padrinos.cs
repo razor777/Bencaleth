@@ -120,12 +120,13 @@ namespace PantallaInicio
             this._Identidad = controles.Parent.Controls["txt_iden_padrinos"].Text;
             this._Telefono = controles.Parent.Controls["txt_Tel_Padrinos"].Text;
             this.Correo = controles.Parent.Controls["txt_Email_Padrinos"].Text;
+            this._Direccion = controles.Parent.Controls["txtbDireccion"].Text;
 
             if (!Herramientas.HayCamposNull(controles))
             {
                 try
                 {
-                    BDpadrinos.Insert_Padrinos2(this.Codigo_Persona, this.Nombre, this.Apellido, this.Genero, Fecha_Nacimiento, Fecha_Inicio, this._Identidad, this._Telefono, this.Correo, this.Mensualidad);
+                    BDpadrinos.Insert_Padrinos2(this.Codigo_Persona, this.Nombre, this.Apellido, this.Genero, Fecha_Nacimiento, Fecha_Inicio, this._Identidad, this._Telefono, this.Correo, this.Mensualidad, this._Direccion);
                     
                     MessageBox.Show("Ingresado");
 
@@ -136,6 +137,7 @@ namespace PantallaInicio
                     controles.Parent.Controls["txt_iden_padrinos"].Text = "";
                     controles.Parent.Controls["txt_Email_Padrinos"].Text = "";
                     controles.Parent.Controls["txt_Tel_Padrinos"].Text = "";
+                    controles.Parent.Controls["txtbDireccion"].Text = "";
                 }
                 catch (SqlException e)
                 {
@@ -163,12 +165,13 @@ namespace PantallaInicio
             this._Identidad = controles.Parent.Controls["txt_iden_padrinos"].Text;
             this._Telefono = controles.Parent.Controls["txt_Tel_Padrinos"].Text;
             this.Correo = controles.Parent.Controls["txt_Email_Padrinos"].Text;
+            this._Direccion = controles.Parent.Controls["txtbDireccion"].Text;
 
             if (!(Herramientas.HayCamposNull(controles)))
             {
                 try
                 {
-                    BDpadrinos.Update_Padrinos2(this.Codigo_Persona, this.Nombre, this.Apellido, this.Genero, Fecha_Nacimiento, Fecha_Inicio, this._Identidad, this._Telefono, this.Correo, this.Mensualidad);
+                    BDpadrinos.Update_Padrinos2(this.Codigo_Persona, this.Nombre, this.Apellido, this.Genero, Fecha_Nacimiento, Fecha_Inicio, this._Identidad, this._Telefono, this.Correo, this.Mensualidad, this._Direccion);
                     MessageBox.Show("Actualizado");
                 }
                 catch (SqlException e)
@@ -220,12 +223,13 @@ namespace PantallaInicio
             dtgrdvw.Columns[1].HeaderText = "Nombre";
             dtgrdvw.Columns[2].HeaderText = "Apellidos";
             dtgrdvw.Columns[3].HeaderText = "Género";
-            dtgrdvw.Columns[4].HeaderText = "Fecha de Nacimiento";
-            dtgrdvw.Columns[5].HeaderText = "Fecha de Inicio";
-            dtgrdvw.Columns[6].HeaderText = "Identidad";
-            dtgrdvw.Columns[7].HeaderText = "Teléfono";
-            dtgrdvw.Columns[8].HeaderText = "Correo Electrónico";
-            dtgrdvw.Columns[9].HeaderText = "Monto";
+            dtgrdvw.Columns[4].HeaderText = "Dirección";
+            dtgrdvw.Columns[5].HeaderText = "Fecha de Nacimiento";
+            dtgrdvw.Columns[6].HeaderText = "Fecha de Inicio";
+            dtgrdvw.Columns[7].HeaderText = "Identidad";
+            dtgrdvw.Columns[8].HeaderText = "Teléfono";
+            dtgrdvw.Columns[9].HeaderText = "Correo Electrónico";
+            dtgrdvw.Columns[10].HeaderText = "Monto";
             dtgrdvw.Update();
         }
 
@@ -248,11 +252,12 @@ namespace PantallaInicio
                 ((RadioButton)controles.Parent.Controls["radio_fem_Padrinos"]).Checked = false;
             }
 
-            controles.Parent.Controls["ddate_Fn_padrinos"].Text = fila.Cells[4].Value.ToString();
-            controles.Parent.Controls["date_Fi_padrinos"].Text = fila.Cells[5].Value.ToString();
-            controles.Parent.Controls["txt_iden_padrinos"].Text = fila.Cells[6].Value.ToString();
-            controles.Parent.Controls["txt_Tel_Padrinos"].Text = fila.Cells[7].Value.ToString();
-            controles.Parent.Controls["txt_Email_Padrinos"].Text = fila.Cells[8].Value.ToString();
+            controles.Parent.Controls["txtbDireccion"].Text = fila.Cells[4].Value.ToString();
+            controles.Parent.Controls["ddate_Fn_padrinos"].Text = fila.Cells[5].Value.ToString();
+            controles.Parent.Controls["date_Fi_padrinos"].Text = fila.Cells[6].Value.ToString();
+            controles.Parent.Controls["txt_iden_padrinos"].Text = fila.Cells[7].Value.ToString();
+            controles.Parent.Controls["txt_Tel_Padrinos"].Text = fila.Cells[8].Value.ToString();
+            controles.Parent.Controls["txt_Email_Padrinos"].Text = fila.Cells[9].Value.ToString();
             //controles.Parent.Controls["txt_Mens_Padrinos"].Text = Convert.ToInt32(fila.Cells["Monto"].Value.ToString()).ToString();
             string palabra = fila.Cells["Monto"].Value.ToString();
             palabra = palabra.Remove(palabra.IndexOf(","));

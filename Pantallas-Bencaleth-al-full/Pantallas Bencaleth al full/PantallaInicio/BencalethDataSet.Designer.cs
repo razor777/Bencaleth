@@ -1899,6 +1899,8 @@ namespace PantallaInicio {
             
             private global::System.Data.DataColumn columnApellido;
             
+            private global::System.Data.DataColumn columnGenero;
+            
             private global::System.Data.DataColumn columnFecha_Nacimiento;
             
             private global::System.Data.DataColumn columnFecha_Contratacion;
@@ -1965,6 +1967,14 @@ namespace PantallaInicio {
             public global::System.Data.DataColumn ApellidoColumn {
                 get {
                     return this.columnApellido;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn GeneroColumn {
+                get {
+                    return this.columnGenero;
                 }
             }
             
@@ -2053,12 +2063,13 @@ namespace PantallaInicio {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public BuscarSelect_EmpleadosRow AddBuscarSelect_EmpleadosRow(string Id, string Nombre, string Apellido, System.DateTime Fecha_Nacimiento, System.DateTime Fecha_Contratacion, string Direccion, int Telefono, string Cargo, string correo) {
+            public BuscarSelect_EmpleadosRow AddBuscarSelect_EmpleadosRow(string Id, string Nombre, string Apellido, string Genero, System.DateTime Fecha_Nacimiento, System.DateTime Fecha_Contratacion, string Direccion, int Telefono, string Cargo, string correo) {
                 BuscarSelect_EmpleadosRow rowBuscarSelect_EmpleadosRow = ((BuscarSelect_EmpleadosRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         Id,
                         Nombre,
                         Apellido,
+                        Genero,
                         Fecha_Nacimiento,
                         Fecha_Contratacion,
                         Direccion,
@@ -2097,6 +2108,7 @@ namespace PantallaInicio {
                 this.columnId = base.Columns["Id"];
                 this.columnNombre = base.Columns["Nombre"];
                 this.columnApellido = base.Columns["Apellido"];
+                this.columnGenero = base.Columns["Genero"];
                 this.columnFecha_Nacimiento = base.Columns["Fecha_Nacimiento"];
                 this.columnFecha_Contratacion = base.Columns["Fecha_Contratacion"];
                 this.columnDireccion = base.Columns["Direccion"];
@@ -2114,6 +2126,8 @@ namespace PantallaInicio {
                 base.Columns.Add(this.columnNombre);
                 this.columnApellido = new global::System.Data.DataColumn("Apellido", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnApellido);
+                this.columnGenero = new global::System.Data.DataColumn("Genero", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnGenero);
                 this.columnFecha_Nacimiento = new global::System.Data.DataColumn("Fecha_Nacimiento", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnFecha_Nacimiento);
                 this.columnFecha_Contratacion = new global::System.Data.DataColumn("Fecha_Contratacion", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
@@ -2133,8 +2147,10 @@ namespace PantallaInicio {
                 this.columnId.MaxLength = 15;
                 this.columnNombre.MaxLength = 50;
                 this.columnApellido.MaxLength = 50;
+                this.columnGenero.MaxLength = 10;
                 this.columnDireccion.MaxLength = 100;
-                this.columnCargo.MaxLength = 15;
+                this.columnCargo.ReadOnly = true;
+                this.columnCargo.MaxLength = 255;
                 this.columncorreo.MaxLength = 255;
             }
             
@@ -3008,6 +3024,8 @@ namespace PantallaInicio {
             
             private global::System.Data.DataColumn columnGenero;
             
+            private global::System.Data.DataColumn columnDireccion;
+            
             private global::System.Data.DataColumn columnFecha_Nacimiento;
             
             private global::System.Data.DataColumn columnFecha_Inicio;
@@ -3082,6 +3100,14 @@ namespace PantallaInicio {
             public global::System.Data.DataColumn GeneroColumn {
                 get {
                     return this.columnGenero;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn DireccionColumn {
+                get {
+                    return this.columnDireccion;
                 }
             }
             
@@ -3170,13 +3196,14 @@ namespace PantallaInicio {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public BuscarSelect_PadrinosRow AddBuscarSelect_PadrinosRow(string Id, string Nombre, string Apellidos, string Genero, System.DateTime Fecha_Nacimiento, System.DateTime Fecha_Inicio, string Identidad, string Telefono, string Correo_Electronico, decimal Monto) {
+            public BuscarSelect_PadrinosRow AddBuscarSelect_PadrinosRow(string Id, string Nombre, string Apellidos, string Genero, string Direccion, System.DateTime Fecha_Nacimiento, System.DateTime Fecha_Inicio, string Identidad, string Telefono, string Correo_Electronico, decimal Monto) {
                 BuscarSelect_PadrinosRow rowBuscarSelect_PadrinosRow = ((BuscarSelect_PadrinosRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         Id,
                         Nombre,
                         Apellidos,
                         Genero,
+                        Direccion,
                         Fecha_Nacimiento,
                         Fecha_Inicio,
                         Identidad,
@@ -3216,6 +3243,7 @@ namespace PantallaInicio {
                 this.columnNombre = base.Columns["Nombre"];
                 this.columnApellidos = base.Columns["Apellidos"];
                 this.columnGenero = base.Columns["Genero"];
+                this.columnDireccion = base.Columns["Direccion"];
                 this.columnFecha_Nacimiento = base.Columns["Fecha_Nacimiento"];
                 this.columnFecha_Inicio = base.Columns["Fecha_Inicio"];
                 this.columnIdentidad = base.Columns["Identidad"];
@@ -3235,6 +3263,8 @@ namespace PantallaInicio {
                 base.Columns.Add(this.columnApellidos);
                 this.columnGenero = new global::System.Data.DataColumn("Genero", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnGenero);
+                this.columnDireccion = new global::System.Data.DataColumn("Direccion", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDireccion);
                 this.columnFecha_Nacimiento = new global::System.Data.DataColumn("Fecha_Nacimiento", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnFecha_Nacimiento);
                 this.columnFecha_Inicio = new global::System.Data.DataColumn("Fecha_Inicio", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
@@ -3255,6 +3285,7 @@ namespace PantallaInicio {
                 this.columnNombre.MaxLength = 50;
                 this.columnApellidos.MaxLength = 50;
                 this.columnGenero.MaxLength = 10;
+                this.columnDireccion.MaxLength = 30;
                 this.columnIdentidad.MaxLength = 15;
                 this.columnTelefono.MaxLength = 15;
                 this.columnCorreo_Electronico.MaxLength = 100;
@@ -13643,6 +13674,22 @@ namespace PantallaInicio {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Genero {
+                get {
+                    try {
+                        return ((string)(this[this.tableBuscarSelect_Empleados.GeneroColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Genero\' de la tabla \'BuscarSelect_Empleados\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableBuscarSelect_Empleados.GeneroColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public System.DateTime Fecha_Nacimiento {
                 get {
                     try {
@@ -13763,6 +13810,18 @@ namespace PantallaInicio {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetApellidoNull() {
                 this[this.tableBuscarSelect_Empleados.ApellidoColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsGeneroNull() {
+                return this.IsNull(this.tableBuscarSelect_Empleados.GeneroColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetGeneroNull() {
+                this[this.tableBuscarSelect_Empleados.GeneroColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -14363,6 +14422,23 @@ namespace PantallaInicio {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Direccion {
+                get {
+                    try {
+                        return ((string)(this[this.tableBuscarSelect_Padrinos.DireccionColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Direccion\' de la tabla \'BuscarSelect_Padrinos\' es DBNull." +
+                                "", e);
+                    }
+                }
+                set {
+                    this[this.tableBuscarSelect_Padrinos.DireccionColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public System.DateTime Fecha_Nacimiento {
                 get {
                     try {
@@ -14495,6 +14571,18 @@ namespace PantallaInicio {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetGeneroNull() {
                 this[this.tableBuscarSelect_Padrinos.GeneroColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsDireccionNull() {
+                return this.IsNull(this.tableBuscarSelect_Padrinos.DireccionColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetDireccionNull() {
+                this[this.tableBuscarSelect_Padrinos.DireccionColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -19842,6 +19930,7 @@ namespace PantallaInicio.BencalethDataSetTableAdapters {
             tableMapping.ColumnMappings.Add("Id", "Id");
             tableMapping.ColumnMappings.Add("Nombre", "Nombre");
             tableMapping.ColumnMappings.Add("Apellido", "Apellido");
+            tableMapping.ColumnMappings.Add("Genero", "Genero");
             tableMapping.ColumnMappings.Add("Fecha_Nacimiento", "Fecha_Nacimiento");
             tableMapping.ColumnMappings.Add("Fecha_Contratacion", "Fecha_Contratacion");
             tableMapping.ColumnMappings.Add("Direccion", "Direccion");
@@ -20447,6 +20536,7 @@ namespace PantallaInicio.BencalethDataSetTableAdapters {
             tableMapping.ColumnMappings.Add("Nombre", "Nombre");
             tableMapping.ColumnMappings.Add("Apellidos", "Apellidos");
             tableMapping.ColumnMappings.Add("Genero", "Genero");
+            tableMapping.ColumnMappings.Add("Direccion", "Direccion");
             tableMapping.ColumnMappings.Add("Fecha_Nacimiento", "Fecha_Nacimiento");
             tableMapping.ColumnMappings.Add("Fecha_Inicio", "Fecha_Inicio");
             tableMapping.ColumnMappings.Add("Identidad", "Identidad");
@@ -26472,6 +26562,7 @@ namespace PantallaInicio.BencalethDataSetTableAdapters {
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[2])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@tele", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[2])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@cargo", global::System.Data.SqlDbType.NVarChar, 10, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[2])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@correo", global::System.Data.SqlDbType.NVarChar, 255, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[2])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@genero", global::System.Data.SqlDbType.NVarChar, 10, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[3] = new global::System.Data.SqlClient.SqlCommand();
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[3])).Connection = new global::System.Data.SqlClient.SqlConnection(global::PantallaInicio.Properties.Settings.Default.BencalethConnectionString);
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[3])).CommandText = "dbo.Insert_Empresas";
@@ -26554,6 +26645,7 @@ namespace PantallaInicio.BencalethDataSetTableAdapters {
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[9])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@telefono", global::System.Data.SqlDbType.NVarChar, 15, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[9])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@correo", global::System.Data.SqlDbType.NVarChar, 100, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[9])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@monto", global::System.Data.SqlDbType.Money, 8, global::System.Data.ParameterDirection.Input, 19, 4, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[9])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@direccion", global::System.Data.SqlDbType.NVarChar, 30, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[10] = new global::System.Data.SqlClient.SqlCommand();
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[10])).Connection = new global::System.Data.SqlClient.SqlConnection(global::PantallaInicio.Properties.Settings.Default.BencalethConnectionString);
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[10])).CommandText = "dbo.Insert_Voluntarios";
@@ -26656,6 +26748,7 @@ namespace PantallaInicio.BencalethDataSetTableAdapters {
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[18])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@telefono", global::System.Data.SqlDbType.NVarChar, 15, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[18])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@correo", global::System.Data.SqlDbType.NVarChar, 100, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[18])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@monto", global::System.Data.SqlDbType.Money, 8, global::System.Data.ParameterDirection.Input, 19, 4, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[18])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@direccion", global::System.Data.SqlDbType.NVarChar, 30, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[19] = new global::System.Data.SqlClient.SqlCommand();
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[19])).Connection = new global::System.Data.SqlClient.SqlConnection(global::PantallaInicio.Properties.Settings.Default.BencalethConnectionString);
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[19])).CommandText = "dbo.uspInsertUsuarios";
@@ -26692,6 +26785,7 @@ namespace PantallaInicio.BencalethDataSetTableAdapters {
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[22])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Telefono", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[22])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@cargo", global::System.Data.SqlDbType.NVarChar, 15, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[22])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@correo", global::System.Data.SqlDbType.NVarChar, 255, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[22])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@genero", global::System.Data.SqlDbType.NVarChar, 10, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[23] = new global::System.Data.SqlClient.SqlCommand();
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[23])).Connection = new global::System.Data.SqlClient.SqlConnection(global::PantallaInicio.Properties.Settings.Default.BencalethConnectionString);
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[23])).CommandText = "dbo.Delete_Alcancias";
@@ -26925,7 +27019,7 @@ namespace PantallaInicio.BencalethDataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Insert_Empleados(string identidad, string nom, string ape, global::System.Nullable<global::System.DateTime> naci, global::System.Nullable<global::System.DateTime> contrata, string direcc, global::System.Nullable<int> tele, string cargo, string correo) {
+        public virtual object Insert_Empleados(string identidad, string nom, string ape, global::System.Nullable<global::System.DateTime> naci, global::System.Nullable<global::System.DateTime> contrata, string direcc, global::System.Nullable<int> tele, string cargo, string correo, string genero) {
             global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[2]));
             if ((identidad == null)) {
                 command.Parameters[1].Value = global::System.DBNull.Value;
@@ -26981,21 +27075,33 @@ namespace PantallaInicio.BencalethDataSetTableAdapters {
             else {
                 command.Parameters[9].Value = ((string)(correo));
             }
+            if ((genero == null)) {
+                command.Parameters[10].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[10].Value = ((string)(genero));
+            }
             global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
             if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
                 command.Connection.Open();
             }
-            int returnValue;
+            object returnValue;
             try {
-                returnValue = command.ExecuteNonQuery();
+                returnValue = command.ExecuteScalar();
             }
             finally {
                 if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
                     command.Connection.Close();
                 }
             }
-            return returnValue;
+            if (((returnValue == null) 
+                        || (returnValue.GetType() == typeof(global::System.DBNull)))) {
+                return null;
+            }
+            else {
+                return ((object)(returnValue));
+            }
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -27355,7 +27461,7 @@ namespace PantallaInicio.BencalethDataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Insert_Padrinos2(string id, string nom, string ape, string Genero, global::System.Nullable<global::System.DateTime> Naci, global::System.Nullable<global::System.DateTime> Fch_ini, string Identidad, string telefono, string correo, global::System.Nullable<decimal> monto) {
+        public virtual object Insert_Padrinos2(string id, string nom, string ape, string Genero, global::System.Nullable<global::System.DateTime> Naci, global::System.Nullable<global::System.DateTime> Fch_ini, string Identidad, string telefono, string correo, global::System.Nullable<decimal> monto, string direccion) {
             global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[9]));
             if ((id == null)) {
                 command.Parameters[1].Value = global::System.DBNull.Value;
@@ -27417,21 +27523,33 @@ namespace PantallaInicio.BencalethDataSetTableAdapters {
             else {
                 command.Parameters[10].Value = global::System.DBNull.Value;
             }
+            if ((direccion == null)) {
+                command.Parameters[11].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[11].Value = ((string)(direccion));
+            }
             global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
             if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
                 command.Connection.Open();
             }
-            int returnValue;
+            object returnValue;
             try {
-                returnValue = command.ExecuteNonQuery();
+                returnValue = command.ExecuteScalar();
             }
             finally {
                 if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
                     command.Connection.Close();
                 }
             }
-            return returnValue;
+            if (((returnValue == null) 
+                        || (returnValue.GetType() == typeof(global::System.DBNull)))) {
+                return null;
+            }
+            else {
+                return ((object)(returnValue));
+            }
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -27902,7 +28020,7 @@ namespace PantallaInicio.BencalethDataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update_Padrinos2(string id, string nom, string ape, string Genero, global::System.Nullable<global::System.DateTime> Naci, global::System.Nullable<global::System.DateTime> Fch_ini, string Identidad, string telefono, string correo, global::System.Nullable<decimal> monto) {
+        public virtual object Update_Padrinos2(string id, string nom, string ape, string Genero, global::System.Nullable<global::System.DateTime> Naci, global::System.Nullable<global::System.DateTime> Fch_ini, string Identidad, string telefono, string correo, global::System.Nullable<decimal> monto, string direccion) {
             global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[18]));
             if ((id == null)) {
                 command.Parameters[1].Value = global::System.DBNull.Value;
@@ -27964,21 +28082,33 @@ namespace PantallaInicio.BencalethDataSetTableAdapters {
             else {
                 command.Parameters[10].Value = global::System.DBNull.Value;
             }
+            if ((direccion == null)) {
+                command.Parameters[11].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[11].Value = ((string)(direccion));
+            }
             global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
             if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
                 command.Connection.Open();
             }
-            int returnValue;
+            object returnValue;
             try {
-                returnValue = command.ExecuteNonQuery();
+                returnValue = command.ExecuteScalar();
             }
             finally {
                 if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
                     command.Connection.Close();
                 }
             }
-            return returnValue;
+            if (((returnValue == null) 
+                        || (returnValue.GetType() == typeof(global::System.DBNull)))) {
+                return null;
+            }
+            else {
+                return ((object)(returnValue));
+            }
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -28099,7 +28229,7 @@ namespace PantallaInicio.BencalethDataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int update_Empleados(string id, string nombre, string apellido, global::System.Nullable<global::System.DateTime> Fecha_Nacimiento, global::System.Nullable<global::System.DateTime> Fecha_Contratacion, string Direccion, global::System.Nullable<int> Telefono, string cargo, string correo) {
+        public virtual object update_Empleados(string id, string nombre, string apellido, global::System.Nullable<global::System.DateTime> Fecha_Nacimiento, global::System.Nullable<global::System.DateTime> Fecha_Contratacion, string Direccion, global::System.Nullable<int> Telefono, string cargo, string correo, string genero) {
             global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[22]));
             if ((id == null)) {
                 command.Parameters[1].Value = global::System.DBNull.Value;
@@ -28155,21 +28285,33 @@ namespace PantallaInicio.BencalethDataSetTableAdapters {
             else {
                 command.Parameters[9].Value = ((string)(correo));
             }
+            if ((genero == null)) {
+                command.Parameters[10].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[10].Value = ((string)(genero));
+            }
             global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
             if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
                 command.Connection.Open();
             }
-            int returnValue;
+            object returnValue;
             try {
-                returnValue = command.ExecuteNonQuery();
+                returnValue = command.ExecuteScalar();
             }
             finally {
                 if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
                     command.Connection.Close();
                 }
             }
-            return returnValue;
+            if (((returnValue == null) 
+                        || (returnValue.GetType() == typeof(global::System.DBNull)))) {
+                return null;
+            }
+            else {
+                return ((object)(returnValue));
+            }
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]

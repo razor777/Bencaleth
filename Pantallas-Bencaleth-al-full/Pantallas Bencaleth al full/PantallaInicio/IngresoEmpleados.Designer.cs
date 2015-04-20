@@ -398,6 +398,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.Name = "IngresoEmpleados";
+            this.Tag = "m";
             this.Load += new System.EventHandler(this.IngresoEmpleados_Load);
             ((System.ComponentModel.ISupportInitialize)(this.bencalethDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.combobox_CargoTipoBindingSource)).EndInit();

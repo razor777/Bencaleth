@@ -217,6 +217,7 @@
             this.radio_mas_Niños.Tag = "m";
             this.radio_mas_Niños.Text = "Masculino";
             this.radio_mas_Niños.UseVisualStyleBackColor = true;
+            this.radio_mas_Niños.CheckedChanged += new System.EventHandler(this.radio_mas_Niños_CheckedChanged);
             // 
             // radio_fem_Niños
             // 

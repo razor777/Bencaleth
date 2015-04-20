@@ -60,6 +60,9 @@
             this.errorProvider6 = new System.Windows.Forms.ErrorProvider(this.components);
             this.errorProvider7 = new System.Windows.Forms.ErrorProvider(this.components);
             this.btnPago = new System.Windows.Forms.Button();
+            this.label11 = new System.Windows.Forms.Label();
+            this.txtbDireccion = new System.Windows.Forms.TextBox();
+            this.errorProvider8 = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider3)).BeginInit();
@@ -67,6 +70,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider8)).BeginInit();
             this.SuspendLayout();
             // 
             // date_Fi_padrinos
@@ -119,7 +123,7 @@
             // txt_iden_padrinos
             // 
             this.txt_iden_padrinos.Location = new System.Drawing.Point(476, 411);
-            this.txt_iden_padrinos.MaxLength = 30;
+            this.txt_iden_padrinos.MaxLength = 13;
             this.txt_iden_padrinos.Name = "txt_iden_padrinos";
             this.txt_iden_padrinos.Size = new System.Drawing.Size(157, 20);
             this.txt_iden_padrinos.TabIndex = 79;
@@ -275,7 +279,7 @@
             this.btn_save.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_save.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_save.ForeColor = System.Drawing.Color.SteelBlue;
-            this.btn_save.Location = new System.Drawing.Point(652, 576);
+            this.btn_save.Location = new System.Drawing.Point(651, 636);
             this.btn_save.Name = "btn_save";
             this.btn_save.Size = new System.Drawing.Size(88, 35);
             this.btn_save.TabIndex = 86;
@@ -345,13 +349,37 @@
             this.btnPago.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPago.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPago.ForeColor = System.Drawing.Color.SteelBlue;
-            this.btnPago.Location = new System.Drawing.Point(512, 576);
+            this.btnPago.Location = new System.Drawing.Point(521, 636);
             this.btnPago.Name = "btnPago";
             this.btnPago.Size = new System.Drawing.Size(88, 35);
             this.btnPago.TabIndex = 89;
             this.btnPago.Text = "Pago";
             this.btnPago.UseVisualStyleBackColor = false;
             this.btnPago.Click += new System.EventHandler(this.btnPago_Click);
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.label11.Location = new System.Drawing.Point(366, 585);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(90, 24);
+            this.label11.TabIndex = 90;
+            this.label11.Text = "Dirección";
+            // 
+            // txtbDireccion
+            // 
+            this.txtbDireccion.Location = new System.Drawing.Point(476, 590);
+            this.txtbDireccion.MaxLength = 30;
+            this.txtbDireccion.Name = "txtbDireccion";
+            this.txtbDireccion.Size = new System.Drawing.Size(157, 20);
+            this.txtbDireccion.TabIndex = 91;
+            this.txtbDireccion.TextChanged += new System.EventHandler(this.txtbDireccion_TextChanged);
+            // 
+            // errorProvider8
+            // 
+            this.errorProvider8.ContainerControl = this;
             // 
             // IngresoPadrinos
             // 
@@ -360,6 +388,8 @@
             this.BackColor = System.Drawing.Color.SteelBlue;
             this.ClientSize = new System.Drawing.Size(1276, 756);
             this.ControlBox = false;
+            this.Controls.Add(this.txtbDireccion);
+            this.Controls.Add(this.label11);
             this.Controls.Add(this.btnPago);
             this.Controls.Add(this.radio_fem_Padrinos);
             this.Controls.Add(this.radio_mas_Padrinos);
@@ -392,6 +422,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider8)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -430,5 +461,8 @@
         private System.Windows.Forms.ErrorProvider errorProvider6;
         private System.Windows.Forms.ErrorProvider errorProvider7;
         private System.Windows.Forms.Button btnPago;
+        private System.Windows.Forms.TextBox txtbDireccion;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.ErrorProvider errorProvider8;
     }
 }

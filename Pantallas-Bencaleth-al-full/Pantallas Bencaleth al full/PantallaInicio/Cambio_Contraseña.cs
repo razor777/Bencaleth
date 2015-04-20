@@ -50,12 +50,23 @@ namespace PantallaInicio
 
         private void btn_Acep_Click_1(object sender, EventArgs e)
         {
+            bool boolPuedeCambiar = true;
+            bool boolEstanVacios = false;
             //Cambio de contraseña evento click
-            if (string.IsNullOrEmpty(txt_Newpassw.Text) || string.IsNullOrEmpty(txt_Confimpassw.Text))
+            if ((string.IsNullOrEmpty(txt_Newpassw.Text) || string.IsNullOrEmpty(txt_Confimpassw.Text)) && (!Herramientas.cumpleCaracterMinimos(txt_Newpassw, 8)) && (!Herramientas.cumpleCaracterMinimos(txt_Confimpassw, 8)))
             {
                 MessageBox.Show("No se pueden dejar campos vacios.");
+                boolPuedeCambiar = false;
+                boolEstanVacios = true;
             }
-            else
+
+            if ((!Herramientas.cumpleCaracterMinimos(txt_Confimpassw, 8)) && (!Herramientas.cumpleCaracterMinimos(txt_Newpassw, 8)) && (!boolEstanVacios))
+            {
+                MessageBox.Show("Se ocupa un minimo de 8 caracteres para una contraseña válida");
+                boolPuedeCambiar = false;
+            }
+
+            if (boolPuedeCambiar)
             {
                 MessageBox.Show(Log.cambioContraseña(mostarUsuariosComboBox.SelectedValue.ToString(), txt_Newpassw.Text, txt_Confimpassw.Text));
                 if (Log.aprobado == 1) { this.Close(); Log.aprobado = 0; }
@@ -75,18 +86,12 @@ namespace PantallaInicio
 
         private void txt_Newpassw_Leave(object sender, EventArgs e)
         {
-            if (Herramientas.cumpleCaracterMinimos(txt_Newpassw, 8))
-            {
-                MessageBox.Show("Se ocupa un minimo de 8 caracteres para una contraseña válida");
-            }
+            
         }
 
         private void txt_Confimpassw_Leave(object sender, EventArgs e)
         {
-            if (Herramientas.cumpleCaracterMinimos(txt_Confimpassw, 8))
-            {
-                MessageBox.Show("Se ocupa un minimo de 8 caracteres para una contraseña válida");
-            }
+            
         }
     }
 }
