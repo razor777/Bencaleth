@@ -256,7 +256,7 @@
             this.txt_id_empresa.MaxLength = 30;
             this.txt_id_empresa.Name = "txt_id_empresa";
             this.txt_id_empresa.ReadOnly = true;
-            this.txt_id_empresa.Size = new System.Drawing.Size(89, 20);
+            this.txt_id_empresa.Size = new System.Drawing.Size(157, 20);
             this.txt_id_empresa.TabIndex = 0;
             this.txt_id_empresa.TextChanged += new System.EventHandler(this.txt_id_empresa_TextChanged);
             // 

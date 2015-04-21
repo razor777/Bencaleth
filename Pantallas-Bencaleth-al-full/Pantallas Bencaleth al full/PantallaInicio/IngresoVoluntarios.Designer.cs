@@ -85,7 +85,7 @@
             this.txt_Id_Voluntarios.Location = new System.Drawing.Point(271, 138);
             this.txt_Id_Voluntarios.MaxLength = 35;
             this.txt_Id_Voluntarios.Name = "txt_Id_Voluntarios";
-            this.txt_Id_Voluntarios.Size = new System.Drawing.Size(157, 26);
+            this.txt_Id_Voluntarios.Size = new System.Drawing.Size(222, 26);
             this.txt_Id_Voluntarios.TabIndex = 53;
             this.txt_Id_Voluntarios.TextChanged += new System.EventHandler(this.txt_Id_Voluntarios_TextChanged);
             this.txt_Id_Voluntarios.Validated += new System.EventHandler(this.txt_Id_Voluntarios_Validated);

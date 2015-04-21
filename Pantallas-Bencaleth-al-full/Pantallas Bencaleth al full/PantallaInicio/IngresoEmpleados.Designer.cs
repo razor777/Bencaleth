@@ -94,22 +94,22 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.label11.Location = new System.Drawing.Point(372, 430);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(85, 24);
+            this.label11.Size = new System.Drawing.Size(128, 31);
             this.label11.TabIndex = 79;
             this.label11.Text = "Teléfono";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.label10.Location = new System.Drawing.Point(367, 511);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(90, 24);
+            this.label10.Size = new System.Drawing.Size(137, 31);
             this.label10.TabIndex = 78;
             this.label10.Text = "Dirección";
             // 
@@ -125,11 +125,11 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.label2.Location = new System.Drawing.Point(289, 471);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(168, 24);
+            this.label2.Size = new System.Drawing.Size(257, 31);
             this.label2.TabIndex = 76;
             this.label2.Text = "Correo Electrónico";
             // 
@@ -138,7 +138,7 @@
             this.txt_Id_Emple.Location = new System.Drawing.Point(499, 147);
             this.txt_Id_Emple.MaxLength = 30;
             this.txt_Id_Emple.Name = "txt_Id_Emple";
-            this.txt_Id_Emple.Size = new System.Drawing.Size(89, 20);
+            this.txt_Id_Emple.Size = new System.Drawing.Size(179, 20);
             this.txt_Id_Emple.TabIndex = 0;
             this.txt_Id_Emple.TextChanged += new System.EventHandler(this.txt_Id_Emple_TextChanged);
             // 
@@ -174,77 +174,77 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.label9.Location = new System.Drawing.Point(430, 143);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(27, 24);
+            this.label9.Size = new System.Drawing.Size(44, 31);
             this.label9.TabIndex = 67;
             this.label9.Text = "ID";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.label8.Location = new System.Drawing.Point(378, 181);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(79, 24);
+            this.label8.Size = new System.Drawing.Size(116, 31);
             this.label8.TabIndex = 66;
             this.label8.Text = "Nombre";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.label7.Location = new System.Drawing.Point(369, 218);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(88, 24);
+            this.label7.Size = new System.Drawing.Size(133, 31);
             this.label7.TabIndex = 65;
             this.label7.Text = "Apellidos";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.label6.Location = new System.Drawing.Point(383, 257);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(74, 24);
+            this.label6.Size = new System.Drawing.Size(110, 31);
             this.label6.TabIndex = 64;
             this.label6.Text = "Género";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.label5.Location = new System.Drawing.Point(293, 301);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(164, 24);
+            this.label5.Size = new System.Drawing.Size(249, 31);
             this.label5.TabIndex = 63;
             this.label5.Text = "Fecha Nacimiento";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.label3.Location = new System.Drawing.Point(325, 348);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(132, 24);
+            this.label3.Size = new System.Drawing.Size(201, 31);
             this.label3.TabIndex = 61;
             this.label3.Text = "Fecha Ingreso";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.label1.Location = new System.Drawing.Point(498, 84);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(158, 31);
+            this.label1.Size = new System.Drawing.Size(214, 42);
             this.label1.TabIndex = 60;
             this.label1.Text = "Empleados";
             // 
@@ -303,11 +303,11 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.label4.Location = new System.Drawing.Point(396, 391);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(61, 24);
+            this.label4.Size = new System.Drawing.Size(93, 31);
             this.label4.TabIndex = 93;
             this.label4.Text = "Cargo";
             // 
@@ -372,7 +372,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
-            this.ClientSize = new System.Drawing.Size(1276, 756);
+            this.ClientSize = new System.Drawing.Size(976, 724);
             this.ControlBox = false;
             this.Controls.Add(this.combobox_CargoTipoComboBox);
             this.Controls.Add(this.label4);

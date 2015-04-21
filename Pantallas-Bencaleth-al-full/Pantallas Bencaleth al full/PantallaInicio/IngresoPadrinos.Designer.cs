@@ -77,7 +77,7 @@
             // 
             this.date_Fi_padrinos.Location = new System.Drawing.Point(476, 365);
             this.date_Fi_padrinos.Name = "date_Fi_padrinos";
-            this.date_Fi_padrinos.Size = new System.Drawing.Size(157, 20);
+            this.date_Fi_padrinos.Size = new System.Drawing.Size(190, 20);
             this.date_Fi_padrinos.TabIndex = 6;
             // 
             // label12
@@ -96,7 +96,7 @@
             this.txt_Mens_Padrinos.Location = new System.Drawing.Point(476, 540);
             this.txt_Mens_Padrinos.MaxLength = 10;
             this.txt_Mens_Padrinos.Name = "txt_Mens_Padrinos";
-            this.txt_Mens_Padrinos.Size = new System.Drawing.Size(157, 20);
+            this.txt_Mens_Padrinos.Size = new System.Drawing.Size(190, 20);
             this.txt_Mens_Padrinos.TabIndex = 10;
             this.txt_Mens_Padrinos.TextChanged += new System.EventHandler(this.txt_Mens_Padrinos_TextChanged);
             // 
@@ -105,7 +105,7 @@
             this.txt_Tel_Padrinos.Location = new System.Drawing.Point(476, 448);
             this.txt_Tel_Padrinos.MaxLength = 15;
             this.txt_Tel_Padrinos.Name = "txt_Tel_Padrinos";
-            this.txt_Tel_Padrinos.Size = new System.Drawing.Size(157, 20);
+            this.txt_Tel_Padrinos.Size = new System.Drawing.Size(190, 20);
             this.txt_Tel_Padrinos.TabIndex = 8;
             this.txt_Tel_Padrinos.TextChanged += new System.EventHandler(this.txt_Tel_Padrinos_TextChanged);
             // 
@@ -125,7 +125,7 @@
             this.txt_iden_padrinos.Location = new System.Drawing.Point(476, 411);
             this.txt_iden_padrinos.MaxLength = 13;
             this.txt_iden_padrinos.Name = "txt_iden_padrinos";
-            this.txt_iden_padrinos.Size = new System.Drawing.Size(157, 20);
+            this.txt_iden_padrinos.Size = new System.Drawing.Size(190, 20);
             this.txt_iden_padrinos.TabIndex = 7;
             this.txt_iden_padrinos.TextChanged += new System.EventHandler(this.txt_iden_padrinos_TextChanged);
             // 
@@ -145,7 +145,7 @@
             this.txt_Id_Padrinos.Location = new System.Drawing.Point(476, 151);
             this.txt_Id_Padrinos.MaxLength = 15;
             this.txt_Id_Padrinos.Name = "txt_Id_Padrinos";
-            this.txt_Id_Padrinos.Size = new System.Drawing.Size(89, 20);
+            this.txt_Id_Padrinos.Size = new System.Drawing.Size(190, 20);
             this.txt_Id_Padrinos.TabIndex = 0;
             this.txt_Id_Padrinos.TextChanged += new System.EventHandler(this.txt_Id_Padrinos_TextChanged);
             // 
@@ -154,7 +154,7 @@
             this.txt_Email_Padrinos.Location = new System.Drawing.Point(476, 495);
             this.txt_Email_Padrinos.MaxLength = 30;
             this.txt_Email_Padrinos.Name = "txt_Email_Padrinos";
-            this.txt_Email_Padrinos.Size = new System.Drawing.Size(157, 20);
+            this.txt_Email_Padrinos.Size = new System.Drawing.Size(190, 20);
             this.txt_Email_Padrinos.TabIndex = 9;
             this.txt_Email_Padrinos.TextChanged += new System.EventHandler(this.txt_Email_Padrinos_TextChanged);
             // 
@@ -164,7 +164,7 @@
             this.ddate_Fn_padrinos.CalendarTitleForeColor = System.Drawing.SystemColors.ControlLight;
             this.ddate_Fn_padrinos.Location = new System.Drawing.Point(476, 314);
             this.ddate_Fn_padrinos.Name = "ddate_Fn_padrinos";
-            this.ddate_Fn_padrinos.Size = new System.Drawing.Size(157, 20);
+            this.ddate_Fn_padrinos.Size = new System.Drawing.Size(190, 20);
             this.ddate_Fn_padrinos.TabIndex = 5;
             // 
             // txt_apellido_padrinos
@@ -172,7 +172,7 @@
             this.txt_apellido_padrinos.Location = new System.Drawing.Point(476, 231);
             this.txt_apellido_padrinos.MaxLength = 30;
             this.txt_apellido_padrinos.Name = "txt_apellido_padrinos";
-            this.txt_apellido_padrinos.Size = new System.Drawing.Size(157, 20);
+            this.txt_apellido_padrinos.Size = new System.Drawing.Size(190, 20);
             this.txt_apellido_padrinos.TabIndex = 2;
             this.txt_apellido_padrinos.TextChanged += new System.EventHandler(this.txt_apellido_padrinos_TextChanged);
             // 
@@ -181,7 +181,7 @@
             this.txt_Nom_padrinos.Location = new System.Drawing.Point(476, 191);
             this.txt_Nom_padrinos.MaxLength = 30;
             this.txt_Nom_padrinos.Name = "txt_Nom_padrinos";
-            this.txt_Nom_padrinos.Size = new System.Drawing.Size(157, 20);
+            this.txt_Nom_padrinos.Size = new System.Drawing.Size(190, 20);
             this.txt_Nom_padrinos.TabIndex = 1;
             this.txt_Nom_padrinos.TextChanged += new System.EventHandler(this.txt_Nom_padrinos_TextChanged);
             // 
@@ -245,7 +245,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label4.Location = new System.Drawing.Point(359, 448);
+            this.label4.Location = new System.Drawing.Point(370, 448);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(85, 24);
             this.label4.TabIndex = 64;
@@ -373,7 +373,7 @@
             this.txtbDireccion.Location = new System.Drawing.Point(476, 590);
             this.txtbDireccion.MaxLength = 30;
             this.txtbDireccion.Name = "txtbDireccion";
-            this.txtbDireccion.Size = new System.Drawing.Size(157, 20);
+            this.txtbDireccion.Size = new System.Drawing.Size(190, 20);
             this.txtbDireccion.TabIndex = 11;
             this.txtbDireccion.TextChanged += new System.EventHandler(this.txtbDireccion_TextChanged);
             // 
