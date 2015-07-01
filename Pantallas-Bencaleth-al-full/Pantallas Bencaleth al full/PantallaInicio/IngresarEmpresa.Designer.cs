@@ -62,8 +62,6 @@
             this.errorProvider5 = new System.Windows.Forms.ErrorProvider(this.components);
             this.errorProvider6 = new System.Windows.Forms.ErrorProvider(this.components);
             this.errorProvider7 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.bencalethDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.combobox_empresasBindingSource)).BeginInit();
@@ -111,7 +109,6 @@
             this.label10.Size = new System.Drawing.Size(67, 31);
             this.label10.TabIndex = 103;
             this.label10.Text = "País";
-            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // txt_tel2_empresa
             // 
@@ -167,7 +164,6 @@
             this.label8.Size = new System.Drawing.Size(110, 31);
             this.label8.TabIndex = 92;
             this.label8.Text = "Nombre";
-            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // label7
             // 
@@ -201,7 +197,6 @@
             this.label3.Size = new System.Drawing.Size(128, 31);
             this.label3.TabIndex = 87;
             this.label3.Text = "Dirección";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label1
             // 
@@ -213,7 +208,6 @@
             this.label1.Size = new System.Drawing.Size(174, 42);
             this.label1.TabIndex = 86;
             this.label1.Text = "Empresa";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label5
             // 
@@ -365,29 +359,6 @@
             // 
             this.errorProvider7.ContainerControl = this;
             // 
-            // maskedTextBox1
-            // 
-            this.maskedTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBox1.Location = new System.Drawing.Point(230, 517);
-            this.maskedTextBox1.Mask = "000-0000";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(193, 26);
-            this.maskedTextBox1.TabIndex = 112;
-            this.maskedTextBox1.Visible = false;
-            // 
-            // maskedTextBox2
-            // 
-            this.maskedTextBox2.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
-            this.maskedTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBox2.HidePromptOnLeave = true;
-            this.maskedTextBox2.Location = new System.Drawing.Point(483, 517);
-            this.maskedTextBox2.Mask = "000-0000";
-            this.maskedTextBox2.Name = "maskedTextBox2";
-            this.maskedTextBox2.Size = new System.Drawing.Size(193, 26);
-            this.maskedTextBox2.TabIndex = 113;
-            this.maskedTextBox2.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
-            this.maskedTextBox2.Visible = false;
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::PantallaInicio.Properties.Resources.Sin_nombre_EN_BLANCO;
@@ -406,8 +377,6 @@
             this.ClientSize = new System.Drawing.Size(1008, 756);
             this.ControlBox = false;
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.maskedTextBox2);
-            this.Controls.Add(this.maskedTextBox1);
             this.Controls.Add(this.combobox_empresasComboBox);
             this.Controls.Add(this.btn_save_empresa);
             this.Controls.Add(this.txt_tel1_empresa);
@@ -483,8 +452,6 @@
         private System.Windows.Forms.ErrorProvider errorProvider5;
         private System.Windows.Forms.ErrorProvider errorProvider6;
         private System.Windows.Forms.ErrorProvider errorProvider7;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox2;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
         public System.Windows.Forms.PictureBox pictureBox1;
     }
 }

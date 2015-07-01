@@ -129,7 +129,7 @@
             // 
             this.txt_iden_padrinos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_iden_padrinos.Location = new System.Drawing.Point(226, 456);
-            this.txt_iden_padrinos.MaxLength = 13;
+            this.txt_iden_padrinos.MaxLength = 15;
             this.txt_iden_padrinos.Name = "txt_iden_padrinos";
             this.txt_iden_padrinos.Size = new System.Drawing.Size(190, 26);
             this.txt_iden_padrinos.TabIndex = 7;

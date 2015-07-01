@@ -177,7 +177,7 @@
             // 
             this.txt_Can_Invd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_Can_Invd.Location = new System.Drawing.Point(494, 237);
-            this.txt_Can_Invd.MaxLength = 8;
+            this.txt_Can_Invd.MaxLength = 10;
             this.txt_Can_Invd.Name = "txt_Can_Invd";
             this.txt_Can_Invd.Size = new System.Drawing.Size(193, 26);
             this.txt_Can_Invd.TabIndex = 87;
@@ -187,7 +187,7 @@
             // 
             this.txt_Des_Invd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_Des_Invd.Location = new System.Drawing.Point(241, 237);
-            this.txt_Des_Invd.MaxLength = 30;
+            this.txt_Des_Invd.MaxLength = 50;
             this.txt_Des_Invd.Name = "txt_Des_Invd";
             this.txt_Des_Invd.Size = new System.Drawing.Size(193, 26);
             this.txt_Des_Invd.TabIndex = 86;
@@ -208,7 +208,7 @@
             // 
             this.txt_Id_Invd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_Id_Invd.Location = new System.Drawing.Point(241, 148);
-            this.txt_Id_Invd.MaxLength = 30;
+            this.txt_Id_Invd.MaxLength = 9;
             this.txt_Id_Invd.Name = "txt_Id_Invd";
             this.txt_Id_Invd.Size = new System.Drawing.Size(193, 26);
             this.txt_Id_Invd.TabIndex = 84;
@@ -307,7 +307,7 @@
             // 
             this.txt_Can_Invf.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_Can_Invf.Location = new System.Drawing.Point(504, 253);
-            this.txt_Can_Invf.MaxLength = 8;
+            this.txt_Can_Invf.MaxLength = 10;
             this.txt_Can_Invf.Name = "txt_Can_Invf";
             this.txt_Can_Invf.Size = new System.Drawing.Size(193, 26);
             this.txt_Can_Invf.TabIndex = 80;
@@ -317,7 +317,7 @@
             // 
             this.txt_Des_Invf.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_Des_Invf.Location = new System.Drawing.Point(241, 253);
-            this.txt_Des_Invf.MaxLength = 30;
+            this.txt_Des_Invf.MaxLength = 50;
             this.txt_Des_Invf.Name = "txt_Des_Invf";
             this.txt_Des_Invf.Size = new System.Drawing.Size(193, 26);
             this.txt_Des_Invf.TabIndex = 79;
@@ -339,7 +339,7 @@
             // 
             this.txt_id_InvF.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_id_InvF.Location = new System.Drawing.Point(241, 153);
-            this.txt_id_InvF.MaxLength = 30;
+            this.txt_id_InvF.MaxLength = 10;
             this.txt_id_InvF.Name = "txt_id_InvF";
             this.txt_id_InvF.Size = new System.Drawing.Size(193, 26);
             this.txt_id_InvF.TabIndex = 76;

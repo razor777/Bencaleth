@@ -18,9 +18,7 @@ namespace PantallaInicio
     public partial class IngresarEmpresa : Form
     {
        Organizaciones empresa;
-
        QueriesTableAdapter bd = new QueriesTableAdapter();
-
        Boolean boolModoActualizar;
 
         public IngresarEmpresa()
@@ -28,8 +26,6 @@ namespace PantallaInicio
             InitializeComponent();
             empresa = new Organizaciones();
             boolModoActualizar = false;
-
-            //txt_id_empresa.ReadOnly = false;
         }
 
         public IngresarEmpresa(DataGridViewRow fila)
@@ -53,7 +49,6 @@ namespace PantallaInicio
                 { return true; }
                 else
                 { return false; }
-
             }
             else
             { return false; }
@@ -106,7 +101,6 @@ namespace PantallaInicio
         }
         private void txt_email_empresa_TextChanged(object sender, EventArgs e)
         {
-           
             errorProvider7.Clear();
         }
         private void combobox_empresasComboBox_SelectedIndexChanged(object sender, EventArgs e)
@@ -128,10 +122,6 @@ namespace PantallaInicio
         }
         private void btn_save_empresa_Click(object sender, EventArgs e)
         {
-            //if (string.IsNullOrEmpty(txt_nom_empresa.Text) || string.IsNullOrEmpty(txt_dire_empresa.Text) || string.IsNullOrEmpty(txt_contac_empresa.Text) || string.IsNullOrEmpty(txt_tel1_empresa.Text) || string.IsNullOrEmpty(txt_tel2_empresa.Text) || string.IsNullOrEmpty(txt_pasi_empresa.Text) || string.IsNullOrEmpty(txt_email_empresa.Text))
-            //{
-            //    errorProvider1.SetError(txt_nom_empresa, "Falta llenar campos vacios");
-            //}
             if (string.IsNullOrEmpty(txt_nom_empresa.Text))
             {
                 errorProvider1.SetError(txt_nom_empresa, "Falta llenar campos vacios");
@@ -171,36 +161,13 @@ namespace PantallaInicio
                     empresa.ingresarDatos(txt_dire_empresa);
                     txt_nom_empresa.Clear(); txt_dire_empresa.Clear(); txt_contac_empresa.Clear(); txt_tel1_empresa.Clear(); txt_tel2_empresa.Clear(); txt_pasi_empresa.Clear(); txt_email_empresa.Clear();
                 }
-                
-                
-
             }
 
         }
 
         private void txt_id_empresa_TextChanged(object sender, EventArgs e)
         {
-
-        }
-
-        private void label10_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label8_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
+            txt_id_empresa.Text = Herramientas.NingunCaracterEspecial(txt_id_empresa);
         }
 
       
