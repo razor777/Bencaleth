@@ -72,6 +72,8 @@ namespace PantallaInicio
         private void txt_user_TextChanged(object sender, EventArgs e)
         {
             txt_user.Text = Herramientas.NingunCaracterEspecial(txt_user);
+            //txt_user.Text = Herramientas.NingunCaracterEspecial(txt_user.Text);
+            //**txt_user.Handle=Convert.
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)

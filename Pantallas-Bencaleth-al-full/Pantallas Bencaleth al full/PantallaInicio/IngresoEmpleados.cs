@@ -21,37 +21,37 @@ namespace PantallaInicio
         public IngresoEmpleados()
         {
             InitializeComponent();
-            empleado = new Empleados();
+            empleado = new Empleados("txtIdEmple", "txtNomEmple", "txt_Apelli_Emple", "txt_Dir_Emple", "txt_Tel_Emple", "txt_Email_Emple", "combobox_CargoTipoComboBox", "date_FechN_Emple", "radio_mas_Emple", "radio_fem_Emple", "Date_FechIn_Emple");
 
             this.date_FechN_Emple.Value = new DateTime((DateTime.Now.Year - 18), 1, 1);
             this.date_FechN_Emple.Update();
 
             boolModoActualizar = false;
 
-            txt_Id_Emple.ReadOnly = false;
+            txtIdEmple.ReadOnly = false;
         }
 
         public IngresoEmpleados(DataGridViewRow fila)
         {
             InitializeComponent();
-            empleado = new Empleados();
+            empleado = new Empleados("txtIdEmple", "txtNomEmple", "txt_Apelli_Emple", "txt_Dir_Emple", "txt_Tel_Emple", "txt_Email_Emple", "combobox_CargoTipoComboBox", "date_FechN_Emple", "radio_mas_Emple", "radio_fem_Emple", "Date_FechIn_Emple");
 
             empleado.ConseguirDatosToUpdate(txt_Apelli_Emple, fila);
             boolModoActualizar = true;
 
-            txt_Id_Emple.ReadOnly = true;
+            txtIdEmple.ReadOnly = true;
         }
 
         private void btn_save_Emple_Click(object sender, EventArgs e)
         {
             //empleado.ingresarDatos(txt_Nom_Emple);
-            if (string.IsNullOrEmpty(txt_Id_Emple.Text))
+            if (string.IsNullOrEmpty(txtIdEmple.Text))
             {
-                errorProvider1.SetError(txt_Id_Emple, "Falta llenar campos vacios");
+                errorProvider1.SetError(txtIdEmple, "Falta llenar campos vacios");
             }
-            if (string.IsNullOrEmpty(txt_Nom_Emple.Text))
+            if (string.IsNullOrEmpty(txtNomEmple.Text))
             {
-                errorProvider2.SetError(txt_Nom_Emple, "Falta llenar Campo");
+                errorProvider2.SetError(txtNomEmple, "Falta llenar Campo");
             }
             if (string.IsNullOrEmpty(txt_Apelli_Emple.Text))
             {
@@ -73,24 +73,24 @@ namespace PantallaInicio
                 {
 
             if(boolModoActualizar){
-                empleado.actualizarDatos(txt_Nom_Emple);
+                empleado.actualizarDatos(txtNomEmple);
             }else{
-                empleado.ingresarDatos(txt_Nom_Emple);
+                empleado.ingresarDatos(txtNomEmple);
                
             }
                 }
         }
 
-        private void txt_Id_Emple_TextChanged(object sender, EventArgs e)
+        private void txtIdEmple_TextChanged(object sender, EventArgs e)
         {
-            txt_Id_Emple.Text = Herramientas.SoloNumeros(txt_Id_Emple);
+            txtIdEmple.Text = Herramientas.SoloNumeros(txtIdEmple);
             errorProvider1.Clear();
             
         }
 
-        private void txt_Nom_Emple_TextChanged(object sender, EventArgs e)
+        private void txtNomEmple_TextChanged(object sender, EventArgs e)
         {
-             txt_Nom_Emple.Text = Herramientas.SoloLetrasYEspaciosSec(txt_Nom_Emple);
+             txtNomEmple.Text = Herramientas.SoloLetrasYEspaciosSec(txtNomEmple);
              errorProvider2.Clear();
         }
 

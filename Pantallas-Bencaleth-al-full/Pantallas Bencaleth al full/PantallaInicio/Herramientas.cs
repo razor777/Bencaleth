@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Text.RegularExpressions;
 
 namespace PantallaInicio
 {
@@ -63,12 +64,6 @@ namespace PantallaInicio
             frmContActual.Show();
             frmContActual.BringToFront();
 
-            //ventanaP = new IngresoPadrinos(fila);
-            //ventanaP.TopLevel = false;
-            //splitContainer1.Panel1.Controls.Add(ventanaP);
-            //ventanaP.Show();
-            //ventanaP.BringToFront();
-
         }
 
         public static Boolean HayCamposNull(Control ctrls) { 
@@ -78,15 +73,11 @@ namespace PantallaInicio
                 if(ctrl is TextBox){
                     if (string.IsNullOrEmpty(ctrl.Text.ToString()) && (!((TextBox)ctrl).ReadOnly))
                     {
-                        //MessageBox.Show("No se pueden dejar campos vacios");
-                        //return true;
                         Herramientas.PintarErrores(ctrl);
                         respuesta = true;
                     }
                 }
             }
-
-            //return false;
             if (respuesta)
             {
                 MessageBox.Show("No se pueden dejar campos vacios");
@@ -106,13 +97,7 @@ namespace PantallaInicio
             }
         }
 
-        //public static void LimpiarErroresCtrl(Control ctrl)
-        //{
-        //    //((TextBox)ctrl).Clear();
-        //}
-
         public static void PintarErrores(Control ctrl) {
-            //errorPro.Clear();
             if(errorPro!=null){
                 errorPro.SetError(ctrl, "No se pueden dejar campos vacios");
             }
@@ -120,7 +105,7 @@ namespace PantallaInicio
 
         public static Boolean IsNumeric(string valor)
         {
-            int result;
+            int result=0;
             return int.TryParse(valor, out result);
         }
 
@@ -261,17 +246,38 @@ namespace PantallaInicio
         public static String NingunCaracterEspecial(Control ctrlRegresar)
         {
             String strRegresar = ctrlRegresar.Text;
-
             foreach (Char chRevisando in strRegresar.ToCharArray())
             {
-                if (!Char.IsLetterOrDigit(chRevisando))
+                if (Regex.IsMatch(chRevisando.ToString(), @"[^0-9a-zA-ZÁÉÍÓÚáéíñóúÑ]+"))
                 {
                     strRegresar = strRegresar.Replace(chRevisando.ToString(), "");
                     Herramientas.EstablecerPosicionCursor(ctrlRegresar);
                 }
             }
             Herramientas.RegularPosicionCursor(ctrlRegresar);
+            return strRegresar;
+        }
 
+        public static String NingunCaracterEspecial(String strRegresar)
+        {
+            //String strRegresar = ctrlRegresar.Text;
+
+            //foreach (Char chRevisando in strRegresar.ToCharArray())
+            //{
+            //    if (!Char.IsLetterOrDigit(chRevisando))
+            //    {
+            //        strRegresar = strRegresar.Replace(chRevisando.ToString(), "");
+            //        Herramientas.EstablecerPosicionCursor(ctrlRegresar);
+            //    }
+            //}
+            //Herramientas.RegularPosicionCursor(ctrlRegresar);
+
+            //String strRegresar = ctrlRegresar.Text;
+            strRegresar = Regex.Replace(strRegresar, @"[^0-9a-zA-ZÁÉÍÓÚáéíñóúÑ]+", "");
+            //Herramientas.EstablecerPosicionCursor(ctrlRegresar);
+            //Herramientas.RegularPosicionCursor(ctrlRegresar);
+            //Console.WriteLine("se llamo");
+            //MessageBox.Show("Hi");
             return strRegresar;
         }
 

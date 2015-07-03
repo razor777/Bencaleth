@@ -35,10 +35,10 @@
             this.label10 = new System.Windows.Forms.Label();
             this.txt_Tel_Emple = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.txt_Id_Emple = new System.Windows.Forms.TextBox();
+            this.txtIdEmple = new System.Windows.Forms.TextBox();
             this.date_FechN_Emple = new System.Windows.Forms.DateTimePicker();
             this.txt_Apelli_Emple = new System.Windows.Forms.TextBox();
-            this.txt_Nom_Emple = new System.Windows.Forms.TextBox();
+            this.txtNomEmple = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -141,15 +141,15 @@
             this.label2.Text = "Correo Electrónico";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
-            // txt_Id_Emple
+            // txtIdEmple
             // 
-            this.txt_Id_Emple.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Id_Emple.Location = new System.Drawing.Point(229, 162);
-            this.txt_Id_Emple.MaxLength = 15;
-            this.txt_Id_Emple.Name = "txt_Id_Emple";
-            this.txt_Id_Emple.Size = new System.Drawing.Size(195, 26);
-            this.txt_Id_Emple.TabIndex = 0;
-            this.txt_Id_Emple.TextChanged += new System.EventHandler(this.txt_Id_Emple_TextChanged);
+            this.txtIdEmple.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIdEmple.Location = new System.Drawing.Point(229, 162);
+            this.txtIdEmple.MaxLength = 15;
+            this.txtIdEmple.Name = "txtIdEmple";
+            this.txtIdEmple.Size = new System.Drawing.Size(195, 26);
+            this.txtIdEmple.TabIndex = 0;
+            this.txtIdEmple.TextChanged += new System.EventHandler(this.txtIdEmple_TextChanged);
             // 
             // date_FechN_Emple
             // 
@@ -174,15 +174,15 @@
             this.txt_Apelli_Emple.TabIndex = 2;
             this.txt_Apelli_Emple.TextChanged += new System.EventHandler(this.txt_Apelli_Emple_TextChanged);
             // 
-            // txt_Nom_Emple
+            // txtNomEmple
             // 
-            this.txt_Nom_Emple.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Nom_Emple.Location = new System.Drawing.Point(229, 241);
-            this.txt_Nom_Emple.MaxLength = 30;
-            this.txt_Nom_Emple.Name = "txt_Nom_Emple";
-            this.txt_Nom_Emple.Size = new System.Drawing.Size(195, 26);
-            this.txt_Nom_Emple.TabIndex = 1;
-            this.txt_Nom_Emple.TextChanged += new System.EventHandler(this.txt_Nom_Emple_TextChanged);
+            this.txtNomEmple.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNomEmple.Location = new System.Drawing.Point(229, 241);
+            this.txtNomEmple.MaxLength = 30;
+            this.txtNomEmple.Name = "txtNomEmple";
+            this.txtNomEmple.Size = new System.Drawing.Size(195, 26);
+            this.txtNomEmple.TabIndex = 1;
+            this.txtNomEmple.TextChanged += new System.EventHandler(this.txtNomEmple_TextChanged);
             // 
             // label9
             // 
@@ -424,10 +424,10 @@
             this.Controls.Add(this.label10);
             this.Controls.Add(this.txt_Tel_Emple);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.txt_Id_Emple);
+            this.Controls.Add(this.txtIdEmple);
             this.Controls.Add(this.date_FechN_Emple);
             this.Controls.Add(this.txt_Apelli_Emple);
-            this.Controls.Add(this.txt_Nom_Emple);
+            this.Controls.Add(this.txtNomEmple);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
@@ -461,10 +461,10 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox txt_Tel_Emple;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txt_Id_Emple;
+        private System.Windows.Forms.TextBox txtIdEmple;
         private System.Windows.Forms.DateTimePicker date_FechN_Emple;
         private System.Windows.Forms.TextBox txt_Apelli_Emple;
-        private System.Windows.Forms.TextBox txt_Nom_Emple;
+        private System.Windows.Forms.TextBox txtNomEmple;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;

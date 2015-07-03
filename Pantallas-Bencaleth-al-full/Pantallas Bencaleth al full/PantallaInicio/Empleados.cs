@@ -13,148 +13,70 @@ namespace PantallaInicio
     {
         QueriesTableAdapter BDPersonas = new QueriesTableAdapter();
         public string Id;
- 
+
+        private string strTxtID;
+        private string strTxtNombre;
+        private string strTxtApellido;
+        private string strTxtDireccion;
+        private string strTxtFechaNacimiento;
+        private string strTxtFechaContratacion;
+        private string strTxtGeneroM;
+        private string strTxtGeneroF;
+        private string strTxtEmail;
+        private string strTxtCargo;
+        private string strTxtTelefono;
+
         private string _Direccion;
-
-       public string Direccion
-       {
-           get
-           {
-               return _Direccion;
-           }
-           set
-           {
-               _Direccion = value;
-           }
-       }
-
-       private string _Apellido;
-       public string Apellido
-       {
-           get
-           {
-               return _Apellido;
-           }
-           set
-           {
-               _Apellido = value;
-           }
-       }
-
-      
-      
-
-        private DateTime _Fecha_de_Contratacion;
-         public DateTime  Fecha_de_Contratacion
-        {
-            get
-            {
-                return _Fecha_de_Contratacion;
-            }
-            set
-            {
-                _Fecha_de_Contratacion = value;
-         }
-        }
-
-         private DateTime _Fecha_de_Nacimiento;
-         public DateTime Fecha_de_Nacimiento
-         {
-             get
-             {
-                 return _Fecha_de_Nacimiento;
-             }
-             set
-             {
-                 _Fecha_de_Nacimiento = value;
-             }
-         }
-         private string _Cargo;
-         public string Cargo
-        {
-            get
-            {
-                return _Cargo;
-            }
-            set
-            {
-                _Cargo = value;
-         }
-        }
-
-         private int _Identidad;
-         public string Identidad
-         {
-             get
-             {
-                 return _Identidad.ToString();
-             }
-             set
-             {
-                 if (Herramientas.IsNumeric(value))
-                     _Identidad = Convert.ToInt16(value);
-             }
-         }
-
-         private int _Telefono;
-         public string Telefono
-         {
-             get
-             {
-                 return _Telefono.ToString();
-             }
-             set
-             {
-                 if (Herramientas.IsNumeric(value))
-                     _Telefono = Convert.ToInt32(value);
-             }
-         }
-
+        private string _Apellido;
+        private string _Cargo;
+        private string _Telefono;
         public string _Correo;
-        public string Correo
-        {
-            get
-            {
-                return _Correo;
-            }
-            set
-            {
-                _Correo = value;
-            }
-        }
 
         private object ValueCombobox = null;
-
         private string _strGenero;
 
+        public Empleados(string strID, string strNom, string strApe, string strDir,string strTxtTel, string strTxtCor, string strTxtCar, string strFecNac, string strGenM, string strGenF, string strFecCon)
+        {
+            strTxtID = strID;
+            strTxtNombre = strNom;
+            strTxtApellido = strApe;
+            strTxtDireccion = strDir;
+            strTxtFechaNacimiento = strFecNac;
+            strTxtFechaContratacion = strFecCon;
+            strTxtGeneroM = strGenM;
+            strTxtGeneroF = strGenF;
+            strTxtEmail = strTxtCor;
+            strTxtCargo = strTxtCar;
+            strTxtTelefono = strTxtTel;
+        }
+
         public override void ingresarDatos(Control controles) {
-            this.Id = controles.Parent.Controls["txt_Id_Emple"].Text;
-            this.Direccion = controles.Parent.Controls["txt_Dir_Emple"].Text;
-            this.Nombre = controles.Parent.Controls["txt_Nom_Emple"].Text;
-            this.Apellido = controles.Parent.Controls["txt_Apelli_Emple"].Text;
-            System.DateTime? Naci = Convert.ToDateTime(controles.Parent.Controls["date_FechN_Emple"].Text);
-            System.DateTime? Contra = Convert.ToDateTime(controles.Parent.Controls["Date_FechIn_Emple"].Text);
-            this.Telefono= controles.Parent.Controls["txt_Tel_Emple"].Text;
-            this.Correo= controles.Parent.Controls["txt_Email_Emple"].Text;
-            this.Direccion= controles.Parent.Controls["txt_Dir_Emple"].Text;
+            this.Id = controles.Parent.Controls[strTxtID].Text;
+            this.Nombre = controles.Parent.Controls[strTxtNombre].Text;
+            this._Apellido = controles.Parent.Controls[strTxtApellido].Text;
+            System.DateTime? Naci = Convert.ToDateTime(controles.Parent.Controls[strTxtFechaNacimiento].Text);
+            System.DateTime? Contra = Convert.ToDateTime(controles.Parent.Controls[strTxtFechaContratacion].Text);
+            int Telefono = Convert.ToInt32(controles.Parent.Controls[strTxtTelefono].Text);
+            this._Correo = controles.Parent.Controls[strTxtEmail].Text;
+            this._Direccion = controles.Parent.Controls[strTxtDireccion].Text;
             this._strGenero = Herramientas.determinarCualRadioButtonEsGenero(controles);
-           
-            string combo = ((ComboBox)controles.Parent.Controls["combobox_CargoTipoComboBox"]).SelectedValue.ToString();
+
+            string combo = ((ComboBox)controles.Parent.Controls[strTxtCargo]).SelectedValue.ToString();
 
             if (!Herramientas.HayCamposNull(controles))
             {
                 try
                 {
-                    BDPersonas.Insert_Empleados(this.Id, this.Nombre, _Apellido, Naci, Contra, Direccion, _Telefono, combo, Correo,this._strGenero);
+                    BDPersonas.Insert_Empleados(this.Id, this.Nombre, _Apellido, Naci, Contra, _Direccion, Telefono, combo, this._Correo,this._strGenero);
                     MessageBox.Show("Ingresado");
 
-                    controles.Parent.Controls["txt_Id_Emple"].Text = "";
-                    controles.Parent.Controls["txt_Dir_Emple"].Text = "";
-                    controles.Parent.Controls["txt_Nom_Emple"].Text = "";
-                    controles.Parent.Controls["txt_Apelli_Emple"].Text = "";
-                    controles.Parent.Controls["txt_Tel_Emple"].Text = "";
-                    controles.Parent.Controls["txt_Email_Emple"].Text = "";
-                    controles.Parent.Controls["txt_Dir_Emple"].Text = "";
+                    controles.Parent.Controls[strTxtID].Text = "";
+                    controles.Parent.Controls[strTxtDireccion].Text = "";
+                    controles.Parent.Controls[strTxtNombre].Text = "";
+                    controles.Parent.Controls[strTxtApellido].Text = "";
+                    controles.Parent.Controls[strTxtTelefono].Text = "";
+                    controles.Parent.Controls[strTxtEmail].Text = "";
+                    controles.Parent.Controls[strTxtDireccion].Text = "";
                 }
                 catch (SqlException e)
                 {
@@ -172,15 +94,14 @@ namespace PantallaInicio
         }
 
         public override void actualizarDatos(Control controles) {
-            this.Id = controles.Parent.Controls["txt_Id_Emple"].Text;
-            this.Direccion = controles.Parent.Controls["txt_Dir_Emple"].Text;
+            this.Id = controles.Parent.Controls["txtIdEmple"].Text;
+            this._Direccion = controles.Parent.Controls["txt_Dir_Emple"].Text;
             this.Nombre = controles.Parent.Controls["txt_Nom_Emple"].Text;
-            this.Apellido = controles.Parent.Controls["txt_Apelli_Emple"].Text;
+            this._Apellido = controles.Parent.Controls["txt_Apelli_Emple"].Text;
             System.DateTime? Naci = Convert.ToDateTime(controles.Parent.Controls["date_FechN_Emple"].Text);
             System.DateTime? Contra = Convert.ToDateTime(controles.Parent.Controls["Date_FechIn_Emple"].Text);
-            this.Telefono = controles.Parent.Controls["txt_Tel_Emple"].Text;
-            this.Correo = controles.Parent.Controls["txt_Email_Emple"].Text;
-            this.Direccion = controles.Parent.Controls["txt_Dir_Emple"].Text;
+            int _Telefono = Convert.ToInt32(controles.Parent.Controls["txt_Tel_Emple"].Text);
+            this._Correo = controles.Parent.Controls["txt_Email_Emple"].Text;
             this._strGenero = Herramientas.determinarCualRadioButtonEsGenero(controles);
 
             string combo = ((ComboBox)controles.Parent.Controls["combobox_CargoTipoComboBox"]).SelectedValue.ToString();
@@ -189,7 +110,7 @@ namespace PantallaInicio
             {
                 try
                 {
-                    BDPersonas.update_Empleados(this.Id, this.Nombre, _Apellido, Naci, Contra, Direccion, _Telefono, combo, Correo,this._strGenero);
+                    BDPersonas.update_Empleados(this.Id, this.Nombre, _Apellido, Naci, Contra, _Direccion, _Telefono, combo, _Correo,this._strGenero);
                     MessageBox.Show("Actualizado");
                 }
                 catch (SqlException e)
@@ -258,7 +179,7 @@ namespace PantallaInicio
         }
 
         public void ConseguirDatosToUpdate(Control controles, DataGridViewRow fila) {
-            controles.Parent.Controls["txt_Id_Emple"].Text =fila.Cells["Id"].Value.ToString();
+            controles.Parent.Controls["txtIdEmple"].Text = fila.Cells["Id"].Value.ToString();
             controles.Parent.Controls["txt_Dir_Emple"].Text = fila.Cells["Direccion"].Value.ToString();
             controles.Parent.Controls["txt_Nom_Emple"].Text = fila.Cells["Nombre"].Value.ToString();
 

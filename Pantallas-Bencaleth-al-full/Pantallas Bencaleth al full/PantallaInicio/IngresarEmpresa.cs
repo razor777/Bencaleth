@@ -26,6 +26,7 @@ namespace PantallaInicio
             InitializeComponent();
             empresa = new Organizaciones();
             boolModoActualizar = false;
+            txt_id_empresa.Visible = false;
         }
 
         public IngresarEmpresa(DataGridViewRow fila)
@@ -35,7 +36,7 @@ namespace PantallaInicio
 
             empresa.ConseguirDatosToUpdate(txt_nom_empresa, fila);
             boolModoActualizar = true;
-
+            txt_id_empresa.Visible = true;
             txt_id_empresa.ReadOnly = true;
         }
 
@@ -110,11 +111,7 @@ namespace PantallaInicio
         
         private void txt_email_empresa_Leave(object sender, EventArgs e)
         {
-            if (validarEmail(txt_email_empresa.Text))
-            {
-               
-            }
-            else
+            if (!validarEmail(txt_email_empresa.Text))
             {
                 MessageBox.Show("Direccion de correo electronico no valida el correo debe terner un formato nombre@dominio.com");
                 txt_email_empresa.Clear();
