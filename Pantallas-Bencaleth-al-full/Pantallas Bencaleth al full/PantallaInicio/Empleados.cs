@@ -50,6 +50,10 @@ namespace PantallaInicio
             strTxtTelefono = strTxtTel;
         }
 
+        public Empleados() { 
+            
+        }
+
         public override void ingresarDatos(Control controles) {
             this.Id = controles.Parent.Controls[strTxtID].Text;
             this.Nombre = controles.Parent.Controls[strTxtNombre].Text;

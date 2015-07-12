@@ -12,7 +12,7 @@ namespace PantallaInicio
     {
         QueriesTableAdapter BDVoluntario = new QueriesTableAdapter();
 
-        private int _Codigo_Voluntarios;
+        private string _Codigo_Voluntarios;
         public override string Codigo_Persona
         {
             get
@@ -21,8 +21,7 @@ namespace PantallaInicio
             }
             set
             {
-                if (Herramientas.IsNumeric(value))
-                    _Codigo_Voluntarios = Convert.ToInt32 (value);
+                _Codigo_Voluntarios = value;
             }
         }
 
@@ -214,7 +213,7 @@ namespace PantallaInicio
                     controles.Parent.Controls["txt_Apelli_Voluntarios"].Text = "";
                     controles.Parent.Controls["date_Fn_Voluntarios"].Text = "";
                     controles.Parent.Controls["date_FI_Voluntarios"].Text = "";
-                    controles.Parent.Controls["txt_Iden_Voluntarios"].Text = "";
+                    //controles.Parent.Controls["txt_Iden_Voluntarios"].Text = "";
                     controles.Parent.Controls["txt_Tel_Voluntarios"].Text = "";
                     controles.Parent.Controls["txt_Email_Voluntarios"].Text = "";
                     controles.Parent.Controls["txtHoras"].Text = "";
