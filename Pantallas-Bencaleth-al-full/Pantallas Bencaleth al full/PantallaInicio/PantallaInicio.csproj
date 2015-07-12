@@ -48,16 +48,16 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>AEE6FA922C0786879CA2BAB9C809707B54DD9BD0</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>677E44D29AD2308215751EC30905EA0D8C221188</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestKeyFile>PantallaInicio_ClaveTemporal.pfx</ManifestKeyFile>
+    <ManifestKeyFile>PantallaInicio_TemporaryKey.pfx</ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
     <GenerateManifests>true</GenerateManifests>
   </PropertyGroup>
   <PropertyGroup>
-    <SignManifests>true</SignManifests>
+    <SignManifests>false</SignManifests>
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationIcon>Sin nombre.ico</ApplicationIcon>
@@ -265,6 +265,7 @@
       <DependentUpon>BencalethDataSet1.xsd</DependentUpon>
     </None>
     <None Include="PantallaInicio_ClaveTemporal.pfx" />
+    <None Include="PantallaInicio_TemporaryKey.pfx" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -303,6 +304,13 @@
     <None Include="Resources\Logo Bencaleth 2.gif" />
     <None Include="Resources\Bencaleth 21.jpg" />
     <None Include="Resources\Logo-Bencaleth-Blanco.gif" />
+    <Content Include="Bencaleth.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bencaleth_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>Bencaleth.mdf</DependentUpon>
+    </Content>
     <Content Include="Sin nombre.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
