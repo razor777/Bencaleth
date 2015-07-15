@@ -13,9 +13,13 @@ namespace PantallaInicio
     public partial class Inventarios : Form
     {
         QueriesTableAdapter BDI = new QueriesTableAdapter();
+        InventarioTerapia InventTerapia;
+        InventarioGeneral Donaciones;
         public Inventarios()
         {
             InitializeComponent();
+            InventTerapia = new InventarioTerapia(txt_id_InvF,txt_Des_Invf,txt_Can_Invf,comboboxResponsablesComboBox);
+            Donaciones = new InventarioGeneral(txt_Id_Invd,txt_Des_Invd,txt_Can_Invd,combobox_nomempresaComboBox);
         }
 
         private void btn_Show_Invs_Click(object sender, EventArgs e)
@@ -59,12 +63,9 @@ namespace PantallaInicio
             {
                 MessageBox.Show("Faltan Campos que llenar");
             }
-
             else
             {
-                BDI.Insert_inven_Donaciones(Convert.ToInt32(txt_Id_Invd.Text), txt_Des_Invd.Text, txt_Can_Invd.Text, combobox_nomempresaComboBox.SelectedValue.ToString());
-                MessageBox.Show("ingresado");
-                txt_Id_Invd.Clear(); txt_Des_Invd.Clear(); txt_Can_Invd.Clear();
+                Donaciones.IngresarProducto(txt_Id_Invd);
             }
         }
 
@@ -88,12 +89,9 @@ namespace PantallaInicio
             {
                 MessageBox.Show("Faltan Campos que llenar");
             }
-
             else
             {
-                BDI.Insert_inven_Terapia(Convert.ToInt16(txt_id_InvF.Text), txt_Des_Invf.Text, txt_Can_Invf.Text,comboboxResponsablesComboBox.SelectedValue.ToString());
-                MessageBox.Show("ingresado");
-                txt_id_InvF.Clear(); txt_Des_Invf.Clear(); txt_Can_Invf.Clear();
+                InventTerapia.IngresarProducto(txt_id_InvF);
             }
         }
 

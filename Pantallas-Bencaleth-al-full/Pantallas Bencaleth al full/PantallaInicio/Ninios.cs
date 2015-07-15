@@ -104,9 +104,17 @@ namespace PantallaInicio
             }
         }
 
-        public override void DeleteDatos(string ID) { 
-            if(!string.IsNullOrEmpty(ID)){
-                BDninios.Delete_Ninos(ID);
+        public override void DeleteDatos(string ID) {
+            try
+            {
+                if (!string.IsNullOrEmpty(ID))
+                {
+                    BDninios.Delete_Ninos(ID);
+                }
+            }
+            catch (SqlException)
+            {
+                MessageBox.Show("No hay conexion con la base de datos");
             }
         }
 
@@ -164,7 +172,13 @@ namespace PantallaInicio
             ctrlFechaNacimiento.Text = fila.Cells[4].Value.ToString();
             ctrlFechaInicio.Text = fila.Cells[5].Value.ToString();
 
-            this.ValueCombobox = BDninios.GetIDToComboBoxResponsable_Empleados(fila.Cells[6].Value.ToString());
+            try
+            {
+                this.ValueCombobox = BDninios.GetIDToComboBoxResponsable_Empleados(fila.Cells[6].Value.ToString());
+            }
+            catch (SqlException) {
+                MessageBox.Show("No hay conexion con la base de datos");
+            }
         }
 
         public void FixComboBox(Control controles)

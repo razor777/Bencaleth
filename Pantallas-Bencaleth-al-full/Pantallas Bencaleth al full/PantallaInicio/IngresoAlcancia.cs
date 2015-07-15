@@ -18,7 +18,7 @@ namespace PantallaInicio
         public IngresoAlcancia()
         {
             InitializeComponent();
-            alcancia = new Alcancias();
+            alcancia = new Alcancias(textBox1,txtbDes,txtbDir,txtbTel,mostrarRecurenciasComboBox,dtpFecha);
             boolModoActualizar = false;
 
             textBox1.ReadOnly = false;
@@ -27,7 +27,7 @@ namespace PantallaInicio
         public IngresoAlcancia(DataGridViewRow fila)
         {
             InitializeComponent();
-            alcancia = new Alcancias();
+            alcancia = new Alcancias(textBox1, txtbDes, txtbDir, txtbTel, mostrarRecurenciasComboBox, dtpFecha);
 
             alcancia.ConseguirDatosToUpdate(txtbDes,fila);
             boolModoActualizar = true;

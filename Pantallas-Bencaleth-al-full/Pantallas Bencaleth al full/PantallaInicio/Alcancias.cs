@@ -12,76 +12,72 @@ namespace PantallaInicio
     {
         QueriesTableAdapter BDAlcancias = new QueriesTableAdapter();
 
-        private int _Codigo_Alcancias;
-        public string Codigo_Alcancias
-        {
-            get
-            {
-                return _Codigo_Alcancias.ToString();
-            }
-            set
-            {
-                if (Herramientas.IsNumeric(value))
-                    _Codigo_Alcancias = Convert.ToInt16(value);
-            }
+        private bool boolEditable;
+        private object ValueCombobox=null;
+        private Control ctrlID;
+        private Control ctrlDireccion;
+        private Control ctrlLocal;
+        private Control ctrlFechaInicio;
+        private Control ctrlTelefono;
+        private Control ctrlCmbRecurrencia;
+
+        public Alcancias(Control ctrlIdent,Control ctrlDesc, Control ctrlDir, Control ctrlTel,Control ctrlRecu,Control ctrlFchIni) {
+            ctrlID = ctrlIdent;
+            ctrlLocal = ctrlDesc;
+            ctrlDireccion = ctrlDir;
+            ctrlTelefono = ctrlTel;
+            ctrlCmbRecurrencia = ctrlRecu;
+            ctrlFechaInicio = ctrlFchIni;
+            boolEditable = true;
         }
 
-        private string Direccion;
+        public Alcancias() {
+            boolEditable = false;
+        }
 
-        private string Descripcion;
-
-        private string _Telefono;
-
-        private object ValueCombobox=null;
-
-        public void ingresarDatos(Control controles) { 
-            this.Codigo_Alcancias=controles.Parent.Controls["textBox1"].Text;
-            this.Direccion = controles.Parent.Controls["txtbDir"].Text;
-            this.Descripcion = controles.Parent.Controls["txtbDes"].Text;
-            System.DateTime? Fecha = Convert.ToDateTime(controles.Parent.Controls["dtpFecha"].Text);
-            int combo = Convert.ToInt32(((ComboBox)controles.Parent.Controls["mostrarRecurenciasComboBox"]).SelectedValue.ToString());
-            this._Telefono = controles.Parent.Controls["txtbTel"].Text;
-
-            if (!Herramientas.HayCamposNull(controles))
+        public void ingresarDatos(Control controles) {
+            if (boolEditable)
             {
-                try
+                System.DateTime? dtetFecha = Convert.ToDateTime(ctrlFechaInicio.Text);
+                int intCombo = Convert.ToInt32(((ComboBox)ctrlCmbRecurrencia).SelectedValue.ToString());
+
+                if (!Herramientas.HayCamposNull(controles))
                 {
-                    BDAlcancias.Insert_Alcancias2(this.Codigo_Alcancias, this.Direccion, this.Descripcion, Fecha, combo,this._Telefono);
-                    MessageBox.Show("Ingresado");
-                    controles.Parent.Controls["textBox1"].Text = "";
-                    controles.Parent.Controls["txtbDir"].Text = "";
-                    controles.Parent.Controls["txtbDes"].Text = "";
-                    controles.Parent.Controls["txtbTel"].Text = "";
-                }
-                catch (SqlException e)
-                {
-                    switch (e.Number)
+                    try
                     {
-                        case 2627:
-                            MessageBox.Show("ID ya existente");
-                            break;
-                        default:
-                            MessageBox.Show("No hay conexion con la base de datos");
-                            break;
+                        BDAlcancias.Insert_Alcancias2(ctrlID.Text, ctrlDireccion.Text, ctrlLocal.Text, dtetFecha, intCombo, ctrlTelefono.Text);
+                        MessageBox.Show("Ingresado");
+                        ctrlID.Text = "";
+                        ctrlDireccion.Text = "";
+                        ctrlLocal.Text = "";
+                        ctrlTelefono.Text = "";
                     }
+                    catch (SqlException e)
+                    {
+                        switch (e.Number)
+                        {
+                            case 2627:
+                                MessageBox.Show("ID ya existente");
+                                break;
+                            default:
+                                MessageBox.Show("No hay conexion con la base de datos");
+                                break;
+                        }
+                    }
+
                 }
-                
             }
         }
 
         public void actualizarDatos(Control controles) {
-            this.Codigo_Alcancias = controles.Parent.Controls["textBox1"].Text;
-            this.Direccion = controles.Parent.Controls["txtbDir"].Text;
-            this.Descripcion = controles.Parent.Controls["txtbDes"].Text;
-            System.DateTime? Fecha = Convert.ToDateTime(controles.Parent.Controls["dtpFecha"].Text);
-            int combo = Convert.ToInt32(((ComboBox)controles.Parent.Controls["mostrarRecurenciasComboBox"]).SelectedValue.ToString());
-            this._Telefono = controles.Parent.Controls["txtbTel"].Text;
+            System.DateTime? dtetFecha = Convert.ToDateTime(ctrlFechaInicio.Text);
+            int intCombo = Convert.ToInt32(((ComboBox)ctrlCmbRecurrencia).SelectedValue.ToString());
 
             if (!(Herramientas.HayCamposNull(controles)))
             {
                 try
                 {
-                    BDAlcancias.Update_alcancias(this.Codigo_Alcancias, this.Direccion, this.Descripcion, Fecha, combo, _Telefono); 
+                    BDAlcancias.Update_alcancias(ctrlID.Text, ctrlDireccion.Text, ctrlLocal.Text, dtetFecha, intCombo, ctrlTelefono.Text); 
                     MessageBox.Show("Actualizado");
                 }
                 catch (SqlException e)
@@ -100,7 +96,13 @@ namespace PantallaInicio
         }
 
         public void DeleteDatos(string ID) {
-            BDAlcancias.Delete_Alcancias(ID);
+            try
+            {
+                BDAlcancias.Delete_Alcancias(ID);
+            }
+            catch (SqlException) {
+                MessageBox.Show("No hay conexion con la base de datos");
+            }
         }
 
         public void mostrarDatos(DataGridView dtgrdvw, TextBox txtbBuscado) {
@@ -137,13 +139,19 @@ namespace PantallaInicio
         }
 
         public void ConseguirDatosToUpdate(Control controles, DataGridViewRow fila) {
-            controles.Parent.Controls["textBox1"].Text = fila.Cells[0].Value.ToString();
-            controles.Parent.Controls["txtbDir"].Text = fila.Cells[1].Value.ToString();
-            controles.Parent.Controls["txtbDes"].Text = fila.Cells[2].Value.ToString();
-            controles.Parent.Controls["txtbTel"].Text = fila.Cells[3].Value.ToString();
-            controles.Parent.Controls["dtpFecha"].Text = fila.Cells["Fecha"].Value.ToString();
-            
-            this.ValueCombobox = BDAlcancias.GetIDToComboBoxRecur_Alcancias(fila.Cells["Recurrencia"].Value.ToString());
+            ctrlID.Text = fila.Cells[0].Value.ToString();
+            ctrlDireccion.Text = fila.Cells[1].Value.ToString();
+            ctrlLocal.Text = fila.Cells[2].Value.ToString();
+            ctrlTelefono.Text = fila.Cells[3].Value.ToString();
+            ctrlFechaInicio.Text = fila.Cells["Fecha"].Value.ToString();
+
+            try
+            {
+                this.ValueCombobox = BDAlcancias.GetIDToComboBoxRecur_Alcancias(fila.Cells["Recurrencia"].Value.ToString());
+            }
+            catch (SqlException) {
+                MessageBox.Show("No hay conexion con la base de datos");
+            }
         }
 
         public void FixComboBox(Control controles)
@@ -151,7 +159,7 @@ namespace PantallaInicio
             //invocar en el load de la clase
             if (ValueCombobox != null)
             {
-                ((ComboBox)controles.Parent.Controls["mostrarRecurenciasComboBox"]).SelectedValue = this.ValueCombobox;
+                ((ComboBox)ctrlCmbRecurrencia).SelectedValue = this.ValueCombobox;
                 this.ValueCombobox = null;
             }
         }

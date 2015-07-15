@@ -5,26 +5,57 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+using PantallaInicio.BencalethDataSetTableAdapters;
 
 namespace PantallaInicio
 {
     class InventarioTerapia:Inventario
     {
         //variables
-        private string _strResponsable;
-        public string strResponsable
-        {
-            get { return _strResponsable; }
+        QueriesTableAdapter BDInventario = new QueriesTableAdapter();
 
-            set { _strResponsable = value; }
+        private Control ctrlCmbResponsables;
+
+        public InventarioTerapia(Control ctrlIdent, Control ctrlDes, Control ctrlCant, Control ctrlRes){
+            ctrlCantidad = ctrlCant;
+            ctrlCmbResponsables = ctrlRes;
+            ctrlID = ctrlIdent;
+            ctrlDescripcion = ctrlDes;
+            boolEditable = true;
+        }
+
+        public InventarioTerapia() {
+            boolEditable = false;
         }
 
         //funciones
-        public override void IngresarProducto(Control lisControls) { }
+        public override void IngresarProducto(Control lisControls) {
+            if (boolEditable)
+            {
+                try
+                {
+                    BDInventario.Insert_inven_Terapia(Convert.ToInt16(ctrlID.Text), ctrlDescripcion.Text, ctrlCantidad.Text, ((ComboBox)ctrlCmbResponsables).SelectedValue.ToString());
+                    MessageBox.Show("Ingresado");
 
-        public override void EditarProducto(Control lisControls) { }
-
-        public override void EliminarProducto(string strIDPa) { }
+                    ((TextBox)ctrlID).Clear();
+                    ((TextBox)ctrlDescripcion).Clear();
+                    ((TextBox)ctrlCantidad).Clear();
+                }
+                catch (SqlException e)
+                {
+                    switch (e.Number)
+                    {
+                        case 2627:
+                            MessageBox.Show("ID ya existente");
+                            break;
+                        default:
+                            MessageBox.Show("No hay conexion con la base de datos");
+                            break;
+                    }
+                }
+            }
+        }
 
         public override void mostrarInventario(DataGridView dtgrdvw) {
             dtgrdvw.DataSource = null;

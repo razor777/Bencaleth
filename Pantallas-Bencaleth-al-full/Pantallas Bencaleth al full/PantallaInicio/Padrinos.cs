@@ -116,9 +116,17 @@ namespace PantallaInicio
             }
         }
 
-        public override void DeleteDatos(string ID) { 
-            if(!string.IsNullOrEmpty(ID)){
-                BDpadrinos.Delete_Padrinos2(ID);
+        public override void DeleteDatos(string ID) {
+            try
+            {
+                if (!string.IsNullOrEmpty(ID))
+                {
+                    BDpadrinos.Delete_Padrinos2(ID);
+                }
+            }
+            catch (SqlException)
+            {
+                MessageBox.Show("No hay conexion con la base de datos");
             }
         }
 

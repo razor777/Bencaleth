@@ -44,7 +44,6 @@ namespace PantallaInicio
 
         private void btn_save_Emple_Click(object sender, EventArgs e)
         {
-            //empleado.ingresarDatos(txt_Nom_Emple);
             if (string.IsNullOrEmpty(txtIdEmple.Text))
             {
                 errorProvider1.SetError(txtIdEmple, "Falta llenar campos vacios");
@@ -134,11 +133,7 @@ namespace PantallaInicio
         }
         private void txt_Email_Emple_Leave(object sender, EventArgs e)
         {
-            if (validarEmail(txt_Email_Emple.Text))
-            {
-
-            }
-            else
+            if (!validarEmail(txt_Email_Emple.Text))
             {
                 MessageBox.Show("Direccion de correo electronico no valida el correo debe terner un formato nombre@dominio.com");
                 txt_Email_Emple.Text = "";

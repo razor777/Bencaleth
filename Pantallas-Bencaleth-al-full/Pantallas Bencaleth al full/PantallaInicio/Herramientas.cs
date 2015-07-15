@@ -258,29 +258,6 @@ namespace PantallaInicio
             return strRegresar;
         }
 
-        public static String NingunCaracterEspecial(String strRegresar)
-        {
-            //String strRegresar = ctrlRegresar.Text;
-
-            //foreach (Char chRevisando in strRegresar.ToCharArray())
-            //{
-            //    if (!Char.IsLetterOrDigit(chRevisando))
-            //    {
-            //        strRegresar = strRegresar.Replace(chRevisando.ToString(), "");
-            //        Herramientas.EstablecerPosicionCursor(ctrlRegresar);
-            //    }
-            //}
-            //Herramientas.RegularPosicionCursor(ctrlRegresar);
-
-            //String strRegresar = ctrlRegresar.Text;
-            strRegresar = Regex.Replace(strRegresar, @"[^0-9a-zA-ZÁÉÍÓÚáéíñóúÑ]+", "");
-            //Herramientas.EstablecerPosicionCursor(ctrlRegresar);
-            //Herramientas.RegularPosicionCursor(ctrlRegresar);
-            //Console.WriteLine("se llamo");
-            //MessageBox.Show("Hi");
-            return strRegresar;
-        }
-
         public static String NingunCharEspecialExpEspaciosSecundarios(Control ctrlRegresar)
         {
             String strRegresar = ctrlRegresar.Text;

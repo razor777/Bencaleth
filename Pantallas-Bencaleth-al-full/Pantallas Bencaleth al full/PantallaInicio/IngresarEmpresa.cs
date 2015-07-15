@@ -24,7 +24,7 @@ namespace PantallaInicio
         public IngresarEmpresa()
         {
             InitializeComponent();
-            empresa = new Organizaciones();
+            empresa = new Organizaciones(txt_id_empresa,txt_nom_empresa,txt_dire_empresa,txt_pasi_empresa,txt_contac_empresa,txt_tel1_empresa,txt_tel2_empresa,txt_email_empresa,combobox_empresasComboBox);
             boolModoActualizar = false;
             txt_id_empresa.Visible = false;
         }
@@ -32,7 +32,7 @@ namespace PantallaInicio
         public IngresarEmpresa(DataGridViewRow fila)
         {
             InitializeComponent();
-            empresa = new Organizaciones();
+            empresa = new Organizaciones(txt_id_empresa, txt_nom_empresa, txt_dire_empresa, txt_pasi_empresa, txt_contac_empresa, txt_tel1_empresa, txt_tel2_empresa, txt_email_empresa, combobox_empresasComboBox);
 
             empresa.ConseguirDatosToUpdate(txt_nom_empresa, fila);
             boolModoActualizar = true;

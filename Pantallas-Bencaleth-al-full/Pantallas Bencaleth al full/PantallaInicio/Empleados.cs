@@ -163,7 +163,14 @@ namespace PantallaInicio
         public void ConseguirDatosToUpdate(Control controles, DataGridViewRow fila) {
             if (boolEditable)
             {
-                this.ValueCombobox = BDPersonas.GetIDToComboBoxCargoTipo_Empleados(fila.Cells["Cargo"].Value.ToString());
+                try
+                {
+                    this.ValueCombobox = BDPersonas.GetIDToComboBoxCargoTipo_Empleados(fila.Cells["Cargo"].Value.ToString());
+                }
+                catch (SqlException)
+                {
+                    MessageBox.Show("No hay conexion con la base de datos");
+                }
 
                 ctrlID.Text = fila.Cells["Id"].Value.ToString();
                 ctrlNombre.Text = fila.Cells["Nombre"].Value.ToString();
