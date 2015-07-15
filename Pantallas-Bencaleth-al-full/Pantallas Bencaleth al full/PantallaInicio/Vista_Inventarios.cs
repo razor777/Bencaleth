@@ -41,8 +41,6 @@ namespace PantallaInicio
 
         private void btn_back_Click(object sender, EventArgs e)
         {
-            //new Inventarios().Show();
-            //this.Close();
             Herramientas.AbrirNuevoForm(new Inventarios());
         }
 
@@ -66,11 +64,6 @@ namespace PantallaInicio
             donaciones = new InventarioGeneral();
             terapia = new InventarioTerapia();
             Cbb_Mantenimiento.SelectedIndex = 0;
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            
         }
     }
 }

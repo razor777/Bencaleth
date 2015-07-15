@@ -58,7 +58,6 @@
             this.splitContainer1.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.splitContainer1.Panel1.Controls.Add(this.pictureBox1);
             this.splitContainer1.Panel1.Padding = new System.Windows.Forms.Padding(1);
-            this.splitContainer1.Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer1_Panel1_Paint);
             // 
             // splitContainer1.Panel2
             // 
@@ -71,7 +70,6 @@
             this.splitContainer1.Panel2.Controls.Add(this.btn_pad);
             this.splitContainer1.Panel2.Controls.Add(this.btn_emp);
             this.splitContainer1.Panel2.Controls.Add(this.btn_niños);
-            this.splitContainer1.Panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer1_Panel2_Paint);
             this.splitContainer1.Size = new System.Drawing.Size(1264, 764);
             this.splitContainer1.SplitterDistance = 818;
             this.splitContainer1.TabIndex = 0;
@@ -207,7 +205,6 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Registro";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Registro_FormClosed);
-            this.Load += new System.EventHandler(this.Registro_Load);
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();

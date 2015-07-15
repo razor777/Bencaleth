@@ -80,7 +80,6 @@
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(916, 764);
             this.tabControl1.TabIndex = 0;
-            this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.tabControl1_SelectedIndexChanged);
             // 
             // tabPage1
             // 
@@ -101,7 +100,6 @@
             this.tabPage1.Size = new System.Drawing.Size(908, 720);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Inventario Donaciones";
-            this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
             // 
             // combobox_nomempresaComboBox
             // 
@@ -246,7 +244,6 @@
             this.comboboxResponsablesComboBox.Size = new System.Drawing.Size(193, 28);
             this.comboboxResponsablesComboBox.TabIndex = 86;
             this.comboboxResponsablesComboBox.ValueMember = "Id";
-            this.comboboxResponsablesComboBox.SelectedIndexChanged += new System.EventHandler(this.comboboxResponsablesComboBox_SelectedIndexChanged);
             // 
             // comboboxResponsablesBindingSource
             // 
@@ -277,7 +274,6 @@
             this.label5.Size = new System.Drawing.Size(184, 31);
             this.label5.TabIndex = 84;
             this.label5.Text = "Responsable";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label4
             // 
@@ -289,7 +285,6 @@
             this.label4.Size = new System.Drawing.Size(131, 31);
             this.label4.TabIndex = 83;
             this.label4.Text = "Cantidad";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label3
             // 
@@ -301,7 +296,6 @@
             this.label3.Size = new System.Drawing.Size(168, 31);
             this.label3.TabIndex = 82;
             this.label3.Text = "Descripción";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // txt_Can_Invf
             // 
@@ -333,7 +327,6 @@
             this.label2.Size = new System.Drawing.Size(44, 31);
             this.label2.TabIndex = 78;
             this.label2.Text = "ID";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // txt_id_InvF
             // 

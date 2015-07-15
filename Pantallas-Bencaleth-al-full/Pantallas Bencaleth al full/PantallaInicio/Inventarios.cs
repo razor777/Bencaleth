@@ -18,25 +18,8 @@ namespace PantallaInicio
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tabPage1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btn_Show_Invs_Click(object sender, EventArgs e)
         {
-            //new Vista_Inventarios().Show();
-            //this.Close();
             Herramientas.AbrirNuevoForm(new Vista_Inventarios());
         }
 
@@ -117,36 +100,6 @@ namespace PantallaInicio
         private void btn_Home_Click(object sender, EventArgs e)
         {
             Herramientas.AbrirNuevoForm(new Menu());
-        }
-
-        private void tabControl1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void comboboxResponsablesComboBox_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
