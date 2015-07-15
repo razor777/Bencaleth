@@ -20,7 +20,7 @@ namespace PantallaInicio
         public IngresoVoluntarios()
         {
             InitializeComponent();
-            voluntario  = new Voluntarios ();
+            voluntario  = new Voluntarios (txt_Id_Voluntarios,txt_Nom_Voluntarios,txt_Apelli_Voluntarios,date_Fn_Voluntarios,date_FI_Voluntarios,radio_mas_Voluntarios,radio_fem_Voluntarios,txt_Email_Voluntarios,txt_Tel_Voluntarios,txt_Info_Voluntarios,txtHoras);
             boolModoActualizar = false;
 
             this.date_Fn_Voluntarios.Value = new DateTime((DateTime.Now.Year - 16), 1, 1);
@@ -33,7 +33,7 @@ namespace PantallaInicio
         public IngresoVoluntarios(DataGridViewRow fila)
         {
             InitializeComponent();
-            voluntario = new Voluntarios();
+            voluntario = new Voluntarios(txt_Id_Voluntarios, txt_Nom_Voluntarios, txt_Apelli_Voluntarios, date_Fn_Voluntarios, date_FI_Voluntarios, radio_mas_Voluntarios, radio_fem_Voluntarios, txt_Email_Voluntarios, txt_Tel_Voluntarios, txt_Info_Voluntarios, txtHoras);
 
             voluntario.ConseguirDatosToUpdate(txt_Apelli_Voluntarios,fila);
             boolModoActualizar = true;
@@ -64,11 +64,6 @@ namespace PantallaInicio
             { return false; }
         }
 
-        private void label8_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void textBox6_TextChanged(object sender, EventArgs e)
         {
             txt_Tel_Voluntarios.Text = Herramientas.SoloNumeros(txt_Tel_Voluntarios);
@@ -89,10 +84,6 @@ namespace PantallaInicio
             {
                 errorProvider3.SetError(txt_Apelli_Voluntarios, "Falta llenar Campo");
             }
-            /*if (string.IsNullOrEmpty(txt_Iden_Voluntarios.Text))
-            {
-                errorProvider4.SetError(txt_Iden_Voluntarios, "Falta llenar Campo");
-            }*/
             if (string.IsNullOrEmpty(txt_Tel_Voluntarios.Text))
             {
                 errorProvider5.SetError(txt_Tel_Voluntarios, "Falta llenar Campo");
@@ -104,11 +95,7 @@ namespace PantallaInicio
             if (string.IsNullOrEmpty(txt_Info_Voluntarios.Text))
             {
                 errorProvider7.SetError(txt_Info_Voluntarios, "Falta llenar Campo");
-            }/*
-            if (string.IsNullOrEmpty(txtbMensualidad.Text))
-            {
-                errorProvider8.SetError(txtbMensualidad, "Falta llenar Campo");
-            }*/
+            }
             if (string.IsNullOrEmpty(txtHoras.Text))
             {
                 errorProvider9.SetError(txtHoras, "Falta llenar Campo");
@@ -156,102 +143,15 @@ namespace PantallaInicio
             errorProvider7.Clear();
         }
 
-        private void txt_Mens_Voluntarios_TextChanged(object sender, EventArgs e)
-        {
-            //txt_Mens_Voluntarios.Text = Herramientas.SoloNumeros(txt_Mens_Voluntarios);
-        }
-
         private void txtHoras_TextChanged(object sender, EventArgs e)
         {
             txtHoras.Text = Herramientas.SoloNumeros(txtHoras);
             errorProvider9.Clear();
         }
 
-        private void txt_Id_Voluntarios_Validated(object sender, EventArgs e)
-        {
-            //if (txt_Id_Voluntarios.Text.Trim() == "")
-            //{
-            //    epERROR.SetError(txt_Id_Voluntarios, "ingrese el ID ");
-            //    txt_Id_Voluntarios.Focus();
-            //}
-            //else
-            //{
-            //    epERROR.Clear();
-            //}
-        }
-
-        private void txt_Nom_Voluntarios_Validated(object sender, EventArgs e)
-        {
-            //if (txt_Nom_Voluntarios.Text.Trim() == "")
-            //{
-            //    epERROR.SetError(txt_Nom_Voluntarios, "ingrese el Nombre ");
-            //    txt_Nom_Voluntarios.Focus();
-            //}
-            //else
-            //{
-            //    epERROR.Clear();
-            //}
-        }
-
-        private void txt_Apelli_Voluntarios_Validated(object sender, EventArgs e)
-        {
-            //if (txt_Apelli_Voluntarios.Text.Trim() == "")
-            //{
-            //    epERROR.SetError(txt_Apelli_Voluntarios, "ingrese el Apellido ");
-            //    txt_Apelli_Voluntarios.Focus();
-            //}
-            //else
-            //{
-            //    epERROR.Clear();
-            //}
-        }
-
-        private void txt_Tel_Voluntarios_Validated(object sender, EventArgs e)
-        {
-            //if (txt_Tel_Voluntarios.Text.Trim() == "")
-            //{
-            //    epERROR.SetError(txt_Tel_Voluntarios, "ingrese el Telefono ");
-            //    txt_Tel_Voluntarios.Focus();
-            //}
-            //else
-            //{
-            //    epERROR.Clear();
-            //}
-        }
-
-        private void txt_Info_Voluntarios_Validated(object sender, EventArgs e)
-        {
-            //if (txt_Info_Voluntarios.Text.Trim() == "")
-            //{
-            //    epERROR.SetError(txt_Info_Voluntarios, "ingrese la Informacion");
-            //    txt_Info_Voluntarios.Focus();
-            //}
-            //else
-            //{
-            //    epERROR.Clear();
-            //}
-        }
-
-        private void txtHoras_Validated(object sender, EventArgs e)
-        {
-            //if (txtHoras.Text.Trim() == "")
-            //{
-            //    epERROR.SetError(txtHoras, "ingrese las Horas ");
-            //    txtHoras.Focus();
-            //}
-            //else
-            //{
-            //    epERROR.Clear();
-            //}
-        }
-
         private void txt_Email_Voluntarios_Leave(object sender, EventArgs e)
         {
-            if (validarEmail(txt_Email_Voluntarios.Text))
-            {
-
-            }
-            else
+            if (!validarEmail(txt_Email_Voluntarios.Text))
             {
                 MessageBox.Show("Direccion de correo electronico no valida el correo debe terner un formato nombre@dominio.com");
                 txt_Email_Voluntarios.Clear();
@@ -275,10 +175,6 @@ namespace PantallaInicio
 
             }
 
-            if ((anoActual - anoIntroducido) >= 18)
-            {
-
-            }
             if (anoIntroducido > anoActual)
             {
                 MessageBox.Show("introduciera un empleado que no ah nacido", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -294,7 +190,6 @@ namespace PantallaInicio
         {
             if (MessageBox.Show("¿Esta seguro que desea ingresar pago?", "Pagar", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
-
                 voluntario.PagarMensualidad(txt_Id_Voluntarios);
             }
         }

@@ -36,6 +36,5 @@ namespace PantallaInicio
         public string campo5 { get { return strID; } set { strID = value; } }
 
         public int Tipo { get { return intTipo; } set { } }
-        //public void estoy() { MessageBox.Show("estoy" + strID, "estoy"); }
     }
 }

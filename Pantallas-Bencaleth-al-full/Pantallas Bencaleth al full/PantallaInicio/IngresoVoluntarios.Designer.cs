@@ -86,7 +86,6 @@
             this.txt_Id_Voluntarios.Size = new System.Drawing.Size(195, 26);
             this.txt_Id_Voluntarios.TabIndex = 53;
             this.txt_Id_Voluntarios.TextChanged += new System.EventHandler(this.txt_Id_Voluntarios_TextChanged);
-            this.txt_Id_Voluntarios.Validated += new System.EventHandler(this.txt_Id_Voluntarios_Validated);
             // 
             // date_Fn_Voluntarios
             // 
@@ -106,7 +105,6 @@
             this.txt_Apelli_Voluntarios.Size = new System.Drawing.Size(195, 26);
             this.txt_Apelli_Voluntarios.TabIndex = 46;
             this.txt_Apelli_Voluntarios.TextChanged += new System.EventHandler(this.txt_Apelli_Voluntarios_TextChanged);
-            this.txt_Apelli_Voluntarios.Validated += new System.EventHandler(this.txt_Apelli_Voluntarios_Validated);
             // 
             // txt_Nom_Voluntarios
             // 
@@ -117,7 +115,6 @@
             this.txt_Nom_Voluntarios.Size = new System.Drawing.Size(195, 26);
             this.txt_Nom_Voluntarios.TabIndex = 45;
             this.txt_Nom_Voluntarios.TextChanged += new System.EventHandler(this.txt_Nom_Voluntarios_TextChanged);
-            this.txt_Nom_Voluntarios.Validated += new System.EventHandler(this.txt_Nom_Voluntarios_Validated);
             // 
             // label9
             // 
@@ -140,7 +137,6 @@
             this.label8.Size = new System.Drawing.Size(110, 31);
             this.label8.TabIndex = 43;
             this.label8.Text = "Nombre";
-            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // label7
             // 
@@ -217,7 +213,6 @@
             this.txt_Tel_Voluntarios.Size = new System.Drawing.Size(195, 26);
             this.txt_Tel_Voluntarios.TabIndex = 55;
             this.txt_Tel_Voluntarios.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
-            this.txt_Tel_Voluntarios.Validated += new System.EventHandler(this.txt_Tel_Voluntarios_Validated);
             // 
             // label10
             // 
@@ -251,7 +246,6 @@
             this.txt_Info_Voluntarios.Size = new System.Drawing.Size(192, 111);
             this.txt_Info_Voluntarios.TabIndex = 59;
             this.txt_Info_Voluntarios.TextChanged += new System.EventHandler(this.txt_Info_Voluntarios_TextChanged);
-            this.txt_Info_Voluntarios.Validated += new System.EventHandler(this.txt_Info_Voluntarios_Validated);
             // 
             // label12
             // 
@@ -335,7 +329,6 @@
             this.txtHoras.Size = new System.Drawing.Size(195, 26);
             this.txtHoras.TabIndex = 116;
             this.txtHoras.TextChanged += new System.EventHandler(this.txtHoras_TextChanged);
-            this.txtHoras.Validated += new System.EventHandler(this.txtHoras_Validated);
             // 
             // epERROR
             // 

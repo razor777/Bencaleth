@@ -21,7 +21,7 @@ namespace PantallaInicio
         public IngresoEmpleados()
         {
             InitializeComponent();
-            empleado = new Empleados("txtIdEmple", "txtNomEmple", "txt_Apelli_Emple", "txt_Dir_Emple", "txt_Tel_Emple", "txt_Email_Emple", "combobox_CargoTipoComboBox", "date_FechN_Emple", "radio_mas_Emple", "radio_fem_Emple", "Date_FechIn_Emple");
+            empleado = new Empleados(txtIdEmple,txtNomEmple,txt_Apelli_Emple,txt_Dir_Emple,date_FechN_Emple,Date_FechIn_Emple,radio_mas_Emple,radio_fem_Emple,txt_Email_Emple,combobox_CargoTipoComboBox,txt_Tel_Emple);
 
             this.date_FechN_Emple.Value = new DateTime((DateTime.Now.Year - 18), 1, 1);
             this.date_FechN_Emple.Update();
@@ -34,9 +34,9 @@ namespace PantallaInicio
         public IngresoEmpleados(DataGridViewRow fila)
         {
             InitializeComponent();
-            empleado = new Empleados("txtIdEmple", "txtNomEmple", "txt_Apelli_Emple", "txt_Dir_Emple", "txt_Tel_Emple", "txt_Email_Emple", "combobox_CargoTipoComboBox", "date_FechN_Emple", "radio_mas_Emple", "radio_fem_Emple", "Date_FechIn_Emple");
+            empleado = new Empleados(txtIdEmple, txtNomEmple, txt_Apelli_Emple, txt_Dir_Emple, date_FechN_Emple, Date_FechIn_Emple, radio_mas_Emple, radio_fem_Emple, txt_Email_Emple, combobox_CargoTipoComboBox, txt_Tel_Emple);
 
-            empleado.ConseguirDatosToUpdate(txt_Apelli_Emple, fila);
+            empleado.ConseguirDatosToUpdate(txtNomEmple, fila);
             boolModoActualizar = true;
 
             txtIdEmple.ReadOnly = true;
@@ -70,15 +70,13 @@ namespace PantallaInicio
                 errorProvider6.SetError(txt_Dir_Emple, "Falta llenar Campo");
             }
             else
-                {
-
-            if(boolModoActualizar){
-                empleado.actualizarDatos(txtNomEmple);
-            }else{
-                empleado.ingresarDatos(txtNomEmple);
-               
-            }
+            {
+                if(boolModoActualizar){
+                    empleado.actualizarDatos(txtNomEmple);
+                }else{
+                    empleado.ingresarDatos(txtNomEmple);
                 }
+             }
         }
 
         private void txtIdEmple_TextChanged(object sender, EventArgs e)
@@ -100,19 +98,6 @@ namespace PantallaInicio
             errorProvider3.Clear();
         }
 
-        private void date_FechN_Emple_ValueChanged(object sender, EventArgs e)
-        {
-            
-           
-        
-        }
-
-        private void Date_FechIn_Emple_ValueChanged(object sender, EventArgs e)
-        {
-           
-        
-        }
-
         private void txt_Tel_Emple_TextChanged(object sender, EventArgs e)
         {
             txt_Tel_Emple.Text=Herramientas.SoloNumeros(txt_Tel_Emple);
@@ -131,14 +116,6 @@ namespace PantallaInicio
             txt_Dir_Emple.Text = Herramientas.NingunEspacioInicial(txt_Dir_Emple.Text);
             errorProvider6.Clear();
         }
-
-        private void txt_Iden_Emple_TextChanged(object sender, EventArgs e)
-        {
-            //txt_Iden_Emple.Text = Herramientas.SoloNumeros(txt_Iden_Emple);
-        }
-
-
-
 
         public static bool validarEmail(string email)
         {
@@ -185,13 +162,6 @@ namespace PantallaInicio
                 }
 
             }
-
-            //if ((anoActual - anoIntroducido) >= 18)
-            //{
-            //    MessageBox.Show("cumple el requisito de edad minima tiene 16 año o ese año los cumple", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            //}
-            
-
         }
 
         private void IngresoEmpleados_Load(object sender, EventArgs e)
@@ -200,76 +170,5 @@ namespace PantallaInicio
             this.combobox_CargoTipoTableAdapter.Fill(this.bencalethDataSet.Combobox_CargoTipo);
             empleado.FixComboBox(txt_Apelli_Emple);
         }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label11_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label10_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void radio_fem_Emple_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void radio_mas_Emple_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label9_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label8_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label7_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void combobox_CargoTipoComboBox_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
     }
 }

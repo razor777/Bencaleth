@@ -130,7 +130,6 @@
             this.label7.Size = new System.Drawing.Size(124, 31);
             this.label7.TabIndex = 24;
             this.label7.Text = "Apellidos";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // label6
             // 
@@ -215,7 +214,6 @@
             this.radio_mas_Niños.Tag = "m";
             this.radio_mas_Niños.Text = "Masculino";
             this.radio_mas_Niños.UseVisualStyleBackColor = true;
-            this.radio_mas_Niños.CheckedChanged += new System.EventHandler(this.radio_mas_Niños_CheckedChanged);
             // 
             // radio_fem_Niños
             // 

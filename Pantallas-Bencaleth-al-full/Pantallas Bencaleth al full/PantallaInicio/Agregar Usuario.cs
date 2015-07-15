@@ -72,9 +72,10 @@ namespace PantallaInicio
         {
             txt_Confir_Adduser.Text = Herramientas.NingunEspacioEnBlanco(txt_Confir_Adduser);
         }
+
        private void btn_Cancel_Adduser_Click(object sender, EventArgs e)
-         {
+       {
             this.Close();
-        }
-        }
+       }
+    }
 }

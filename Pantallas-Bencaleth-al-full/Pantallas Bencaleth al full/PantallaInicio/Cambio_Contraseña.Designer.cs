@@ -87,7 +87,6 @@
             this.txt_Newpassw.Size = new System.Drawing.Size(157, 26);
             this.txt_Newpassw.TabIndex = 6;
             this.txt_Newpassw.TextChanged += new System.EventHandler(this.txt_Newpassw_TextChanged_1);
-            this.txt_Newpassw.Leave += new System.EventHandler(this.txt_Newpassw_Leave);
             // 
             // txt_Confimpassw
             // 
@@ -98,7 +97,6 @@
             this.txt_Confimpassw.Size = new System.Drawing.Size(157, 26);
             this.txt_Confimpassw.TabIndex = 7;
             this.txt_Confimpassw.TextChanged += new System.EventHandler(this.txt_Confimpassw_TextChanged_1);
-            this.txt_Confimpassw.Leave += new System.EventHandler(this.txt_Confimpassw_Leave);
             // 
             // btn_Acep
             // 

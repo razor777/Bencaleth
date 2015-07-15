@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
-using PantallaInicio.BencalethDataSet1TableAdapters;
+using PantallaInicio.BencalethDataSetTableAdapters;
 
 namespace PantallaInicio
 {
@@ -112,17 +112,6 @@ namespace PantallaInicio
             rdbtnID.Checked = true;
             Cbb_Mantenimiento.SelectedIndex = cbxDesplegar;
             txtbABuscar.Text = buscado;
-            //radioButton7
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void btn_Edit_Click(object sender, EventArgs e)

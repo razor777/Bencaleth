@@ -12,154 +12,95 @@ namespace PantallaInicio
     {
         QueriesTableAdapter BDninios = new QueriesTableAdapter();
 
-        private string _Codigo_Persona;
-        public override string Codigo_Persona
-        {
-            get
-            {
-                return _Codigo_Persona;
-            }
-            set
-            {
-                _Codigo_Persona = value;
-            }
-        }
-
-        private string _Responsable;
-        public string Responsable
-        {
-            get
-            {
-                return _Responsable;
-            }
-            set
-            {
-                _Responsable = value;
-            }
-        }
-
-        private string _Apellido;
-        public string Apellido
-        {
-            get
-            {
-                return _Apellido;
-            }
-            set
-            {
-                _Apellido = value;
-            }
-        }
-
-        private string _Genero;
-        public string Genero
-        {
-            get
-            {
-                return _Genero;
-            }
-            set
-            {
-                _Genero = value;
-            }
-        }
-
-        private DateTime _Defuncion;
-        public DateTime Defuncion
-        {
-            get
-            {
-                return _Defuncion;
-            }
-            set
-            {
-                _Defuncion = value;
-            }
-        }
-
-        private int _Identidad;
-        public string Identidad
-        {
-            get
-            {
-                return _Identidad.ToString();
-            }
-            set
-            {
-                if (Herramientas.IsNumeric(value))
-                    _Identidad = Convert.ToInt16(value);
-            }
-        }
-
+        private bool boolEditable;
         private object ValueCombobox = null;
+        private Control ctrlFechaInicio;
+        private Control ctrlResponsables;
+
+        public Ninios(Control ctrlIden, Control ctrlNom, Control ctrlApell, Control ctrlFechNaci, Control ctrlIni, Control ctrlGenM, Control ctrlGenF, Control ctrlRes)
+        {
+            ctrlID = ctrlIden;
+            ctrlNombre = ctrlNom;
+            ctrlApellido = ctrlApell;
+            ctrlFechaNacimiento = ctrlFechNaci;
+            ctrlFechaInicio = ctrlIni;
+            ctrlGeneroM = ctrlGenM;
+            ctrlGeneroF = ctrlGenF;
+            ctrlResponsables = ctrlRes;
+            boolEditable = true;
+        }
+
+        public Ninios() {
+            boolEditable = false;
+        }
 
         public override void ingresarDatos(Control controles)
         {
-            this.Codigo_Persona = controles.Parent.Controls["txt_idniños"].Text;
-            this.Nombre = controles.Parent.Controls["txt_nomniños"].Text;
-            this.Apellido = controles.Parent.Controls["txt_apellido"].Text;
-            this.Genero = Herramientas.determinarCualRadioButtonEsGenero(controles);
-            System.DateTime? naci = Convert.ToDateTime(controles.Parent.Controls["fech_niños"].Text);
-            System.DateTime? ingreso = Convert.ToDateTime(controles.Parent.Controls["fech_ingre"].Text);
-            this.Responsable = ((ComboBox)controles.Parent.Controls["comboboxResponsablesComboBox"]).SelectedValue.ToString();
-
-            if (!Herramientas.HayCamposNull(controles))
+            if (boolEditable)
             {
-                try
-                {
-                    BDninios.Insert_Niños(this.Codigo_Persona, this.Nombre, this.Apellido, this.Genero, naci, ingreso, this.Responsable);
-                    MessageBox.Show("Ingresado");
+                string strGenero = Herramientas.determinarCualRadioButtonEsGenero(controles);
+                System.DateTime? naci = Convert.ToDateTime(ctrlFechaNacimiento.Text);
+                System.DateTime? ingreso = Convert.ToDateTime(ctrlFechaInicio.Text);
+                string strResponsable = ((ComboBox)ctrlResponsables).SelectedValue.ToString();
 
-                    controles.Parent.Controls["txt_idniños"].Text = "";
-                    controles.Parent.Controls["txt_nomniños"].Text = "";
-                    controles.Parent.Controls["txt_apellido"].Text = "";
-                }
-                catch (SqlException e)
+                if (!Herramientas.HayCamposNull(controles))
                 {
-                    switch (e.Number)
+                    try
                     {
-                        case 2627:
-                            MessageBox.Show("ID ya existente");
-                            break;
-                        default:
-                            MessageBox.Show("No hay conexion con la base de datos");
-                            break;
+                        BDninios.Insert_Niños(ctrlID.Text, ctrlNombre.Text, ctrlApellido.Text, strGenero, naci, ingreso, strResponsable);
+                        MessageBox.Show("Ingresado");
+
+                        ctrlID.Text = "";
+                        ctrlNombre.Text = "";
+                        ctrlApellido.Text = "";
                     }
+                    catch (SqlException e)
+                    {
+                        switch (e.Number)
+                        {
+                            case 2627:
+                                MessageBox.Show("ID ya existente");
+                                break;
+                            default:
+                                MessageBox.Show("No hay conexion con la base de datos");
+                                break;
+                        }
+                    }
+
                 }
-                
             }
         }
 
         public override void actualizarDatos(Control controles) {
-            this.Codigo_Persona = controles.Parent.Controls["txt_idniños"].Text;
-            this.Nombre = controles.Parent.Controls["txt_nomniños"].Text;
-            this.Apellido = controles.Parent.Controls["txt_apellido"].Text;
-            this.Genero = Herramientas.determinarCualRadioButtonEsGenero(controles);
-            System.DateTime? naci = Convert.ToDateTime(controles.Parent.Controls["fech_niños"].Text);
-            System.DateTime? ingreso = Convert.ToDateTime(controles.Parent.Controls["fech_ingre"].Text);
-            this.Responsable = ((ComboBox)controles.Parent.Controls["comboboxResponsablesComboBox"]).SelectedValue.ToString();
-
-            if (!Herramientas.HayCamposNull(controles))
+            if (boolEditable)
             {
-                try
-                {
-                    BDninios.Update_Ninos2(this.Codigo_Persona, this.Nombre, this.Apellido, this.Genero, naci, ingreso, this.Responsable);
-                    MessageBox.Show("Actualizado");
+                string strGenero = Herramientas.determinarCualRadioButtonEsGenero(controles);
+                System.DateTime? naci = Convert.ToDateTime(ctrlFechaNacimiento.Text);
+                System.DateTime? ingreso = Convert.ToDateTime(ctrlFechaInicio.Text);
+                string strResponsable = ((ComboBox)ctrlResponsables).SelectedValue.ToString();
 
-                }
-                catch (SqlException e)
+                if (!Herramientas.HayCamposNull(controles))
                 {
-                    switch (e.Number)
+                    try
                     {
-                        case 2627:
-                            MessageBox.Show("ID ya existente");
-                            break;
-                        default:
-                            MessageBox.Show("No hay conexion con la base de datos");
-                            break;
-                    }
-                }
+                        BDninios.Update_Ninos2(ctrlID.Text, ctrlNombre.Text, ctrlApellido.Text, strGenero, naci, ingreso, strResponsable);
+                        MessageBox.Show("Actualizado");
 
+                    }
+                    catch (SqlException e)
+                    {
+                        switch (e.Number)
+                        {
+                            case 2627:
+                                MessageBox.Show("ID ya existente");
+                                break;
+                            default:
+                                MessageBox.Show("No hay conexion con la base de datos");
+                                break;
+                        }
+                    }
+
+                }
             }
         }
 
@@ -205,25 +146,24 @@ namespace PantallaInicio
         }
 
         public void ConseguirDatosToUpdate(Control controles, DataGridViewRow fila) {
-            controles.Parent.Controls["txt_idniños"].Text = fila.Cells[0].Value.ToString();
-            controles.Parent.Controls["txt_nomniños"].Text = fila.Cells[1].Value.ToString();
-            controles.Parent.Controls["txt_apellido"].Text = fila.Cells[2].Value.ToString();
+            ctrlID.Text = fila.Cells[0].Value.ToString();
+            ctrlNombre.Text = fila.Cells[1].Value.ToString();
+            ctrlApellido.Text = fila.Cells[2].Value.ToString();
 
             if (fila.Cells[3].Value.ToString() == "Femenino")
             {
-                ((RadioButton)controles.Parent.Controls["radio_mas_Niños"]).Checked = false;
-                ((RadioButton)controles.Parent.Controls["radio_fem_Niños"]).Checked = true;
+                ((RadioButton)ctrlGeneroM).Checked = false;
+                ((RadioButton)ctrlGeneroF).Checked = true;
             }
             else
             {
-                ((RadioButton)controles.Parent.Controls["radio_mas_Niños"]).Checked = true;
-                ((RadioButton)controles.Parent.Controls["radio_fem_Niños"]).Checked = false;
+                ((RadioButton)ctrlGeneroM).Checked = true;
+                ((RadioButton)ctrlGeneroF).Checked = false;
             }
-            
-            controles.Parent.Controls["fech_niños"].Text = fila.Cells[4].Value.ToString();
-            controles.Parent.Controls["fech_ingre"].Text = fila.Cells[5].Value.ToString();
 
-            //((ComboBox)controles.Parent.Controls["comboboxResponsablesComboBox"]).SelectedValue = fila.Cells[6].Value;
+            ctrlFechaNacimiento.Text = fila.Cells[4].Value.ToString();
+            ctrlFechaInicio.Text = fila.Cells[5].Value.ToString();
+
             this.ValueCombobox = BDninios.GetIDToComboBoxResponsable_Empleados(fila.Cells[6].Value.ToString());
         }
 
@@ -232,7 +172,7 @@ namespace PantallaInicio
             //invocar en el load de la clase
             if (ValueCombobox != null)
             {
-                ((ComboBox)controles.Parent.Controls["comboboxResponsablesComboBox"]).SelectedValue = this.ValueCombobox;
+                ((ComboBox)ctrlResponsables).SelectedValue = this.ValueCombobox;
                 this.ValueCombobox = null;
             }
         }

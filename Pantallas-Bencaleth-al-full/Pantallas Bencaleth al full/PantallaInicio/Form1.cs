@@ -19,21 +19,6 @@ namespace PantallaInicio
             InitializeComponent();
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
             txt_pasw.Text = Herramientas.NingunCaracterEspecial(txt_pasw);
@@ -41,16 +26,11 @@ namespace PantallaInicio
 
         private void btn_Ing_Click(object sender, EventArgs e)
         {
-            //Form Menu = new Menu();
-            //Menu.Show();
-            //this.Hide();
+
             if (Log.Validacion(txt_user.Text, txt_pasw.Text) == 1)
             {
-                //Form Menu = new Menu();
-                //Menu.Show();
-                //this.Hide();
-                Log.sesion = this.txt_user.Text;
 
+                Log.sesion = this.txt_user.Text;
 
                 this.txt_user.Clear();
                 this.txt_pasw.Clear();
@@ -59,11 +39,8 @@ namespace PantallaInicio
             else
             {
 
-                if (Log.intentosActuales == Log.intentosMax) { MessageBox.Show(Log.Block(Log.NombreBlock)); }
-                else
-                {
-                    MessageBox.Show("Usuario o contraseña incorrecto.");
-                }
+                if (Log.intentosActuales == Log.intentosMax) { Log.Block(Log.NombreBlock); }
+                MessageBox.Show("Usuario o contraseña incorrecto.");
 
             }
            
@@ -72,23 +49,6 @@ namespace PantallaInicio
         private void txt_user_TextChanged(object sender, EventArgs e)
         {
             txt_user.Text = Herramientas.NingunCaracterEspecial(txt_user);
-            //txt_user.Text = Herramientas.NingunCaracterEspecial(txt_user.Text);
-            //**txt_user.Handle=Convert.
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void login_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

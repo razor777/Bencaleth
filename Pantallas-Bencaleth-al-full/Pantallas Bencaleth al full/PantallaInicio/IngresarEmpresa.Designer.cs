@@ -49,10 +49,10 @@
             this.label9 = new System.Windows.Forms.Label();
             this.txt_id_empresa = new System.Windows.Forms.TextBox();
             this.btn_save_empresa = new System.Windows.Forms.Button();
-            this.bencalethDataSet1 = new PantallaInicio.BencalethDataSet1();
+            this.bencalethDataSet = new PantallaInicio.BencalethDataSet();
             this.combobox_empresasBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.combobox_empresasTableAdapter = new PantallaInicio.BencalethDataSet1TableAdapters.combobox_empresasTableAdapter();
-            this.tableAdapterManager = new PantallaInicio.BencalethDataSet1TableAdapters.TableAdapterManager();
+            this.combobox_empresasTableAdapter = new PantallaInicio.BencalethDataSetTableAdapters.combobox_empresasTableAdapter();
+            this.tableAdapterManager = new PantallaInicio.BencalethDataSetTableAdapters.TableAdapterManager();
             this.combobox_empresasBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.combobox_empresasComboBox = new System.Windows.Forms.ComboBox();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
@@ -63,7 +63,7 @@
             this.errorProvider6 = new System.Windows.Forms.ErrorProvider(this.components);
             this.errorProvider7 = new System.Windows.Forms.ErrorProvider(this.components);
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.bencalethDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bencalethDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.combobox_empresasBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.combobox_empresasBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
@@ -293,13 +293,13 @@
             // 
             // bencalethDataSet1
             // 
-            this.bencalethDataSet1.DataSetName = "BencalethDataSet1";
-            this.bencalethDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.bencalethDataSet.DataSetName = "BencalethDataSet";
+            this.bencalethDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // combobox_empresasBindingSource
             // 
             this.combobox_empresasBindingSource.DataMember = "combobox_empresas";
-            this.combobox_empresasBindingSource.DataSource = this.bencalethDataSet1;
+            this.combobox_empresasBindingSource.DataSource = this.bencalethDataSet;
             // 
             // combobox_empresasTableAdapter
             // 
@@ -309,12 +309,12 @@
             // 
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
             this.tableAdapterManager.Connection = null;
-            this.tableAdapterManager.UpdateOrder = PantallaInicio.BencalethDataSet1TableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.UpdateOrder = PantallaInicio.BencalethDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
             // combobox_empresasBindingSource1
             // 
             this.combobox_empresasBindingSource1.DataMember = "combobox_empresas";
-            this.combobox_empresasBindingSource1.DataSource = this.bencalethDataSet1;
+            this.combobox_empresasBindingSource1.DataSource = this.bencalethDataSet;
             // 
             // combobox_empresasComboBox
             // 
@@ -329,7 +329,6 @@
             this.combobox_empresasComboBox.Size = new System.Drawing.Size(193, 28);
             this.combobox_empresasComboBox.TabIndex = 2;
             this.combobox_empresasComboBox.ValueMember = "Id";
-            this.combobox_empresasComboBox.SelectedIndexChanged += new System.EventHandler(this.combobox_empresasComboBox_SelectedIndexChanged);
             // 
             // errorProvider1
             // 
@@ -402,7 +401,7 @@
             this.Name = "IngresarEmpresa";
             this.TransparencyKey = System.Drawing.Color.White;
             this.Load += new System.EventHandler(this.IngresarEmpresa_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.bencalethDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bencalethDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.combobox_empresasBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.combobox_empresasBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
@@ -439,10 +438,10 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox txt_id_empresa;
         private System.Windows.Forms.Button btn_save_empresa;
-        private BencalethDataSet1 bencalethDataSet1;
+        private BencalethDataSet bencalethDataSet;
         private System.Windows.Forms.BindingSource combobox_empresasBindingSource;
-        private BencalethDataSet1TableAdapters.combobox_empresasTableAdapter combobox_empresasTableAdapter;
-        private BencalethDataSet1TableAdapters.TableAdapterManager tableAdapterManager;
+        private BencalethDataSetTableAdapters.combobox_empresasTableAdapter combobox_empresasTableAdapter;
+        private BencalethDataSetTableAdapters.TableAdapterManager tableAdapterManager;
         private System.Windows.Forms.BindingSource combobox_empresasBindingSource1;
         private System.Windows.Forms.ComboBox combobox_empresasComboBox;
         private System.Windows.Forms.ErrorProvider errorProvider1;

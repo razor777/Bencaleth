@@ -21,9 +21,8 @@ namespace PantallaInicio
         public IngresoNiños()
         {
             InitializeComponent();
-            ninio = new Ninios();
+            ninio = new Ninios(txt_idniños,txt_nomniños,txt_apellido,fech_niños,fech_ingre,radio_mas_Niños,radio_fem_Niños,comboboxResponsablesComboBox);
 
-            //no se edad de ninos
             this.fech_niños.Value = new DateTime((DateTime.Now.Year - 10), 1, 1);
             this.fech_niños.Update();
 
@@ -35,7 +34,7 @@ namespace PantallaInicio
         public IngresoNiños(DataGridViewRow fila)
         {
             InitializeComponent();
-            ninio = new Ninios();
+            ninio = new Ninios(txt_idniños, txt_nomniños, txt_apellido, fech_niños, fech_ingre, radio_mas_Niños, radio_fem_Niños, comboboxResponsablesComboBox);
 
             ninio.ConseguirDatosToUpdate(txt_apellido,fila);
             boolModoActualizar = true;
@@ -50,29 +49,9 @@ namespace PantallaInicio
             ninio.FixComboBox(txt_apellido);
         }
 
-        private void txt_nomninos_TextChanged(object sender, EventArgs e)
-        {
-            //txt_nomninos.Text = Herramientas.SoloLetrasYEspaciosSec(txt_nomninos);
-        }
-
         private void txt_apellido_TextChanged(object sender, EventArgs e)
         {
             txt_apellido.Text = Herramientas.SoloLetrasYEspaciosSec(txt_apellido);
-        }
-
-        private void txt_responsable_TextChanged(object sender, EventArgs e)
-        {
-            //txt_responsable.Text = Herramientas.NingunCaracterEspecial(txt_responsable);
-        }
-
-        private void btn_saveNiños_Click(object sender, EventArgs e)
-        {
-            //ninio.ingresarDatos(txt_nomninos);
-        }
-
-        private void comboboxResponsablesComboBox_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void btn_saveNiños_Click_1(object sender, EventArgs e)
@@ -119,16 +98,6 @@ namespace PantallaInicio
         {
             txt_apellido.Text = Herramientas.SoloLetrasYEspaciosSec(txt_apellido);
             errorProvider3.Clear();
-        }
-
-        private void radio_mas_Niños_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label7_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

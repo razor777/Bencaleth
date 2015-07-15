@@ -105,7 +105,6 @@
             this.label11.Size = new System.Drawing.Size(120, 31);
             this.label11.TabIndex = 79;
             this.label11.Text = "Teléfono";
-            this.label11.Click += new System.EventHandler(this.label11_Click);
             // 
             // label10
             // 
@@ -117,7 +116,6 @@
             this.label10.Size = new System.Drawing.Size(128, 31);
             this.label10.TabIndex = 78;
             this.label10.Text = "Dirección";
-            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // txt_Tel_Emple
             // 
@@ -139,7 +137,6 @@
             this.label2.Size = new System.Drawing.Size(239, 31);
             this.label2.TabIndex = 76;
             this.label2.Text = "Correo Electrónico";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // txtIdEmple
             // 
@@ -161,7 +158,6 @@
             this.date_FechN_Emple.Size = new System.Drawing.Size(195, 26);
             this.date_FechN_Emple.TabIndex = 5;
             this.date_FechN_Emple.Value = new System.DateTime(2015, 12, 31, 0, 0, 0, 0);
-            this.date_FechN_Emple.ValueChanged += new System.EventHandler(this.date_FechN_Emple_ValueChanged);
             this.date_FechN_Emple.Leave += new System.EventHandler(this.date_FechN_Emple_Leave);
             // 
             // txt_Apelli_Emple
@@ -194,7 +190,6 @@
             this.label9.Size = new System.Drawing.Size(42, 31);
             this.label9.TabIndex = 67;
             this.label9.Text = "ID";
-            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // label8
             // 
@@ -206,7 +201,6 @@
             this.label8.Size = new System.Drawing.Size(110, 31);
             this.label8.TabIndex = 66;
             this.label8.Text = "Nombre";
-            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // label7
             // 
@@ -218,7 +212,6 @@
             this.label7.Size = new System.Drawing.Size(124, 31);
             this.label7.TabIndex = 65;
             this.label7.Text = "Apellidos";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // label6
             // 
@@ -230,7 +223,6 @@
             this.label6.Size = new System.Drawing.Size(104, 31);
             this.label6.TabIndex = 64;
             this.label6.Text = "Género";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label5
             // 
@@ -242,7 +234,6 @@
             this.label5.Size = new System.Drawing.Size(233, 31);
             this.label5.TabIndex = 63;
             this.label5.Text = "Fecha Nacimiento";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label3
             // 
@@ -254,7 +245,6 @@
             this.label3.Size = new System.Drawing.Size(188, 31);
             this.label3.TabIndex = 61;
             this.label3.Text = "Fecha Ingreso";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label1
             // 
@@ -266,7 +256,6 @@
             this.label1.Size = new System.Drawing.Size(214, 42);
             this.label1.TabIndex = 60;
             this.label1.Text = "Empleados";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // Date_FechIn_Emple
             // 
@@ -278,7 +267,6 @@
             this.Date_FechIn_Emple.Size = new System.Drawing.Size(195, 26);
             this.Date_FechIn_Emple.TabIndex = 6;
             this.Date_FechIn_Emple.Value = new System.DateTime(2015, 12, 31, 0, 0, 0, 0);
-            this.Date_FechIn_Emple.ValueChanged += new System.EventHandler(this.Date_FechIn_Emple_ValueChanged);
             // 
             // radio_fem_Emple
             // 
@@ -292,7 +280,6 @@
             this.radio_fem_Emple.Tag = "f";
             this.radio_fem_Emple.Text = "Femenino";
             this.radio_fem_Emple.UseVisualStyleBackColor = true;
-            this.radio_fem_Emple.CheckedChanged += new System.EventHandler(this.radio_fem_Emple_CheckedChanged);
             // 
             // radio_mas_Emple
             // 
@@ -308,7 +295,6 @@
             this.radio_mas_Emple.Tag = "m";
             this.radio_mas_Emple.Text = "Masculino";
             this.radio_mas_Emple.UseVisualStyleBackColor = true;
-            this.radio_mas_Emple.CheckedChanged += new System.EventHandler(this.radio_mas_Emple_CheckedChanged);
             // 
             // btn_save_Emple
             // 
@@ -334,7 +320,6 @@
             this.label4.Size = new System.Drawing.Size(88, 31);
             this.label4.TabIndex = 93;
             this.label4.Text = "Cargo";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // bencalethDataSet
             // 
@@ -368,7 +353,6 @@
             this.combobox_CargoTipoComboBox.Size = new System.Drawing.Size(195, 28);
             this.combobox_CargoTipoComboBox.TabIndex = 7;
             this.combobox_CargoTipoComboBox.ValueMember = "Empleado_Tipo";
-            this.combobox_CargoTipoComboBox.SelectedIndexChanged += new System.EventHandler(this.combobox_CargoTipoComboBox_SelectedIndexChanged);
             // 
             // errorProvider1
             // 

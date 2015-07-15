@@ -58,7 +58,7 @@ namespace PantallaInicio
         private void IngresarEmpresa_Load(object sender, EventArgs e)
         {
             // TODO: esta línea de código carga datos en la tabla 'bencalethDataSet1.combobox_empresas' Puede moverla o quitarla según sea necesario.
-            this.combobox_empresasTableAdapter.Fill(this.bencalethDataSet1.combobox_empresas);
+            this.combobox_empresasTableAdapter.Fill(this.bencalethDataSet.combobox_empresas);
 
             //Herramientas.errorPro = errorProvider1;
             empresa.FixComboBox(txt_nom_empresa);
@@ -103,10 +103,6 @@ namespace PantallaInicio
         private void txt_email_empresa_TextChanged(object sender, EventArgs e)
         {
             errorProvider7.Clear();
-        }
-        private void combobox_empresasComboBox_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            //  empresa.Tipo = combobox_empresasComboBox.SelectedValue.ToString();
         }
         
         private void txt_email_empresa_Leave(object sender, EventArgs e)

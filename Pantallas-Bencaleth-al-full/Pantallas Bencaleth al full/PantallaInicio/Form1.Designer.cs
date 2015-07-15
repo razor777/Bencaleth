@@ -54,7 +54,6 @@
             this.label2.Size = new System.Drawing.Size(267, 33);
             this.label2.TabIndex = 1;
             this.label2.Text = "Ingrese sus Datos";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
@@ -67,7 +66,6 @@
             this.label3.Size = new System.Drawing.Size(93, 25);
             this.label3.TabIndex = 2;
             this.label3.Text = "Usuario";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label4
             // 
@@ -80,7 +78,6 @@
             this.label4.Size = new System.Drawing.Size(133, 25);
             this.label4.TabIndex = 3;
             this.label4.Text = "Contraseña";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // txt_user
             // 
@@ -131,7 +128,6 @@
             this.groupBox1.Size = new System.Drawing.Size(408, 755);
             this.groupBox1.TabIndex = 9;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // pictureBox2
             // 
@@ -166,7 +162,6 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "login";
             this.Text = "BENCALETH";
-            this.Load += new System.EventHandler(this.login_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

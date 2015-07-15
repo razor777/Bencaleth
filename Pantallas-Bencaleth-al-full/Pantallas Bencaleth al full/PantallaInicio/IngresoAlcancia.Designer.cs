@@ -213,7 +213,6 @@
             this.mostrarRecurenciasComboBox.Size = new System.Drawing.Size(200, 28);
             this.mostrarRecurenciasComboBox.TabIndex = 4;
             this.mostrarRecurenciasComboBox.ValueMember = "Id";
-            this.mostrarRecurenciasComboBox.SelectedIndexChanged += new System.EventHandler(this.mostrarRecurenciasComboBox_SelectedIndexChanged);
             // 
             // errorProvider1
             // 

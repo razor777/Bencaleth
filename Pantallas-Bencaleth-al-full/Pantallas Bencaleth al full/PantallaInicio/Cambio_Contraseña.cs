@@ -24,19 +24,10 @@ namespace PantallaInicio
 
         }
 
-        private void btn_Acep_Click(object sender, EventArgs e)
-        {
-            
-
-
-        }
-
         private void btn_Cancel_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-
-
 
         private void txt_Newpassw_TextChanged(object sender, EventArgs e)
         {
@@ -82,16 +73,6 @@ namespace PantallaInicio
         private void txt_Confimpassw_TextChanged_1(object sender, EventArgs e)
         {
             Herramientas.NingunEspacioEnBlanco(txt_Confimpassw);
-        }
-
-        private void txt_Newpassw_Leave(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void txt_Confimpassw_Leave(object sender, EventArgs e)
-        {
-            
         }
     }
 }

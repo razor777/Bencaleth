@@ -12,178 +12,105 @@ namespace PantallaInicio
     {
         QueriesTableAdapter BDpadrinos = new QueriesTableAdapter();
 
-        public Decimal Mensualidad;
+        private bool boolEditable;
 
-        private string _Codigo_Padrino;
-        public override string Codigo_Persona
+        private Control ctrlDireccion;
+        private Control ctrlFechaInicio;
+        private Control ctrlCedulaIdentidad;
+        private Control ctrlEmail;
+        private Control ctrlMensualidad;
+        private Control ctrlTelefono;
+
+        public Padrinos(Control ctrlIden, Control ctrlNom, Control ctrlApell, Control ctrlDir, Control ctrlFechNaci, Control ctrlIni, Control ctrlIdent, Control ctrlGenM, Control ctrlGenF, Control ctrlCor, Control ctrlMen, Control ctrlTel)
         {
-            get
-            {
-                return _Codigo_Padrino;
-            }
-            set
-            {
-                _Codigo_Padrino = value;
-            }
+            ctrlID = ctrlIden;
+            ctrlNombre = ctrlNom;
+            ctrlApellido = ctrlApell;
+            ctrlDireccion = ctrlDir;
+            ctrlFechaNacimiento = ctrlFechNaci;
+            ctrlCedulaIdentidad = ctrlIdent;
+            ctrlGeneroM = ctrlGenM;
+            ctrlGeneroF = ctrlGenF;
+            ctrlEmail = ctrlCor;
+            ctrlMensualidad = ctrlMen;
+            ctrlTelefono = ctrlTel;
+            ctrlFechaInicio = ctrlIni;
+            boolEditable = true;
         }
 
-        private string _Identidad;
-
-        private DateTime _Fecha_Cobro;
-        public DateTime Fecha_Cobro
+        public Padrinos()
         {
-            get
-            {
-                return _Fecha_Cobro;
-            }
-            set
-            {
-                _Fecha_Cobro = value;
-         }
-        }
-
-        private DateTime _Fecha_Bodas;
-        public DateTime Fecha_Bodas
-        {
-            get
-            {
-                return _Fecha_Bodas;
-            }
-            set
-            {
-                _Fecha_Bodas = value;
-            }
-        }
-
-      private string _Correo;
-      public string Correo
-        {
-            get
-            {
-                return _Correo;
-            }
-            set
-            {
-                _Correo = value;
-         }
-        }
-
-      private string _Direccion;
-      public string Direccion
-        {
-            get
-            {
-                return _Direccion;
-            }
-            set
-            {
-                _Direccion= value;
-         }
-        }
-
-        private string _Telefono;
-
-        private string _Apellido;
-        public string Apellido
-        {
-            get
-            {
-                return _Apellido;
-            }
-            set
-            {
-                _Apellido = value;
-            }
-        }
-
-        private string _Genero;
-        public string Genero
-        {
-            get
-            {
-                return _Genero;
-            }
-            set
-            {
-                _Genero = value;
-            }
+            boolEditable = false;
         }
 
         public override void ingresarDatos(Control controles) {
-            this.Codigo_Persona = controles.Parent.Controls["txt_Id_Padrinos"].Text;
-            this.Nombre = controles.Parent.Controls["txt_Nom_padrinos"].Text;
-            this.Apellido = controles.Parent.Controls["txt_apellido_padrinos"].Text;
-            this.Genero = Herramientas.determinarCualRadioButtonEsGenero(controles);
-            System.DateTime? Fecha_Nacimiento = Convert.ToDateTime(controles.Parent.Controls["ddate_Fn_padrinos"].Text);
-            System.DateTime? Fecha_Inicio = Convert.ToDateTime(controles.Parent.Controls["date_Fi_padrinos"].Text);
-            this.Mensualidad = string.IsNullOrEmpty(controles.Parent.Controls["txt_Mens_Padrinos"].Text.ToString()) ? 0 : Convert.ToDecimal(controles.Parent.Controls["txt_Mens_Padrinos"].Text.ToString());
-            this._Identidad = controles.Parent.Controls["txt_iden_padrinos"].Text;
-            this._Telefono = controles.Parent.Controls["txt_Tel_Padrinos"].Text;
-            this.Correo = controles.Parent.Controls["txt_Email_Padrinos"].Text;
-            this._Direccion = controles.Parent.Controls["txtbDireccion"].Text;
-
-            if (!Herramientas.HayCamposNull(controles))
+            if (boolEditable)
             {
-                try
-                {
-                    BDpadrinos.Insert_Padrinos2(this.Codigo_Persona, this.Nombre, this.Apellido, this.Genero, Fecha_Nacimiento, Fecha_Inicio, this._Identidad, this._Telefono, this.Correo, this.Mensualidad, this._Direccion);
-                    
-                    MessageBox.Show("Ingresado");
+                string strGenero = Herramientas.determinarCualRadioButtonEsGenero(controles);
+                System.DateTime? Fecha_Nacimiento = Convert.ToDateTime(ctrlFechaNacimiento.Text);
+                System.DateTime? Fecha_Inicio = Convert.ToDateTime(ctrlFechaInicio.Text);
+                Decimal decMensualidad = string.IsNullOrEmpty(ctrlMensualidad.Text.ToString()) ? 0 : Convert.ToDecimal(ctrlMensualidad.Text.ToString());
 
-                    controles.Parent.Controls["txt_Id_Padrinos"].Text = "";
-                    controles.Parent.Controls["txt_Nom_padrinos"].Text = "";
-                    controles.Parent.Controls["txt_apellido_padrinos"].Text = "";
-                    controles.Parent.Controls["txt_Mens_Padrinos"].Text = "";
-                    controles.Parent.Controls["txt_iden_padrinos"].Text = "";
-                    controles.Parent.Controls["txt_Email_Padrinos"].Text = "";
-                    controles.Parent.Controls["txt_Tel_Padrinos"].Text = "";
-                    controles.Parent.Controls["txtbDireccion"].Text = "";
-                }
-                catch (SqlException e)
+                if (!Herramientas.HayCamposNull(controles))
                 {
-                    switch(e.Number){
-                        case 2627:
-                        MessageBox.Show("ID ya existente");
-                            break;
-                        default:
-                            MessageBox.Show("No hay conexion con la base de datos");
-                            break;
+                    try
+                    {
+                        BDpadrinos.Insert_Padrinos2(ctrlID.Text, ctrlNombre.Text, ctrlApellido.Text, strGenero, Fecha_Nacimiento, Fecha_Inicio, ctrlCedulaIdentidad.Text, ctrlTelefono.Text, ctrlEmail.Text, decMensualidad, ctrlDireccion.Text);
+
+                        MessageBox.Show("Ingresado");
+
+                        ctrlID.Text = "";
+                        ctrlNombre.Text = "";
+                        ctrlApellido.Text = "";
+                        ctrlMensualidad.Text = "";
+                        ctrlCedulaIdentidad.Text = "";
+                        ctrlEmail.Text = "";
+                        ctrlTelefono.Text = "";
+                        ctrlDireccion.Text = "";
                     }
+                    catch (SqlException e)
+                    {
+                        switch (e.Number)
+                        {
+                            case 2627:
+                                MessageBox.Show("ID ya existente");
+                                break;
+                            default:
+                                MessageBox.Show("No hay conexion con la base de datos");
+                                break;
+                        }
+                    }
+
                 }
-                
             }
         }
 
         public override void actualizarDatos(Control controles) {
-            this.Codigo_Persona = controles.Parent.Controls["txt_Id_Padrinos"].Text;
-            this.Nombre = controles.Parent.Controls["txt_Nom_padrinos"].Text;
-            this.Apellido = controles.Parent.Controls["txt_apellido_padrinos"].Text;
-            this.Genero = Herramientas.determinarCualRadioButtonEsGenero(controles);
-            System.DateTime? Fecha_Nacimiento = Convert.ToDateTime(controles.Parent.Controls["ddate_Fn_padrinos"].Text);
-            System.DateTime? Fecha_Inicio = Convert.ToDateTime(controles.Parent.Controls["date_Fi_padrinos"].Text);
-            this.Mensualidad = string.IsNullOrEmpty(controles.Parent.Controls["txt_Mens_Padrinos"].Text.ToString()) ? 0 : Convert.ToDecimal(controles.Parent.Controls["txt_Mens_Padrinos"].Text.ToString());
-            this._Identidad = controles.Parent.Controls["txt_iden_padrinos"].Text;
-            this._Telefono = controles.Parent.Controls["txt_Tel_Padrinos"].Text;
-            this.Correo = controles.Parent.Controls["txt_Email_Padrinos"].Text;
-            this._Direccion = controles.Parent.Controls["txtbDireccion"].Text;
-
-            if (!(Herramientas.HayCamposNull(controles)))
+            if (boolEditable)
             {
-                try
+                string strGenero = Herramientas.determinarCualRadioButtonEsGenero(controles);
+                System.DateTime? Fecha_Nacimiento = Convert.ToDateTime(ctrlFechaNacimiento.Text);
+                System.DateTime? Fecha_Inicio = Convert.ToDateTime(ctrlFechaInicio.Text);
+                Decimal decMensualidad = string.IsNullOrEmpty(ctrlMensualidad.Text.ToString()) ? 0 : Convert.ToDecimal(ctrlMensualidad.Text.ToString());
+
+                if (!(Herramientas.HayCamposNull(controles)))
                 {
-                    BDpadrinos.Update_Padrinos2(this.Codigo_Persona, this.Nombre, this.Apellido, this.Genero, Fecha_Nacimiento, Fecha_Inicio, this._Identidad, this._Telefono, this.Correo, this.Mensualidad, this._Direccion);
-                    MessageBox.Show("Actualizado");
-                }
-                catch (SqlException e)
-                {
-                    switch (e.Number)
+                    try
                     {
-                        case 2627:
-                            MessageBox.Show("ID ya existente");
-                            break;
-                        default:
-                            MessageBox.Show("No hay conexion con la base de datos");
-                            break;
+                        BDpadrinos.Update_Padrinos2(ctrlID.Text, ctrlNombre.Text, ctrlApellido.Text, strGenero, Fecha_Nacimiento, Fecha_Inicio, ctrlCedulaIdentidad.Text, ctrlTelefono.Text, ctrlEmail.Text, decMensualidad, ctrlDireccion.Text);
+                        MessageBox.Show("Actualizado");
+                    }
+                    catch (SqlException e)
+                    {
+                        switch (e.Number)
+                        {
+                            case 2627:
+                                MessageBox.Show("ID ya existente");
+                                break;
+                            default:
+                                MessageBox.Show("No hay conexion con la base de datos");
+                                break;
+                        }
                     }
                 }
             }
@@ -235,40 +162,46 @@ namespace PantallaInicio
 
         public void ConseguirDatosToUpdate(Control controles,DataGridViewRow fila)
         {
-            //MessageBox.Show(fila.Cells[0].Value.ToString());
-
-            controles.Parent.Controls["txt_Id_Padrinos"].Text = fila.Cells[0].Value.ToString();
-            controles.Parent.Controls["txt_Nom_padrinos"].Text = fila.Cells[1].Value.ToString();
-            controles.Parent.Controls["txt_apellido_padrinos"].Text = fila.Cells[2].Value.ToString();
-
-            if (fila.Cells[3].Value.ToString() == "Femenino")
+            if (boolEditable)
             {
-                ((RadioButton)controles.Parent.Controls["radio_mas_Padrinos"]).Checked = false;
-                ((RadioButton)controles.Parent.Controls["radio_fem_Padrinos"]).Checked = true;
-            }
-            else
-            {
-                ((RadioButton)controles.Parent.Controls["radio_mas_Padrinos"]).Checked = true;
-                ((RadioButton)controles.Parent.Controls["radio_fem_Padrinos"]).Checked = false;
-            }
+                ctrlID.Text = fila.Cells[0].Value.ToString();
+                ctrlNombre.Text = fila.Cells[1].Value.ToString();
+                ctrlApellido.Text = fila.Cells[2].Value.ToString();
 
-            controles.Parent.Controls["txtbDireccion"].Text = fila.Cells[4].Value.ToString();
-            controles.Parent.Controls["ddate_Fn_padrinos"].Text = fila.Cells[5].Value.ToString();
-            controles.Parent.Controls["date_Fi_padrinos"].Text = fila.Cells[6].Value.ToString();
-            controles.Parent.Controls["txt_iden_padrinos"].Text = fila.Cells[7].Value.ToString();
-            controles.Parent.Controls["txt_Tel_Padrinos"].Text = fila.Cells[8].Value.ToString();
-            controles.Parent.Controls["txt_Email_Padrinos"].Text = fila.Cells[9].Value.ToString();
-            //controles.Parent.Controls["txt_Mens_Padrinos"].Text = Convert.ToInt32(fila.Cells["Monto"].Value.ToString()).ToString();
-            string palabra = fila.Cells["Monto"].Value.ToString();
-            palabra = palabra.Remove(palabra.IndexOf(","));
-            controles.Parent.Controls["txt_Mens_Padrinos"].Text = palabra;
+                if (fila.Cells[3].Value.ToString() == "Femenino")
+                {
+                    ((RadioButton)ctrlGeneroM).Checked = false;
+                    ((RadioButton)ctrlGeneroF).Checked = true;
+                }
+                else
+                {
+                    ((RadioButton)ctrlGeneroM).Checked = true;
+                    ((RadioButton)ctrlGeneroF).Checked = false;
+                }
+
+                ctrlDireccion.Text = fila.Cells[4].Value.ToString();
+                ctrlFechaNacimiento.Text = fila.Cells[5].Value.ToString();
+                ctrlFechaInicio.Text = fila.Cells[6].Value.ToString();
+                ctrlCedulaIdentidad.Text = fila.Cells[7].Value.ToString();
+                ctrlTelefono.Text = fila.Cells[8].Value.ToString();
+                ctrlEmail.Text = fila.Cells[9].Value.ToString();
+
+                string monto = fila.Cells["Monto"].Value.ToString();
+                monto = monto.Remove(monto.IndexOf(","));
+                ctrlMensualidad.Text = monto;
+            }
         }
 
         public void PagarMensualidad(Control ctrls) {
-            this.Codigo_Persona = ctrls.Parent.Controls["txt_Id_Padrinos"].Text;
-            this.Mensualidad = string.IsNullOrEmpty(ctrls.Parent.Controls["txt_Mens_Padrinos"].Text.ToString()) ? 0 : Convert.ToDecimal(ctrls.Parent.Controls["txt_Mens_Padrinos"].Text.ToString());
-            BDpadrinos.setPadrinoPago(this.Codigo_Persona, this.Mensualidad);
-            MessageBox.Show("Se ingreso el registro de pago");
+            Decimal decMensualidad = string.IsNullOrEmpty(ctrlMensualidad.Text.ToString()) ? 0 : Convert.ToDecimal(ctrlMensualidad.Text.ToString());
+            try
+            {
+                BDpadrinos.setPadrinoPago(ctrlID.Text, decMensualidad);
+                MessageBox.Show("Se ingreso el registro de pago");
+            }
+            catch (SqlException) {
+                MessageBox.Show("No hay conexion con la base de datos");
+            }
         }
     }
 }

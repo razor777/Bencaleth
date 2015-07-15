@@ -12,262 +12,97 @@ namespace PantallaInicio
     {
         QueriesTableAdapter BDVoluntario = new QueriesTableAdapter();
 
-        private string _Codigo_Voluntarios;
-        public override string Codigo_Persona
+        private bool boolEditable;
+
+        private Control ctrlFechaInicio;
+        private Control ctrlEmail;
+        private Control ctrlTelefono;
+        private Control ctrlInformacion;
+        private Control ctrlHoras;
+
+        public Voluntarios(Control ctrlIden, Control ctrlNom, Control ctrlApell, Control ctrlFechNaci, Control ctrlIni, Control ctrlGenM, Control ctrlGenF, Control ctrlCor, Control ctrlTel, Control ctrlInfo, Control ctrlHor)
         {
-            get
-            {
-                return _Codigo_Voluntarios.ToString ();
-            }
-            set
-            {
-                _Codigo_Voluntarios = value;
-            }
+            ctrlID = ctrlIden;
+            ctrlNombre = ctrlNom;
+            ctrlApellido = ctrlApell;
+            ctrlFechaNacimiento = ctrlFechNaci;
+            ctrlGeneroM = ctrlGenM;
+            ctrlGeneroF = ctrlGenF;
+            ctrlEmail = ctrlCor;
+            ctrlTelefono = ctrlTel;
+            ctrlFechaInicio = ctrlIni;
+            ctrlInformacion = ctrlInfo;
+            ctrlHoras = ctrlHor;
+            boolEditable = true;
         }
 
-
-        private string _Nombre;
-
-        public string nombre
-        {
-            get
-            {
-                return _Nombre;
-            }
-            set
-            {
-                _Nombre = value;
-            }
-        }
-
-        private string _Apellido;
-        public string Apellido
-        {
-            get
-            {
-                return _Apellido;
-            }
-            set
-            {
-                _Apellido = value;
-            }
-        }
-
-        private string _Genero;
-        public string Genero
-        {
-            get
-            {
-                return _Genero;
-            }
-            set
-            {
-                _Genero = value;
-            }
-        }
-
-        public DateTime  _Fecha_Inicio;
-        public DateTime  Fecha_Inicio
-        {
-            get
-            {
-                return _Fecha_Inicio;
-            }
-            set
-            {
-                _Fecha_Inicio = value;
-         }
-        }    
-
-        private string _Estudios;
-        public string Estudios
-        {
-            get
-            {
-                return _Estudios;
-            }
-            set
-            {
-                _Estudios = value;
-         }
-        }
-
-        public Decimal Mensualidad;
-
-        private string _Informacion;
-        public string Informacion
-        {
-            get
-            {
-                return _Informacion;
-            }
-            set
-            {
-                _Informacion = value;
-            }
-        }
-
-        private int _Telefono;
-        public string Telefono
-        {
-            get
-            {
-                return _Telefono.ToString();
-            }
-            set
-            {
-                if (Herramientas.IsNumeric(value))
-                    _Telefono = Convert.ToInt32(value);
-            }
-        }
-
-        public string _Correo;
-        public string Correo
-        {
-            get
-            {
-                return _Correo;
-            }
-            set
-            {
-                _Correo = value;
-            }
-        }
-
-        private  String _Horas;
-        public String  Horas
-        {
-            get
-            {
-                return _Horas;
-            }
-            set
-            {
-                _Horas= value;
-            }
-        }
-
-        private int _Identidad;
-        public string Identidad
-        {
-            get
-            {
-                return _Identidad.ToString();
-            }
-            set
-            {
-                if (Herramientas.IsNumeric(value))
-                    _Identidad = Convert.ToInt16(value);
-            }
-        }
-
-        private string _Pais;
-        public string Pais
-        {
-            get
-            {
-                return _Pais;
-            }
-            set
-            {
-                    _Pais = value;
-            }
-        }
-
-        private string _Pasaporte;
-        public string Pasaporte
-        {
-            get
-            {
-                return _Pasaporte;
-            }
-            set
-            {
-                    _Pasaporte = value;
-            }
+        public Voluntarios() {
+            boolEditable = false;
         }
 
         public override void ingresarDatos(Control controles) {
-            
-            this.Codigo_Persona=controles.Parent.Controls["txt_Id_Voluntarios"].Text;
-            this.Nombre = controles.Parent.Controls["txt_Nom_Voluntarios"].Text;
-            this.Apellido = controles.Parent.Controls["txt_Apelli_Voluntarios"].Text;
-            this.Genero = Herramientas.determinarCualRadioButtonEsGenero(controles);
-            System .DateTime? Fecha_Nacimiento =Convert.ToDateTime(controles.Parent.Controls["date_Fn_Voluntarios"].Text);
-            System .DateTime?  Fecha_Inicio =Convert.ToDateTime (controles.Parent.Controls["date_FI_Voluntarios"].Text);
-            //decimal? Mensual = 5 ;// Convert.ToDecimal(controles.Parent.Controls["txtbMensualidad"].Text);
-            this.Telefono = controles.Parent.Controls["txt_Tel_Voluntarios"].Text;
-            this.Correo = controles.Parent.Controls["txt_Email_Voluntarios"].Text;
-            this.Horas  = controles.Parent.Controls["txtHoras"].Text;
-            this.Informacion = controles.Parent.Controls["txt_Info_Voluntarios"].Text;
-
-            if (!Herramientas.HayCamposNull(controles))
+            if (boolEditable)
             {
-                try
-                {
-                    BDVoluntario.Insert2_Voluntarios(Codigo_Persona, Nombre, Apellido, Genero, Fecha_Nacimiento, Fecha_Inicio, _Telefono, Correo, Horas, Informacion);
-                    MessageBox.Show("Ingresado");
+                string strGenero = Herramientas.determinarCualRadioButtonEsGenero(controles);
+                System.DateTime? Fecha_Nacimiento = Convert.ToDateTime(ctrlFechaNacimiento.Text);
+                System.DateTime? Fecha_Inicio = Convert.ToDateTime(ctrlFechaInicio.Text);
 
-                    controles.Parent.Controls["txt_Id_Voluntarios"].Text = "";
-                    controles.Parent.Controls["txt_Nom_Voluntarios"].Text = "";
-                    controles.Parent.Controls["txt_Apelli_Voluntarios"].Text = "";
-                    controles.Parent.Controls["date_Fn_Voluntarios"].Text = "";
-                    controles.Parent.Controls["date_FI_Voluntarios"].Text = "";
-                    //controles.Parent.Controls["txt_Iden_Voluntarios"].Text = "";
-                    controles.Parent.Controls["txt_Tel_Voluntarios"].Text = "";
-                    controles.Parent.Controls["txt_Email_Voluntarios"].Text = "";
-                    controles.Parent.Controls["txtHoras"].Text = "";
-                    controles.Parent.Controls["txt_Info_Voluntarios"].Text = "";
-                }
-                catch (SqlException e)
+                if (!Herramientas.HayCamposNull(controles))
                 {
-                    switch (e.Number)
+                    try
                     {
-                        case 2627:
-                            MessageBox.Show("ID ya existente");
-                            break;
-                        default:
-                            MessageBox.Show("No hay conexion con la base de datos");
-                            break;
+                        BDVoluntario.Insert2_Voluntarios(ctrlID.Text, ctrlNombre.Text, ctrlApellido.Text, strGenero, Fecha_Nacimiento, Fecha_Inicio, ctrlTelefono.Text, ctrlEmail.Text, ctrlHoras.Text, ctrlInformacion.Text);
+                        MessageBox.Show("Ingresado");
+
+                        ctrlID.Text = "";
+                        ctrlNombre.Text = "";
+                        ctrlApellido.Text = "";
+                        ctrlTelefono.Text = "";
+                        ctrlEmail.Text = "";
+                        ctrlHoras.Text = "";
+                        ctrlInformacion.Text = "";
+                    }
+                    catch (SqlException e)
+                    {
+                        switch (e.Number)
+                        {
+                            case 2627:
+                                MessageBox.Show("ID ya existente");
+                                break;
+                            default:
+                                MessageBox.Show("No hay conexion con la base de datos");
+                                break;
+                        }
                     }
                 }
             }
-                       
-            
-
-
         }
 
         public override void actualizarDatos(Control controles) {
-            this.Codigo_Persona = controles.Parent.Controls["txt_Id_Voluntarios"].Text;
-            this.Nombre = controles.Parent.Controls["txt_Nom_Voluntarios"].Text;
-            this.Apellido = controles.Parent.Controls["txt_Apelli_Voluntarios"].Text;
-            this.Genero = Herramientas.determinarCualRadioButtonEsGenero(controles);
-            System.DateTime? Fecha_Nacimiento = Convert.ToDateTime(controles.Parent.Controls["date_Fn_Voluntarios"].Text);
-            System.DateTime? Fecha_Inicio = Convert.ToDateTime(controles.Parent.Controls["date_FI_Voluntarios"].Text);
-            decimal? Mensual = Convert.ToDecimal(controles.Parent.Controls["txtbMensualidad"].Text);
-            this.Telefono = controles.Parent.Controls["txt_Tel_Voluntarios"].Text;
-            this.Correo = controles.Parent.Controls["txt_Email_Voluntarios"].Text;
-            this.Horas = controles.Parent.Controls["txtHoras"].Text;
-            this.Informacion = controles.Parent.Controls["txt_Info_Voluntarios"].Text;
-
-            if (!Herramientas.HayCamposNull(controles))
+            if (boolEditable)
             {
-                try
+                string strGenero = Herramientas.determinarCualRadioButtonEsGenero(controles);
+                System.DateTime? Fecha_Nacimiento = Convert.ToDateTime(ctrlFechaNacimiento.Text);
+                System.DateTime? Fecha_Inicio = Convert.ToDateTime(ctrlFechaInicio.Text);
+
+                if (!Herramientas.HayCamposNull(controles))
                 {
-                    BDVoluntario.Update2_Voluntarios(Codigo_Persona, Nombre, Apellido, Genero, Fecha_Nacimiento, Fecha_Inicio, _Telefono, Correo, Horas, Informacion);
-                    MessageBox.Show("Actualizado");
-                }
-                catch (SqlException e)
-                {
-                    switch (e.Number)
+                    try
                     {
-                        case 2627:
-                            MessageBox.Show("ID ya existente");
-                            break;
-                        default:
-                            MessageBox.Show("No hay conexion con la base de datos");
-                            break;
+                        BDVoluntario.Update2_Voluntarios(ctrlID.Text, ctrlNombre.Text, ctrlApellido.Text, strGenero, Fecha_Nacimiento, Fecha_Inicio, ctrlTelefono.Text, ctrlEmail.Text, ctrlHoras.Text, ctrlInformacion.Text);
+                        MessageBox.Show("Actualizado");
+                    }
+                    catch (SqlException e)
+                    {
+                        switch (e.Number)
+                        {
+                            case 2627:
+                                MessageBox.Show("ID ya existente");
+                                break;
+                            default:
+                                MessageBox.Show("No hay conexion con la base de datos");
+                                break;
+                        }
                     }
                 }
             }
@@ -317,36 +152,40 @@ namespace PantallaInicio
         }
 
         public void ConseguirDatosToUpdate(Control controles, DataGridViewRow fila) {
-            controles.Parent.Controls["txt_Id_Voluntarios"].Text = fila.Cells[0].Value.ToString();
-            controles.Parent.Controls["txt_Nom_Voluntarios"].Text = fila.Cells[1].Value.ToString();
-            controles.Parent.Controls["txt_Apelli_Voluntarios"].Text = fila.Cells[2].Value.ToString();
+            ctrlID.Text = fila.Cells[0].Value.ToString();
+            ctrlNombre.Text = fila.Cells[1].Value.ToString();
+            ctrlApellido.Text = fila.Cells[2].Value.ToString();
 
             if (fila.Cells[3].Value.ToString() == "Femenino")
             {
-                ((RadioButton)controles.Parent.Controls["radio_mas_Voluntarios"]).Checked = false;
-                ((RadioButton)controles.Parent.Controls["radio_fem_Voluntarios"]).Checked = true;
+                ((RadioButton)ctrlGeneroM).Checked = false;
+                ((RadioButton)ctrlGeneroF).Checked = true;
             }
             else
             {
-                ((RadioButton)controles.Parent.Controls["radio_mas_Voluntarios"]).Checked = true;
-                ((RadioButton)controles.Parent.Controls["radio_fem_Voluntarios"]).Checked = false;
+                ((RadioButton)ctrlGeneroM).Checked = true;
+                ((RadioButton)ctrlGeneroF).Checked = false;
             }
 
-            controles.Parent.Controls["date_Fn_Voluntarios"].Text = fila.Cells[4].Value.ToString();
-            controles.Parent.Controls["date_FI_Voluntarios"].Text = fila.Cells[5].Value.ToString();
+            ctrlFechaNacimiento.Text = fila.Cells[4].Value.ToString();
+            ctrlFechaInicio.Text = fila.Cells[5].Value.ToString();
 
-            //controles.Parent.Controls["txtbMensualidad"].Text = fila.Cells[6].Value.ToString();
-            controles.Parent.Controls["txt_Tel_Voluntarios"].Text = fila.Cells[6].Value.ToString();
-            controles.Parent.Controls["txt_Email_Voluntarios"].Text = fila.Cells[7].Value.ToString();
-            controles.Parent.Controls["txtHoras"].Text = fila.Cells[8].Value.ToString();
-            controles.Parent.Controls["txt_Info_Voluntarios"].Text = fila.Cells[9].Value.ToString();
+            ctrlTelefono.Text = fila.Cells[6].Value.ToString();
+            ctrlEmail.Text = fila.Cells[7].Value.ToString();
+            ctrlHoras.Text = fila.Cells[8].Value.ToString();
+            ctrlInformacion.Text = fila.Cells[9].Value.ToString();
         }
 
         public void PagarMensualidad(Control ctrls)
         {
-            this.Codigo_Persona = ctrls.Parent.Controls["txt_Id_Voluntarios"].Text;
-            BDVoluntario.setVoluntarioPago(this.Codigo_Persona,100);
-            MessageBox.Show("Se ingreso el registro de pago");
+            try
+            {
+                BDVoluntario.setVoluntarioPago(ctrlID.Text, 100);
+                MessageBox.Show("Se ingreso el registro de pago");
+            }
+            catch (SqlException) {
+                MessageBox.Show("No hay conexion con la base de datos");
+            }
         }
     }
 }

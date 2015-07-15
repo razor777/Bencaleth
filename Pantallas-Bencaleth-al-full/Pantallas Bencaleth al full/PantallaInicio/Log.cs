@@ -71,10 +71,9 @@ namespace PantallaInicio
             }  
         }
 
-        public static string Block(string user)
+        public static void Block(string user)
         {
             bd.block(user);
-            return ("El usuario " + user + " a sido bloqueado,  por favor contacte a la administracion para mas informacion.");
         }
 
         public static string cambioContraseña(string comboUsuario, string contraseñaNew, string confirm)

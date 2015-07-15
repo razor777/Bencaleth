@@ -21,7 +21,7 @@ namespace PantallaInicio
         public IngresoPadrinos()
         {
             InitializeComponent();
-            pdr = new Padrinos();
+            pdr = new Padrinos(txt_Id_Padrinos, txt_Nom_padrinos, txt_apellido_padrinos, txtbDireccion,ddate_Fn_padrinos,date_Fi_padrinos,txt_iden_padrinos,radio_mas_Padrinos,radio_fem_Padrinos,txt_Email_Padrinos,txt_Mens_Padrinos,txt_Tel_Padrinos);
 
             this.ddate_Fn_padrinos.Value = new DateTime((DateTime.Now.Year - 18), 1, 1);
             this.ddate_Fn_padrinos.Update();
@@ -36,8 +36,8 @@ namespace PantallaInicio
         public IngresoPadrinos(DataGridViewRow fila)
         {
             InitializeComponent();
-            pdr = new Padrinos();
-            
+            pdr = new Padrinos(txt_Id_Padrinos, txt_Nom_padrinos, txt_apellido_padrinos, txtbDireccion, ddate_Fn_padrinos, date_Fi_padrinos, txt_iden_padrinos, radio_mas_Padrinos, radio_fem_Padrinos, txt_Email_Padrinos, txt_Mens_Padrinos, txt_Tel_Padrinos);
+
             pdr.ConseguirDatosToUpdate(txt_apellido_padrinos,fila);
             boolModoActualizar = true;
 
@@ -142,8 +142,6 @@ namespace PantallaInicio
 
         private void btnPago_Click(object sender, EventArgs e)
         {
-            //bd.setPadrinoPago(txt_Id_Padrinos.Text,Convert.ToDecimal(txt_Mens_Padrinos.Text));
-
             if (MessageBox.Show("¿Esta seguro que desea ingresar pago?", "Pagar", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
                 if (!string.IsNullOrEmpty(txt_Mens_Padrinos.Text))

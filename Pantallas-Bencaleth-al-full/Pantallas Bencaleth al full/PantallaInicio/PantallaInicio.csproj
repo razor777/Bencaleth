@@ -12,7 +12,7 @@
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <IsWebBootstrapper>false</IsWebBootstrapper>
-    <PublishUrl>C:\Users\Julissa Medina\Desktop\sistema bencaleth\</PublishUrl>
+    <PublishUrl>C:\Users\Oliva\Desktop\para juanka\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
     <UpdateEnabled>false</UpdateEnabled>
@@ -22,7 +22,7 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>4</ApplicationRevision>
+    <ApplicationRevision>5</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -86,15 +86,14 @@
       <DependentUpon>Agregar Usuario.cs</DependentUpon>
     </Compile>
     <Compile Include="Alcancias.cs" />
+    <Compile Include="BencalethDataSet.cs">
+      <DependentUpon>BencalethDataSet.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="BencalethDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>BencalethDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="BencalethDataSet1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>BencalethDataSet1.xsd</DependentUpon>
     </Compile>
     <Compile Include="Cambio_Contraseña.cs">
       <SubType>Form</SubType>
@@ -111,7 +110,6 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Herramientas.cs" />
-    <Compile Include="HorasVoluntarios.cs" />
     <Compile Include="IngresarEmpresa.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -252,17 +250,6 @@
     </None>
     <None Include="BencalethDataSet.xss">
       <DependentUpon>BencalethDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="BencalethDataSet1.xsc">
-      <DependentUpon>BencalethDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="BencalethDataSet1.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>BencalethDataSet1.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="BencalethDataSet1.xss">
-      <DependentUpon>BencalethDataSet1.xsd</DependentUpon>
     </None>
     <None Include="PantallaInicio_ClaveTemporal.pfx" />
     <None Include="PantallaInicio_TemporaryKey.pfx" />
