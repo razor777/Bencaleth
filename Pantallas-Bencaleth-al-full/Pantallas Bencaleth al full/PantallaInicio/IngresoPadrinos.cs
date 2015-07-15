@@ -158,5 +158,27 @@ namespace PantallaInicio
             txtbDireccion.Text = Herramientas.NingunEspacioInicial(txtbDireccion.Text);
             errorProvider8.Clear();
         }
+
+        private void ddate_Fn_padrinos_Leave(object sender, EventArgs e)
+        {
+            int anoActual, anoIntroducido;
+
+            anoActual = Convert.ToInt32(DateTime.Today.Year);
+            anoIntroducido = ddate_Fn_padrinos.Value.Year;
+
+            if (anoIntroducido > anoActual)
+            {
+                this.ddate_Fn_padrinos.Value = new DateTime((DateTime.Now.Year - 18), 1, 1);
+                this.ddate_Fn_padrinos.Update();
+                MessageBox.Show("Introdujo un padrino que no a nacido", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+            if (anoIntroducido == anoActual)
+            {
+                this.ddate_Fn_padrinos.Value = new DateTime((DateTime.Now.Year - 18), 1, 1);
+                this.ddate_Fn_padrinos.Update();
+                MessageBox.Show(" Introdujo un padrino recien nacido", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }

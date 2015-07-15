@@ -27,6 +27,7 @@ namespace PantallaInicio
             empresa = new Organizaciones(txt_id_empresa,txt_nom_empresa,txt_dire_empresa,txt_pasi_empresa,txt_contac_empresa,txt_tel1_empresa,txt_tel2_empresa,txt_email_empresa,combobox_empresasComboBox);
             boolModoActualizar = false;
             txt_id_empresa.Visible = false;
+            label9.Visible = false;
         }
 
         public IngresarEmpresa(DataGridViewRow fila)
@@ -38,6 +39,7 @@ namespace PantallaInicio
             boolModoActualizar = true;
             txt_id_empresa.Visible = true;
             txt_id_empresa.ReadOnly = true;
+            label9.Visible = true;
         }
 
         public static bool validarEmail(string email)

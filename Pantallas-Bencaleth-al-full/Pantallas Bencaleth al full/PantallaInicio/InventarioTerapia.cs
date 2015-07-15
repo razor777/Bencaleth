@@ -6,7 +6,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
-using PantallaInicio.BencalethDataSetTableAdapters;
 
 namespace PantallaInicio
 {
@@ -35,7 +34,7 @@ namespace PantallaInicio
             {
                 try
                 {
-                    BDInventario.Insert_inven_Terapia(Convert.ToInt16(ctrlID.Text), ctrlDescripcion.Text, ctrlCantidad.Text, ((ComboBox)ctrlCmbResponsables).SelectedValue.ToString());
+                    BDInventario.Insert_inven_Terapia(Convert.ToInt32(ctrlID.Text), ctrlDescripcion.Text, ctrlCantidad.Text, ((ComboBox)ctrlCmbResponsables).SelectedValue.ToString());
                     MessageBox.Show("Ingresado");
 
                     ((TextBox)ctrlID).Clear();

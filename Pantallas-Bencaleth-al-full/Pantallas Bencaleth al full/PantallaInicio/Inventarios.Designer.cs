@@ -206,7 +206,7 @@
             // 
             this.txt_Id_Invd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_Id_Invd.Location = new System.Drawing.Point(241, 148);
-            this.txt_Id_Invd.MaxLength = 9;
+            this.txt_Id_Invd.MaxLength = 7;
             this.txt_Id_Invd.Name = "txt_Id_Invd";
             this.txt_Id_Invd.Size = new System.Drawing.Size(193, 26);
             this.txt_Id_Invd.TabIndex = 84;
@@ -332,7 +332,7 @@
             // 
             this.txt_id_InvF.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_id_InvF.Location = new System.Drawing.Point(241, 153);
-            this.txt_id_InvF.MaxLength = 10;
+            this.txt_id_InvF.MaxLength = 7;
             this.txt_id_InvF.Name = "txt_id_InvF";
             this.txt_id_InvF.Size = new System.Drawing.Size(193, 26);
             this.txt_id_InvF.TabIndex = 76;

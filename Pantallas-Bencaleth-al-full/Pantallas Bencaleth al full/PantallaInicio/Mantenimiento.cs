@@ -53,7 +53,7 @@ namespace PantallaInicio
                 //Empresas
                 case 2:
                     org.mostrarDatos(dataGridView1,txtbABuscar);
-                    dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+                    dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.DisplayedCells;
                     break;
                 //Ninos
                 case 3:

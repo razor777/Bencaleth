@@ -194,9 +194,9 @@ namespace PantallaInicio
                 ctrlTelefono.Text = fila.Cells[8].Value.ToString();
                 ctrlEmail.Text = fila.Cells[9].Value.ToString();
 
-                string monto = fila.Cells["Monto"].Value.ToString();
-                monto = monto.Remove(monto.IndexOf(","));
-                ctrlMensualidad.Text = monto;
+
+                Decimal dclMonto = Convert.ToDecimal(fila.Cells["Monto"].Value);
+                ctrlMensualidad.Text = Convert.ToInt64(dclMonto).ToString();
             }
         }
 

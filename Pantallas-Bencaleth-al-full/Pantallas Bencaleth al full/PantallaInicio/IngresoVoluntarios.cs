@@ -164,25 +164,26 @@ namespace PantallaInicio
 
             anoActual = Convert.ToInt32(DateTime.Today.Year);
             anoIntroducido = date_Fn_Voluntarios.Value.Year;
-            while ((anoActual - anoIntroducido) < 16)
+
+            if ((anoActual - anoIntroducido) < 16 && (!(anoIntroducido >= anoActual)))
             {
-
-                if ((anoActual - anoIntroducido) < 16)
-                {
-                    MessageBox.Show("no cumple el requisito de edad minima", "Error", MessageBoxButtons.AbortRetryIgnore, MessageBoxIcon.Error);
-                    break;
-                }
-
+                this.date_Fn_Voluntarios.Value = new DateTime((DateTime.Now.Year - 16), 1, 1);
+                this.date_Fn_Voluntarios.Update();
+                MessageBox.Show("Introdujo un voluntario muy joven", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
             if (anoIntroducido > anoActual)
             {
-                MessageBox.Show("introduciera un empleado que no ah nacido", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                this.date_Fn_Voluntarios.Value = new DateTime((DateTime.Now.Year - 16), 1, 1);
+                this.date_Fn_Voluntarios.Update();
+                MessageBox.Show("Introdujo un voluntario que no a nacido", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
             if (anoIntroducido == anoActual)
             {
-                MessageBox.Show(" introduciera un empleado recien nacido", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                this.date_Fn_Voluntarios.Value = new DateTime((DateTime.Now.Year - 16), 1, 1);
+                this.date_Fn_Voluntarios.Update();
+                MessageBox.Show(" Introdujo un voluntario recien nacido", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 

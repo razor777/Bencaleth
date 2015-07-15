@@ -175,6 +175,7 @@
             this.ddate_Fn_padrinos.Name = "ddate_Fn_padrinos";
             this.ddate_Fn_padrinos.Size = new System.Drawing.Size(190, 26);
             this.ddate_Fn_padrinos.TabIndex = 5;
+            this.ddate_Fn_padrinos.Leave += new System.EventHandler(this.ddate_Fn_padrinos_Leave);
             // 
             // txt_apellido_padrinos
             // 

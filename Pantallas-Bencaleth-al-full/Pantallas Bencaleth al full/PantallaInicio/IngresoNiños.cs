@@ -99,5 +99,27 @@ namespace PantallaInicio
             txt_apellido.Text = Herramientas.SoloLetrasYEspaciosSec(txt_apellido);
             errorProvider3.Clear();
         }
+
+        private void fech_niños_Leave(object sender, EventArgs e)
+        {
+            int anoActual, anoIntroducido;
+
+            anoActual = Convert.ToInt32(DateTime.Today.Year);
+            anoIntroducido = fech_niños.Value.Year;
+
+            if (anoIntroducido > anoActual)
+            {
+                this.fech_niños.Value = new DateTime((DateTime.Now.Year - 10), 1, 1);
+                this.fech_niños.Update();
+                MessageBox.Show("Introdujo un padrino que no a nacido", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+            if (anoIntroducido == anoActual)
+            {
+                this.fech_niños.Value = new DateTime((DateTime.Now.Year - 10), 1, 1);
+                this.fech_niños.Update();
+                MessageBox.Show(" Introdujo un padrino recien nacido", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }

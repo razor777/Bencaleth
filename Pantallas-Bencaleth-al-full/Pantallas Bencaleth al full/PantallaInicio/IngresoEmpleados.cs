@@ -143,19 +143,31 @@ namespace PantallaInicio
 
         private void date_FechN_Emple_Leave(object sender, EventArgs e)
         {
+
             int anoActual, anoIntroducido;
 
             anoActual = Convert.ToInt32(DateTime.Today.Year);
             anoIntroducido = date_FechN_Emple.Value.Year;
-            while ((anoActual - anoIntroducido) < 18)
+
+            if ((anoActual - anoIntroducido) < 18 && (!(anoIntroducido >= anoActual)))
             {
+                this.date_FechN_Emple.Value = new DateTime((DateTime.Now.Year - 18), 1, 1);
+                this.date_FechN_Emple.Update();
+                MessageBox.Show("Introdujo un empleado muy joven", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
 
-                if ((anoActual - anoIntroducido) < 18)
-                {
-                    MessageBox.Show("no cumple el requisito de edad minima", "Error", MessageBoxButtons.AbortRetryIgnore, MessageBoxIcon.Error);
-                    break;
-                }
+            if (anoIntroducido > anoActual)
+            {
+                this.date_FechN_Emple.Value = new DateTime((DateTime.Now.Year - 18), 1, 1);
+                this.date_FechN_Emple.Update();
+                MessageBox.Show("Introdujo un empleado que no a nacido", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
 
+            if (anoIntroducido == anoActual)
+            {
+                this.date_FechN_Emple.Value = new DateTime((DateTime.Now.Year - 18), 1, 1);
+                this.date_FechN_Emple.Update();
+                MessageBox.Show(" Introdujo un empleado recien nacido", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 

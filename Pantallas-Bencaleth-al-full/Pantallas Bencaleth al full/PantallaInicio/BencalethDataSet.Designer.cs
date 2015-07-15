@@ -1770,8 +1770,8 @@ namespace PantallaInicio {
                 this.columnId.AllowDBNull = false;
                 this.columnId.Unique = true;
                 this.columnId.MaxLength = 15;
-                this.columnDireccion.MaxLength = 255;
-                this.columnDescripcion.MaxLength = 255;
+                this.columnDireccion.MaxLength = 50;
+                this.columnDescripcion.MaxLength = 30;
                 this.columnTelefono.MaxLength = 15;
                 this.columnRecurrencia.ReadOnly = true;
                 this.columnRecurrencia.MaxLength = 25;
@@ -2542,15 +2542,15 @@ namespace PantallaInicio {
                 this.columnId.AllowDBNull = false;
                 this.columnId.ReadOnly = true;
                 this.columnId.Unique = true;
-                this.columnNombre.MaxLength = 100;
+                this.columnNombre.MaxLength = 30;
                 this.columnTipo_Empresa.ReadOnly = true;
                 this.columnTipo_Empresa.MaxLength = 255;
-                this.columnDireccion.MaxLength = 255;
-                this.columnContacto.MaxLength = 15;
-                this.columnTelefono1.MaxLength = 20;
-                this.columnTelefono2.MaxLength = 20;
-                this.columnPais.MaxLength = 255;
-                this.columnEmail.MaxLength = 100;
+                this.columnDireccion.MaxLength = 50;
+                this.columnContacto.MaxLength = 30;
+                this.columnTelefono1.MaxLength = 15;
+                this.columnTelefono2.MaxLength = 15;
+                this.columnPais.MaxLength = 30;
+                this.columnEmail.MaxLength = 30;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -3608,7 +3608,7 @@ namespace PantallaInicio {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public BuscarSelect_VoluntariosRow AddBuscarSelect_VoluntariosRow(string Id, string Nombre, string Apellido, string Genero, System.DateTime Fecha_Nacimiento, System.DateTime Fecha_Inicio, int Telefono, string Correo, string Horas, string Informacion) {
+            public BuscarSelect_VoluntariosRow AddBuscarSelect_VoluntariosRow(string Id, string Nombre, string Apellido, string Genero, System.DateTime Fecha_Nacimiento, System.DateTime Fecha_Inicio, string Telefono, string Correo, string Horas, string Informacion) {
                 BuscarSelect_VoluntariosRow rowBuscarSelect_VoluntariosRow = ((BuscarSelect_VoluntariosRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         Id,
@@ -3677,7 +3677,7 @@ namespace PantallaInicio {
                 base.Columns.Add(this.columnFecha_Nacimiento);
                 this.columnFecha_Inicio = new global::System.Data.DataColumn("Fecha_Inicio", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnFecha_Inicio);
-                this.columnTelefono = new global::System.Data.DataColumn("Telefono", typeof(int), null, global::System.Data.MappingType.Element);
+                this.columnTelefono = new global::System.Data.DataColumn("Telefono", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnTelefono);
                 this.columnCorreo = new global::System.Data.DataColumn("Correo", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnCorreo);
@@ -3690,11 +3690,12 @@ namespace PantallaInicio {
                 this.columnId.AllowDBNull = false;
                 this.columnId.Unique = true;
                 this.columnId.MaxLength = 15;
-                this.columnNombre.MaxLength = 50;
-                this.columnApellido.MaxLength = 50;
+                this.columnNombre.MaxLength = 30;
+                this.columnApellido.MaxLength = 30;
                 this.columnGenero.MaxLength = 10;
-                this.columnCorreo.MaxLength = 100;
-                this.columnHoras.MaxLength = 255;
+                this.columnTelefono.MaxLength = 15;
+                this.columnCorreo.MaxLength = 30;
+                this.columnHoras.MaxLength = 30;
                 this.columnInformacion.MaxLength = 255;
             }
             
@@ -14816,10 +14817,10 @@ namespace PantallaInicio {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public int Telefono {
+            public string Telefono {
                 get {
                     try {
-                        return ((int)(this[this.tableBuscarSelect_Voluntarios.TelefonoColumn]));
+                        return ((string)(this[this.tableBuscarSelect_Voluntarios.TelefonoColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("El valor de la columna \'Telefono\' de la tabla \'BuscarSelect_Voluntarios\' es DBNul" +
@@ -27272,7 +27273,7 @@ namespace PantallaInicio.BencalethDataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Insert_inven_Terapia(global::System.Nullable<int> Id, string Descripcion, string Cantidad, string responsable) {
+        public virtual object Insert_inven_Terapia(global::System.Nullable<int> Id, string Descripcion, string Cantidad, string responsable) {
             global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[5]));
             if ((Id.HasValue == true)) {
                 command.Parameters[1].Value = ((int)(Id.Value));
@@ -27303,16 +27304,22 @@ namespace PantallaInicio.BencalethDataSetTableAdapters {
                         != global::System.Data.ConnectionState.Open)) {
                 command.Connection.Open();
             }
-            int returnValue;
+            object returnValue;
             try {
-                returnValue = command.ExecuteNonQuery();
+                returnValue = command.ExecuteScalar();
             }
             finally {
                 if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
                     command.Connection.Close();
                 }
             }
-            return returnValue;
+            if (((returnValue == null) 
+                        || (returnValue.GetType() == typeof(global::System.DBNull)))) {
+                return null;
+            }
+            else {
+                return ((object)(returnValue));
+            }
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]

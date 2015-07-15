@@ -77,6 +77,7 @@
             this.fech_niños.Name = "fech_niños";
             this.fech_niños.Size = new System.Drawing.Size(193, 26);
             this.fech_niños.TabIndex = 3;
+            this.fech_niños.Leave += new System.EventHandler(this.fech_niños_Leave);
             // 
             // txt_apellido
             // 
