@@ -60,6 +60,9 @@
             this.tableAdapterManager = new PantallaInicio.BencalethDataSetTableAdapters.TableAdapterManager();
             this.comboboxResponsablesTableAdapter = new PantallaInicio.BencalethDataSetTableAdapters.ComboboxResponsablesTableAdapter();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.combobox_nomempresaBindingSource)).BeginInit();
@@ -67,6 +70,9 @@
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.comboboxResponsablesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -78,7 +84,7 @@
             this.tabControl1.Multiline = true;
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(916, 764);
+            this.tabControl1.Size = new System.Drawing.Size(1352, 764);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage1
@@ -97,7 +103,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 40);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(908, 720);
+            this.tabPage1.Size = new System.Drawing.Size(1344, 720);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Inventario Donaciones";
             // 
@@ -194,13 +200,13 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label9.Location = new System.Drawing.Point(235, 114);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(42, 31);
+            this.label9.Size = new System.Drawing.Size(106, 31);
             this.label9.TabIndex = 85;
-            this.label9.Text = "ID";
+            this.label9.Text = "Código";
             // 
             // txt_Id_Invd
             // 
@@ -228,7 +234,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 40);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(908, 720);
+            this.tabPage2.Size = new System.Drawing.Size(1344, 720);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Inventario Terapia";
             // 
@@ -239,7 +245,7 @@
             this.comboboxResponsablesComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboboxResponsablesComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboboxResponsablesComboBox.FormattingEnabled = true;
-            this.comboboxResponsablesComboBox.Location = new System.Drawing.Point(241, 356);
+            this.comboboxResponsablesComboBox.Location = new System.Drawing.Point(241, 332);
             this.comboboxResponsablesComboBox.Name = "comboboxResponsablesComboBox";
             this.comboboxResponsablesComboBox.Size = new System.Drawing.Size(193, 28);
             this.comboboxResponsablesComboBox.TabIndex = 86;
@@ -256,7 +262,7 @@
             this.btn_save_InTF.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_save_InTF.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_save_InTF.ForeColor = System.Drawing.Color.SteelBlue;
-            this.btn_save_InTF.Location = new System.Drawing.Point(504, 420);
+            this.btn_save_InTF.Location = new System.Drawing.Point(494, 414);
             this.btn_save_InTF.Name = "btn_save_InTF";
             this.btn_save_InTF.Size = new System.Drawing.Size(193, 80);
             this.btn_save_InTF.TabIndex = 86;
@@ -269,7 +275,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label5.Location = new System.Drawing.Point(235, 322);
+            this.label5.Location = new System.Drawing.Point(235, 298);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(184, 31);
             this.label5.TabIndex = 84;
@@ -280,7 +286,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label4.Location = new System.Drawing.Point(495, 219);
+            this.label4.Location = new System.Drawing.Point(488, 203);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(131, 31);
             this.label4.TabIndex = 83;
@@ -291,7 +297,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label3.Location = new System.Drawing.Point(235, 219);
+            this.label3.Location = new System.Drawing.Point(235, 203);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(168, 31);
             this.label3.TabIndex = 82;
@@ -300,7 +306,7 @@
             // txt_Can_Invf
             // 
             this.txt_Can_Invf.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Can_Invf.Location = new System.Drawing.Point(504, 253);
+            this.txt_Can_Invf.Location = new System.Drawing.Point(494, 237);
             this.txt_Can_Invf.MaxLength = 10;
             this.txt_Can_Invf.Name = "txt_Can_Invf";
             this.txt_Can_Invf.Size = new System.Drawing.Size(193, 26);
@@ -310,7 +316,7 @@
             // txt_Des_Invf
             // 
             this.txt_Des_Invf.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Des_Invf.Location = new System.Drawing.Point(241, 253);
+            this.txt_Des_Invf.Location = new System.Drawing.Point(241, 237);
             this.txt_Des_Invf.MaxLength = 50;
             this.txt_Des_Invf.Name = "txt_Des_Invf";
             this.txt_Des_Invf.Size = new System.Drawing.Size(193, 26);
@@ -322,16 +328,16 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label2.Location = new System.Drawing.Point(235, 119);
+            this.label2.Location = new System.Drawing.Point(235, 114);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(44, 31);
+            this.label2.Size = new System.Drawing.Size(106, 31);
             this.label2.TabIndex = 78;
-            this.label2.Text = "ID";
+            this.label2.Text = "Código";
             // 
             // txt_id_InvF
             // 
             this.txt_id_InvF.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_id_InvF.Location = new System.Drawing.Point(241, 153);
+            this.txt_id_InvF.Location = new System.Drawing.Point(241, 148);
             this.txt_id_InvF.MaxLength = 7;
             this.txt_id_InvF.Name = "txt_id_InvF";
             this.txt_id_InvF.Size = new System.Drawing.Size(193, 26);
@@ -344,7 +350,7 @@
             this.btn_Home.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Home.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Home.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.btn_Home.Location = new System.Drawing.Point(990, 401);
+            this.btn_Home.Location = new System.Drawing.Point(157, 352);
             this.btn_Home.Name = "btn_Home";
             this.btn_Home.Size = new System.Drawing.Size(209, 80);
             this.btn_Home.TabIndex = 6;
@@ -358,7 +364,7 @@
             this.btn_Show_Invs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Show_Invs.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Show_Invs.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.btn_Show_Invs.Location = new System.Drawing.Point(990, 273);
+            this.btn_Show_Invs.Location = new System.Drawing.Point(157, 245);
             this.btn_Show_Invs.Name = "btn_Show_Invs";
             this.btn_Show_Invs.Size = new System.Drawing.Size(209, 80);
             this.btn_Show_Invs.TabIndex = 7;
@@ -383,28 +389,63 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::PantallaInicio.Properties.Resources.Logo_Bencaleth_2;
-            this.pictureBox1.Location = new System.Drawing.Point(917, 43);
+            this.pictureBox1.Location = new System.Drawing.Point(39, 46);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(150, 150);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.pictureBox3);
+            this.panel1.Controls.Add(this.pictureBox2);
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.btn_Show_Invs);
+            this.panel1.Controls.Add(this.btn_Home);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel1.Location = new System.Drawing.Point(944, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(408, 764);
+            this.panel1.TabIndex = 93;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::PantallaInicio.Properties.Resources.Menú_Principal;
+            this.pictureBox3.Location = new System.Drawing.Point(48, 352);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(80, 80);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 23;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::PantallaInicio.Properties.Resources.Mostrar;
+            this.pictureBox2.Location = new System.Drawing.Point(48, 245);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(80, 80);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 22;
+            this.pictureBox2.TabStop = false;
+            // 
             // Inventarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(1264, 764);
+            this.ClientSize = new System.Drawing.Size(1352, 764);
             this.ControlBox = false;
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.btn_Show_Invs);
-            this.Controls.Add(this.btn_Home);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.tabControl1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(1600, 900);
             this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(1364, 726);
             this.Name = "Inventarios";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Inventarios_FormClosed);
             this.Load += new System.EventHandler(this.Inventarios_Load);
             this.tabControl1.ResumeLayout(false);
@@ -416,6 +457,9 @@
             this.tabPage2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.comboboxResponsablesBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -452,5 +496,8 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }

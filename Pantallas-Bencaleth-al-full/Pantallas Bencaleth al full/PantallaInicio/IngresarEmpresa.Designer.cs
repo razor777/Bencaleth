@@ -203,7 +203,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(359, 26);
+            this.label1.Location = new System.Drawing.Point(361, 27);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(174, 42);
             this.label1.TabIndex = 86;
@@ -260,9 +260,9 @@
             this.label9.ForeColor = System.Drawing.SystemColors.Window;
             this.label9.Location = new System.Drawing.Point(224, 97);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(42, 31);
+            this.label9.Size = new System.Drawing.Size(100, 31);
             this.label9.TabIndex = 93;
-            this.label9.Text = "ID";
+            this.label9.Text = "Código";
             // 
             // txt_id_empresa
             // 
@@ -283,7 +283,7 @@
             this.btn_save_empresa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_save_empresa.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_save_empresa.ForeColor = System.Drawing.Color.SteelBlue;
-            this.btn_save_empresa.Location = new System.Drawing.Point(514, 625);
+            this.btn_save_empresa.Location = new System.Drawing.Point(507, 579);
             this.btn_save_empresa.Name = "btn_save_empresa";
             this.btn_save_empresa.Size = new System.Drawing.Size(164, 64);
             this.btn_save_empresa.TabIndex = 9;
@@ -291,7 +291,7 @@
             this.btn_save_empresa.UseVisualStyleBackColor = false;
             this.btn_save_empresa.Click += new System.EventHandler(this.btn_save_empresa_Click);
             // 
-            // bencalethDataSet1
+            // bencalethDataSet
             // 
             this.bencalethDataSet.DataSetName = "BencalethDataSet";
             this.bencalethDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
@@ -373,7 +373,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
-            this.ClientSize = new System.Drawing.Size(1008, 756);
+            this.ClientSize = new System.Drawing.Size(883, 770);
             this.ControlBox = false;
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.combobox_empresasComboBox);

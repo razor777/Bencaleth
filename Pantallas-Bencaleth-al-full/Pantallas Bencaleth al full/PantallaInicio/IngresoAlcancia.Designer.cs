@@ -100,9 +100,9 @@
             this.label9.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.label9.Location = new System.Drawing.Point(220, 124);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(42, 31);
+            this.label9.Size = new System.Drawing.Size(100, 31);
             this.label9.TabIndex = 93;
-            this.label9.Text = "ID";
+            this.label9.Text = "Código";
             // 
             // label8
             // 
@@ -131,7 +131,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label1.Location = new System.Drawing.Point(361, 39);
+            this.label1.Location = new System.Drawing.Point(361, 27);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(188, 42);
             this.label1.TabIndex = 86;
@@ -143,7 +143,7 @@
             this.btn_save_Alcancias.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_save_Alcancias.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_save_Alcancias.ForeColor = System.Drawing.Color.SteelBlue;
-            this.btn_save_Alcancias.Location = new System.Drawing.Point(518, 576);
+            this.btn_save_Alcancias.Location = new System.Drawing.Point(507, 579);
             this.btn_save_Alcancias.Name = "btn_save_Alcancias";
             this.btn_save_Alcancias.Size = new System.Drawing.Size(164, 64);
             this.btn_save_Alcancias.TabIndex = 5;
@@ -270,7 +270,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
-            this.ClientSize = new System.Drawing.Size(1008, 756);
+            this.ClientSize = new System.Drawing.Size(883, 770);
             this.ControlBox = false;
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.txtbTel);

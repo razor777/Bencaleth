@@ -106,9 +106,9 @@
             this.label9.ForeColor = System.Drawing.Color.White;
             this.label9.Location = new System.Drawing.Point(221, 130);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(42, 31);
+            this.label9.Size = new System.Drawing.Size(126, 31);
             this.label9.TabIndex = 26;
-            this.label9.Text = "ID";
+            this.label9.Text = "Identidad";
             // 
             // label8
             // 

@@ -35,12 +35,16 @@
             this.Cbb_Mantenimiento = new System.Windows.Forms.ComboBox();
             this.btn_back = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btn_Delete = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -65,10 +69,10 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dataGridView1.Location = new System.Drawing.Point(16, 97);
+            this.dataGridView1.Location = new System.Drawing.Point(30, 92);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(895, 614);
+            this.dataGridView1.Size = new System.Drawing.Size(895, 600);
             this.dataGridView1.TabIndex = 3;
             // 
             // Cbb_Mantenimiento
@@ -79,7 +83,7 @@
             this.Cbb_Mantenimiento.Items.AddRange(new object[] {
             "Donaciones",
             "Terapia Física"});
-            this.Cbb_Mantenimiento.Location = new System.Drawing.Point(463, 48);
+            this.Cbb_Mantenimiento.Location = new System.Drawing.Point(473, 31);
             this.Cbb_Mantenimiento.Name = "Cbb_Mantenimiento";
             this.Cbb_Mantenimiento.Size = new System.Drawing.Size(236, 28);
             this.Cbb_Mantenimiento.TabIndex = 2;
@@ -91,7 +95,7 @@
             this.btn_back.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_back.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_back.ForeColor = System.Drawing.Color.White;
-            this.btn_back.Location = new System.Drawing.Point(86, 278);
+            this.btn_back.Location = new System.Drawing.Point(157, 245);
             this.btn_back.Name = "btn_back";
             this.btn_back.Size = new System.Drawing.Size(209, 80);
             this.btn_back.TabIndex = 18;
@@ -104,29 +108,17 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(220, 47);
+            this.label1.Location = new System.Drawing.Point(231, 31);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(213, 29);
             this.label1.TabIndex = 123;
             this.label1.Text = "Tipo de Inventario:";
             // 
-            // groupBox1
-            // 
-            this.groupBox1.BackColor = System.Drawing.Color.White;
-            this.groupBox1.Controls.Add(this.pictureBox1);
-            this.groupBox1.Controls.Add(this.btn_Delete);
-            this.groupBox1.Controls.Add(this.btn_back);
-            this.groupBox1.Location = new System.Drawing.Point(928, 1);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(440, 774);
-            this.groupBox1.TabIndex = 124;
-            this.groupBox1.TabStop = false;
-            // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.White;
             this.pictureBox1.Image = global::PantallaInicio.Properties.Resources.Logo_Bencaleth_2;
-            this.pictureBox1.Location = new System.Drawing.Point(19, 43);
+            this.pictureBox1.Location = new System.Drawing.Point(39, 46);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(150, 150);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -139,7 +131,7 @@
             this.btn_Delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Delete.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Delete.ForeColor = System.Drawing.Color.White;
-            this.btn_Delete.Location = new System.Drawing.Point(86, 388);
+            this.btn_Delete.Location = new System.Drawing.Point(157, 394);
             this.btn_Delete.Name = "btn_Delete";
             this.btn_Delete.Size = new System.Drawing.Size(209, 80);
             this.btn_Delete.TabIndex = 20;
@@ -147,19 +139,53 @@
             this.btn_Delete.UseVisualStyleBackColor = false;
             this.btn_Delete.Visible = false;
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.pictureBox2);
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.btn_back);
+            this.panel1.Controls.Add(this.btn_Delete);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel1.Location = new System.Drawing.Point(960, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(408, 780);
+            this.panel1.TabIndex = 125;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Controls.Add(this.Cbb_Mantenimiento);
+            this.panel2.Controls.Add(this.dataGridView1);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(960, 780);
+            this.panel2.TabIndex = 126;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::PantallaInicio.Properties.Resources.Regresar;
+            this.pictureBox2.Location = new System.Drawing.Point(48, 245);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(80, 80);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 21;
+            this.pictureBox2.TabStop = false;
+            // 
             // Vista_Inventarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
-            this.ClientSize = new System.Drawing.Size(1280, 780);
+            this.ClientSize = new System.Drawing.Size(1368, 780);
             this.ControlBox = false;
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.Cbb_Mantenimiento);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximumSize = new System.Drawing.Size(1600, 900);
+            this.MinimumSize = new System.Drawing.Size(1364, 726);
             this.Name = "Vista_Inventarios";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Vista de Inventarios";
@@ -167,10 +193,12 @@
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Vista_Inventarios_FormClosed);
             this.Load += new System.EventHandler(this.Vista_Inventarios_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -180,8 +208,10 @@
         private System.Windows.Forms.ComboBox Cbb_Mantenimiento;
         private System.Windows.Forms.Button btn_back;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btn_Delete;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

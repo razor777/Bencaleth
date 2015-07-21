@@ -298,6 +298,13 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>Bencaleth.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\Crear.png" />
+    <None Include="Resources\Herramientas.png" />
+    <None Include="Resources\Modificar.png" />
+    <None Include="Resources\Borrar.png" />
+    <None Include="Resources\Menú Principal.png" />
+    <None Include="Resources\Regresar.png" />
+    <None Include="Resources\Mostrar.png" />
     <Content Include="Sin nombre.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
