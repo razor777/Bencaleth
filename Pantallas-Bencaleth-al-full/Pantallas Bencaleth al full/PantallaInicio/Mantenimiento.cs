@@ -211,6 +211,11 @@ namespace PantallaInicio
             txtbABuscar.Clear();
         }
 
+        private void btn_reportes_Click(object sender, EventArgs e)
+        {
+            Herramientas.AbrirNuevoForm(new Reportes());
+        }
+
       
     }
 }
