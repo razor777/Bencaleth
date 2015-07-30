@@ -52,7 +52,6 @@
             this.errorProvider5 = new System.Windows.Forms.ErrorProvider(this.components);
             this.txtbTel = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.bencalethDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mostrarRecurenciasBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
@@ -60,7 +59,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // textBox1
@@ -197,9 +195,23 @@
             // 
             // tableAdapterManager
             // 
+            this.tableAdapterManager.AlcanciasTableAdapter = null;
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.CargoTipoTableAdapter = null;
             this.tableAdapterManager.Connection = null;
+            this.tableAdapterManager.EmpleadosTableAdapter = null;
+            this.tableAdapterManager.EmpresasTableAdapter = null;
+            this.tableAdapterManager.Inventario_DonacionesTableAdapter = null;
+            this.tableAdapterManager.Inventario_TerapiaTableAdapter = null;
+            this.tableAdapterManager.MensualidadTableAdapter = null;
+            this.tableAdapterManager.NiñosTableAdapter = null;
+            this.tableAdapterManager.PadrinosTableAdapter = null;
+            this.tableAdapterManager.recurrenciaTableAdapter = null;
+            this.tableAdapterManager.Tipo_EmpresaTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = PantallaInicio.BencalethDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.UsuariosCargoTableAdapter = null;
+            this.tableAdapterManager.UsuariosTableAdapter = null;
+            this.tableAdapterManager.VoluntariosTableAdapter = null;
             // 
             // mostrarRecurenciasComboBox
             // 
@@ -255,24 +267,13 @@
             this.label4.TabIndex = 119;
             this.label4.Text = "Teléfono";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::PantallaInicio.Properties.Resources.Sin_nombre_EN_BLANCO;
-            this.pictureBox1.Location = new System.Drawing.Point(1, 1);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(154, 159);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 121;
-            this.pictureBox1.TabStop = false;
-            // 
             // IngresoAlcancia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
-            this.ClientSize = new System.Drawing.Size(883, 770);
+            this.ClientSize = new System.Drawing.Size(944, 771);
             this.ControlBox = false;
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.txtbTel);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.mostrarRecurenciasComboBox);
@@ -297,7 +298,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -328,6 +328,5 @@
         private System.Windows.Forms.ErrorProvider errorProvider5;
         private System.Windows.Forms.TextBox txtbTel;
         private System.Windows.Forms.Label label4;
-        public System.Windows.Forms.PictureBox pictureBox1;
     }
 }

@@ -83,6 +83,7 @@
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.btn_mant);
             this.panel1.Controls.Add(this.btn_niños);
             this.panel1.Controls.Add(this.btn_menu);

@@ -90,5 +90,10 @@ namespace PantallaInicio
                 }
             }
         }
+
+        private void btn_admin_Click(object sender, EventArgs e)
+        {
+            Herramientas.AbrirNuevoForm(new TipoEmpleEmpresa());
+        }
     }
 }

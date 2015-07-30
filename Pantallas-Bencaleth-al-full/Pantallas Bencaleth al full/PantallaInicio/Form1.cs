@@ -26,22 +26,26 @@ namespace PantallaInicio
 
         private void btn_Ing_Click(object sender, EventArgs e)
         {
-
-            if (Log.Validacion(txt_user.Text, txt_pasw.Text) == 1)
+            try
             {
+                if (Log.Validacion(txt_user.Text, txt_pasw.Text) == 1)
+                {
 
-                Log.sesion = this.txt_user.Text;
+                    Log.sesion = this.txt_user.Text;
 
-                this.txt_user.Clear();
-                this.txt_pasw.Clear();
-                Herramientas.initProgramaGestionForms(this, new Menu());
-            }
-            else
-            {
+                    this.txt_user.Clear();
+                    this.txt_pasw.Clear();
+                    Herramientas.initProgramaGestionForms(this, new Menu());
+                }
+                else
+                {
 
-                if (Log.intentosActuales == Log.intentosMax) { Log.Block(Log.NombreBlock); }
-                MessageBox.Show("Usuario o contraseña incorrecto.");
+                    if (Log.intentosActuales == Log.intentosMax) { Log.Block(Log.NombreBlock); }
+                    MessageBox.Show("Usuario o contraseña incorrecto.");
 
+                }
+            }catch(SqlException){
+                MessageBox.Show("La conexión se corto por tiempo, trate de conectarse de nuevo");
             }
            
         }

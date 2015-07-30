@@ -63,7 +63,6 @@
             this.errorProvider8 = new System.Windows.Forms.ErrorProvider(this.components);
             this.errorProvider9 = new System.Windows.Forms.ErrorProvider(this.components);
             this.btnPagar = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.epERROR)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).BeginInit();
@@ -74,7 +73,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // txt_Id_Voluntarios
@@ -384,24 +382,13 @@
             this.btnPagar.UseVisualStyleBackColor = false;
             this.btnPagar.Click += new System.EventHandler(this.btnPagar_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::PantallaInicio.Properties.Resources.Sin_nombre_EN_BLANCO;
-            this.pictureBox1.Location = new System.Drawing.Point(1, 1);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(154, 159);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 124;
-            this.pictureBox1.TabStop = false;
-            // 
             // IngresoVoluntarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
-            this.ClientSize = new System.Drawing.Size(883, 770);
+            this.ClientSize = new System.Drawing.Size(944, 771);
             this.ControlBox = false;
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnPagar);
             this.Controls.Add(this.txtHoras);
             this.Controls.Add(this.label13);
@@ -438,7 +425,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -480,6 +466,5 @@
         private System.Windows.Forms.ErrorProvider errorProvider8;
         private System.Windows.Forms.ErrorProvider errorProvider9;
         private System.Windows.Forms.Button btnPagar;
-        public System.Windows.Forms.PictureBox pictureBox1;
     }
 }

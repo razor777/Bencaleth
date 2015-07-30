@@ -162,35 +162,53 @@ namespace PantallaInicio
             {
                 if (filaAEnviar != null)
                 {
-                    switch (Cbb_Mantenimiento.SelectedIndex)
-                    {
-                        //Alcancias
-                        case 0:
-                            alc.DeleteDatos(strIdAEnviar);
-                            break;
-                        //Empleados
-                        case 1:
-                            empl.DeleteDatos(strIdAEnviar);
-                            break;
-                        //Empresas
-                        case 2:
-                            org.DeleteDatos(strIdAEnviar);
-                            break;
-                        //Ninos
-                        case 3:
-                            nino.DeleteDatos(strIdAEnviar);
-                            break;
-                        //Padrinos
-                        case 4:
-                            pdr.DeleteDatos(strIdAEnviar);
-                            break;
-                        //Voluntarios
-                        case 5:
-                            volt.DeleteDatos(strIdAEnviar);
-                            break;
-                        default:
-                            break;
+                    try{
+                        switch (Cbb_Mantenimiento.SelectedIndex)
+                        {
+                            //Alcancias
+                            case 0:
+                                alc.DeleteDatos(strIdAEnviar);
+                                break;
+                            //Empleados
+                            case 1:
+                                empl.DeleteDatos(strIdAEnviar);
+                                break;
+                            //Empresas
+                            case 2:
+                                org.DeleteDatos(strIdAEnviar);
+                                break;
+                            //Ninos
+                            case 3:
+                                nino.DeleteDatos(strIdAEnviar);
+                                break;
+                            //Padrinos
+                            case 4:
+                                pdr.DeleteDatos(strIdAEnviar);
+                                break;
+                            //Voluntarios
+                            case 5:
+                                volt.DeleteDatos(strIdAEnviar);
+                                break;
+                            default:
+                                break;
+                        }
                     }
+                    catch (SqlException ee)
+                    {
+                        switch (ee.Number)
+                        {
+                            case 2627:
+                                MessageBox.Show("Código Identificador ya existente");
+                                break;
+                            case 547:
+                                MessageBox.Show("Registro usado por otra tabla de datos");
+                                break;
+                            default:
+                                MessageBox.Show("No hay conexion con la base de datos");
+                                break;
+                        }
+                    }
+                       
                     this.SelectPantalla();
                 }
             }

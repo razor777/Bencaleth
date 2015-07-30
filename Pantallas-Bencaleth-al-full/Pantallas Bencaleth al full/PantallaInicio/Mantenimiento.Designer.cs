@@ -164,7 +164,7 @@
             this.btn_Edit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Edit.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Edit.ForeColor = System.Drawing.Color.White;
-            this.btn_Edit.Location = new System.Drawing.Point(157, 245);
+            this.btn_Edit.Location = new System.Drawing.Point(157, 227);
             this.btn_Edit.Name = "btn_Edit";
             this.btn_Edit.Size = new System.Drawing.Size(209, 80);
             this.btn_Edit.TabIndex = 14;
@@ -178,7 +178,7 @@
             this.btn_Delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Delete.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Delete.ForeColor = System.Drawing.Color.White;
-            this.btn_Delete.Location = new System.Drawing.Point(157, 352);
+            this.btn_Delete.Location = new System.Drawing.Point(157, 338);
             this.btn_Delete.Name = "btn_Delete";
             this.btn_Delete.Size = new System.Drawing.Size(209, 80);
             this.btn_Delete.TabIndex = 15;
@@ -192,7 +192,7 @@
             this.btn_menu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_menu.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_menu.ForeColor = System.Drawing.Color.White;
-            this.btn_menu.Location = new System.Drawing.Point(157, 573);
+            this.btn_menu.Location = new System.Drawing.Point(157, 552);
             this.btn_menu.Name = "btn_menu";
             this.btn_menu.Size = new System.Drawing.Size(209, 80);
             this.btn_menu.TabIndex = 16;
@@ -232,7 +232,7 @@
             // pictureBox5
             // 
             this.pictureBox5.Image = global::PantallaInicio.Properties.Resources.Reportes;
-            this.pictureBox5.Location = new System.Drawing.Point(48, 461);
+            this.pictureBox5.Location = new System.Drawing.Point(48, 447);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(80, 80);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -245,7 +245,7 @@
             this.btn_reportes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_reportes.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_reportes.ForeColor = System.Drawing.Color.White;
-            this.btn_reportes.Location = new System.Drawing.Point(157, 461);
+            this.btn_reportes.Location = new System.Drawing.Point(157, 447);
             this.btn_reportes.Name = "btn_reportes";
             this.btn_reportes.Size = new System.Drawing.Size(209, 80);
             this.btn_reportes.TabIndex = 21;
@@ -256,7 +256,7 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = global::PantallaInicio.Properties.Resources.Menú_Principal;
-            this.pictureBox4.Location = new System.Drawing.Point(48, 573);
+            this.pictureBox4.Location = new System.Drawing.Point(48, 552);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(80, 80);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -266,7 +266,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::PantallaInicio.Properties.Resources.Modificar;
-            this.pictureBox2.Location = new System.Drawing.Point(48, 245);
+            this.pictureBox2.Location = new System.Drawing.Point(48, 227);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(80, 80);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -276,7 +276,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::PantallaInicio.Properties.Resources.Borrar;
-            this.pictureBox3.Location = new System.Drawing.Point(48, 352);
+            this.pictureBox3.Location = new System.Drawing.Point(48, 338);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(80, 80);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;

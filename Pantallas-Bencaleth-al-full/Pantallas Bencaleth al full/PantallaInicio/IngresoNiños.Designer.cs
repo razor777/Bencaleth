@@ -52,14 +52,12 @@
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.errorProvider2 = new System.Windows.Forms.ErrorProvider(this.components);
             this.errorProvider3 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txt_idniños = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.bencalethDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.comboboxResponsablesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // fech_ingre
@@ -245,9 +243,23 @@
             // 
             // tableAdapterManager
             // 
+            this.tableAdapterManager.AlcanciasTableAdapter = null;
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.CargoTipoTableAdapter = null;
             this.tableAdapterManager.Connection = null;
+            this.tableAdapterManager.EmpleadosTableAdapter = null;
+            this.tableAdapterManager.EmpresasTableAdapter = null;
+            this.tableAdapterManager.Inventario_DonacionesTableAdapter = null;
+            this.tableAdapterManager.Inventario_TerapiaTableAdapter = null;
+            this.tableAdapterManager.MensualidadTableAdapter = null;
+            this.tableAdapterManager.NiñosTableAdapter = null;
+            this.tableAdapterManager.PadrinosTableAdapter = null;
+            this.tableAdapterManager.recurrenciaTableAdapter = null;
+            this.tableAdapterManager.Tipo_EmpresaTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = PantallaInicio.BencalethDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.UsuariosCargoTableAdapter = null;
+            this.tableAdapterManager.UsuariosTableAdapter = null;
+            this.tableAdapterManager.VoluntariosTableAdapter = null;
             // 
             // comboboxResponsablesComboBox
             // 
@@ -274,16 +286,6 @@
             // 
             this.errorProvider3.ContainerControl = this;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::PantallaInicio.Properties.Resources.Sin_nombre_EN_BLANCO;
-            this.pictureBox1.Location = new System.Drawing.Point(1, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(154, 159);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 123;
-            this.pictureBox1.TabStop = false;
-            // 
             // txt_idniños
             // 
             this.txt_idniños.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -299,9 +301,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
-            this.ClientSize = new System.Drawing.Size(883, 770);
+            this.ClientSize = new System.Drawing.Size(944, 771);
             this.ControlBox = false;
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.comboboxResponsablesComboBox);
             this.Controls.Add(this.radio_fem_Niños);
             this.Controls.Add(this.radio_mas_Niños);
@@ -327,7 +328,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -358,7 +358,6 @@
         private System.Windows.Forms.ErrorProvider errorProvider1;
         private System.Windows.Forms.ErrorProvider errorProvider2;
         private System.Windows.Forms.ErrorProvider errorProvider3;
-        public System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox txt_idniños;
     }
 }

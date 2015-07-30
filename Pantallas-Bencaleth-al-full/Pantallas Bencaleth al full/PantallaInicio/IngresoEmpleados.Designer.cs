@@ -62,7 +62,6 @@
             this.errorProvider4 = new System.Windows.Forms.ErrorProvider(this.components);
             this.errorProvider5 = new System.Windows.Forms.ErrorProvider(this.components);
             this.errorProvider6 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.bencalethDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.combobox_CargoTipoBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
@@ -71,7 +70,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // txt_Dir_Emple
@@ -337,9 +335,23 @@
             // 
             // tableAdapterManager
             // 
+            this.tableAdapterManager.AlcanciasTableAdapter = null;
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.CargoTipoTableAdapter = null;
             this.tableAdapterManager.Connection = null;
+            this.tableAdapterManager.EmpleadosTableAdapter = null;
+            this.tableAdapterManager.EmpresasTableAdapter = null;
+            this.tableAdapterManager.Inventario_DonacionesTableAdapter = null;
+            this.tableAdapterManager.Inventario_TerapiaTableAdapter = null;
+            this.tableAdapterManager.MensualidadTableAdapter = null;
+            this.tableAdapterManager.NiñosTableAdapter = null;
+            this.tableAdapterManager.PadrinosTableAdapter = null;
+            this.tableAdapterManager.recurrenciaTableAdapter = null;
+            this.tableAdapterManager.Tipo_EmpresaTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = PantallaInicio.BencalethDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.UsuariosCargoTableAdapter = null;
+            this.tableAdapterManager.UsuariosTableAdapter = null;
+            this.tableAdapterManager.VoluntariosTableAdapter = null;
             // 
             // combobox_CargoTipoComboBox
             // 
@@ -378,24 +390,13 @@
             // 
             this.errorProvider6.ContainerControl = this;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::PantallaInicio.Properties.Resources.Sin_nombre_EN_BLANCO;
-            this.pictureBox1.Location = new System.Drawing.Point(1, 1);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(154, 159);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 123;
-            this.pictureBox1.TabStop = false;
-            // 
             // IngresoEmpleados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
-            this.ClientSize = new System.Drawing.Size(883, 770);
+            this.ClientSize = new System.Drawing.Size(944, 771);
             this.ControlBox = false;
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.combobox_CargoTipoComboBox);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.btn_save_Emple);
@@ -431,7 +432,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -472,6 +472,5 @@
         private System.Windows.Forms.ErrorProvider errorProvider4;
         private System.Windows.Forms.ErrorProvider errorProvider5;
         private System.Windows.Forms.ErrorProvider errorProvider6;
-        public System.Windows.Forms.PictureBox pictureBox1;
     }
 }

@@ -42,22 +42,25 @@
             this.btn_mantenimiento = new System.Windows.Forms.Button();
             this.btn_inv = new System.Windows.Forms.Button();
             this.btn_registro = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.link_logout = new System.Windows.Forms.LinkLabel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.link_cambiarpas = new System.Windows.Forms.LinkLabel();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.link_Newuser = new System.Windows.Forms.LinkLabel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.btn_admin = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView2
@@ -160,7 +163,7 @@
             this.btn_mantenimiento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_mantenimiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_mantenimiento.ForeColor = System.Drawing.Color.White;
-            this.btn_mantenimiento.Location = new System.Drawing.Point(157, 352);
+            this.btn_mantenimiento.Location = new System.Drawing.Point(157, 338);
             this.btn_mantenimiento.Name = "btn_mantenimiento";
             this.btn_mantenimiento.Size = new System.Drawing.Size(209, 80);
             this.btn_mantenimiento.TabIndex = 6;
@@ -174,7 +177,7 @@
             this.btn_inv.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_inv.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_inv.ForeColor = System.Drawing.Color.White;
-            this.btn_inv.Location = new System.Drawing.Point(157, 461);
+            this.btn_inv.Location = new System.Drawing.Point(157, 447);
             this.btn_inv.Name = "btn_inv";
             this.btn_inv.Size = new System.Drawing.Size(209, 80);
             this.btn_inv.TabIndex = 7;
@@ -188,7 +191,7 @@
             this.btn_registro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_registro.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_registro.ForeColor = System.Drawing.Color.White;
-            this.btn_registro.Location = new System.Drawing.Point(157, 241);
+            this.btn_registro.Location = new System.Drawing.Point(157, 227);
             this.btn_registro.Name = "btn_registro";
             this.btn_registro.Size = new System.Drawing.Size(209, 80);
             this.btn_registro.TabIndex = 5;
@@ -196,38 +199,18 @@
             this.btn_registro.UseVisualStyleBackColor = false;
             this.btn_registro.Click += new System.EventHandler(this.btn_registro_Click);
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::PantallaInicio.Properties.Resources.Crear;
-            this.pictureBox2.Location = new System.Drawing.Point(48, 241);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(80, 80);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 8;
-            this.pictureBox2.TabStop = false;
-            // 
             // link_logout
             // 
             this.link_logout.AutoSize = true;
             this.link_logout.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.link_logout.LinkColor = System.Drawing.Color.SteelBlue;
-            this.link_logout.Location = new System.Drawing.Point(229, 595);
+            this.link_logout.Location = new System.Drawing.Point(229, 662);
             this.link_logout.Name = "link_logout";
             this.link_logout.Size = new System.Drawing.Size(137, 20);
             this.link_logout.TabIndex = 3;
             this.link_logout.TabStop = true;
             this.link_logout.Text = "Finalizar Sesión";
             this.link_logout.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.link_logout_LinkClicked);
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::PantallaInicio.Properties.Resources.Herramientas;
-            this.pictureBox3.Location = new System.Drawing.Point(48, 352);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(80, 80);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 9;
-            this.pictureBox3.TabStop = false;
             // 
             // link_cambiarpas
             // 
@@ -241,26 +224,6 @@
             this.link_cambiarpas.TabStop = true;
             this.link_cambiarpas.Text = "Cambiar Contraseña";
             this.link_cambiarpas.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.link_cambiarpas_LinkClicked);
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::PantallaInicio.Properties.Resources.Modificar;
-            this.pictureBox4.Location = new System.Drawing.Point(48, 461);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(80, 80);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 10;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(16, 29);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(155, 155);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
             // 
             // link_Newuser
             // 
@@ -277,6 +240,8 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.pictureBox5);
+            this.panel1.Controls.Add(this.btn_admin);
             this.panel1.Controls.Add(this.link_Newuser);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.pictureBox4);
@@ -292,6 +257,70 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(408, 764);
             this.panel1.TabIndex = 2;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::PantallaInicio.Properties.Resources.Configurar;
+            this.pictureBox5.Location = new System.Drawing.Point(48, 552);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(80, 80);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 13;
+            this.pictureBox5.TabStop = false;
+            // 
+            // btn_admin
+            // 
+            this.btn_admin.BackColor = System.Drawing.Color.SteelBlue;
+            this.btn_admin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_admin.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_admin.ForeColor = System.Drawing.Color.White;
+            this.btn_admin.Location = new System.Drawing.Point(157, 552);
+            this.btn_admin.Name = "btn_admin";
+            this.btn_admin.Size = new System.Drawing.Size(209, 80);
+            this.btn_admin.TabIndex = 12;
+            this.btn_admin.Text = "Administracion";
+            this.btn_admin.UseVisualStyleBackColor = false;
+            this.btn_admin.Click += new System.EventHandler(this.btn_admin_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(16, 29);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(155, 155);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::PantallaInicio.Properties.Resources.Modificar;
+            this.pictureBox4.Location = new System.Drawing.Point(48, 447);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(80, 80);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 10;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::PantallaInicio.Properties.Resources.Herramientas;
+            this.pictureBox3.Location = new System.Drawing.Point(48, 338);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(80, 80);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 9;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::PantallaInicio.Properties.Resources.Crear;
+            this.pictureBox2.Location = new System.Drawing.Point(48, 227);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(80, 80);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 8;
+            this.pictureBox2.TabStop = false;
             // 
             // Menu
             // 
@@ -314,12 +343,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -346,5 +376,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.LinkLabel link_Newuser;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.Button btn_admin;
     }
 }
