@@ -63,9 +63,39 @@ namespace PantallaInicio.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Bencaleth_2 {
+            get {
+                object obj = ResourceManager.GetObject("Bencaleth 2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Logo_Bencaleth_2 {
+            get {
+                object obj = ResourceManager.GetObject("Logo Bencaleth 2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Sin_nombre {
             get {
                 object obj = ResourceManager.GetObject("Sin nombre", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Sin_nombre_EN_BLANCO {
+            get {
+                object obj = ResourceManager.GetObject("Sin nombre EN BLANCO", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -92,5 +92,15 @@ namespace PantallaInicio
         {
             //MessageBox.Show(mostrarRecurenciasComboBox.SelectedText);
         }
+
+        private void txtbTel_TextChanged(object sender, EventArgs e)
+        {
+            txtbTel.Text = Herramientas.SoloNumeros(txtbTel);
+        }
+
+        private void masktxtbTel_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+
+        }
     }
 }

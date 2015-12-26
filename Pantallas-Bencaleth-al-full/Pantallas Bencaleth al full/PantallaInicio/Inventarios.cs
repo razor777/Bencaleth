@@ -42,7 +42,7 @@ namespace PantallaInicio
 
         private void txt_Id_Invd_TextChanged(object sender, EventArgs e)
         {
-            txt_Id_Invd.Text = Herramientas.NingunCaracterEspecial(txt_Id_Invd);
+            txt_Id_Invd.Text = Herramientas.SoloNumeros(txt_Id_Invd);
         }
 
         private void txt_Des_Invd_TextChanged(object sender, EventArgs e)
@@ -57,7 +57,7 @@ namespace PantallaInicio
 
         private void txt_id_InvF_TextChanged(object sender, EventArgs e)
         {
-            txt_id_InvF.Text = Herramientas.NingunCaracterEspecial(txt_id_InvF);
+            txt_id_InvF.Text = Herramientas.SoloNumeros(txt_id_InvF);
         }
 
         private void txt_Des_Invf_TextChanged(object sender, EventArgs e)

@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Registro));
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btn_mant = new System.Windows.Forms.Button();
             this.btn_menu = new System.Windows.Forms.Button();
             this.btn_vol = new System.Windows.Forms.Button();
@@ -38,7 +39,6 @@
             this.btn_pad = new System.Windows.Forms.Button();
             this.btn_emp = new System.Windows.Forms.Button();
             this.btn_niños = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -72,9 +72,18 @@
             this.splitContainer1.Panel2.Controls.Add(this.btn_emp);
             this.splitContainer1.Panel2.Controls.Add(this.btn_niños);
             this.splitContainer1.Panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer1_Panel2_Paint);
-            this.splitContainer1.Size = new System.Drawing.Size(1276, 733);
+            this.splitContainer1.Size = new System.Drawing.Size(1352, 754);
             this.splitContainer1.SplitterDistance = 877;
             this.splitContainer1.TabIndex = 0;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(4, 4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(882, 750);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // btn_mant
             // 
@@ -188,27 +197,15 @@
             this.btn_niños.UseVisualStyleBackColor = false;
             this.btn_niños.Click += new System.EventHandler(this.button1_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(4, 4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(869, 729);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // Registro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1276, 733);
+            this.ClientSize = new System.Drawing.Size(1352, 754);
             this.ControlBox = false;
             this.Controls.Add(this.splitContainer1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Registro";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "BENCALETH";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Registro_FormClosed);
             this.Load += new System.EventHandler(this.Registro_Load);
             this.splitContainer1.Panel1.ResumeLayout(false);

@@ -1580,6 +1580,8 @@ namespace PantallaInicio {
             
             private global::System.Data.DataColumn columnDescripcion;
             
+            private global::System.Data.DataColumn columnTelefono;
+            
             private global::System.Data.DataColumn columnFecha;
             
             private global::System.Data.DataColumn columnRecurrencia;
@@ -1643,6 +1645,14 @@ namespace PantallaInicio {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn TelefonoColumn {
+                get {
+                    return this.columnTelefono;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn FechaColumn {
                 get {
                     return this.columnFecha;
@@ -1694,12 +1704,13 @@ namespace PantallaInicio {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public BuscarSelect_AlcanciasRow AddBuscarSelect_AlcanciasRow(string Id, string Direccion, string Descripcion, System.DateTime Fecha, string Recurrencia) {
+            public BuscarSelect_AlcanciasRow AddBuscarSelect_AlcanciasRow(string Id, string Direccion, string Descripcion, string Telefono, System.DateTime Fecha, string Recurrencia) {
                 BuscarSelect_AlcanciasRow rowBuscarSelect_AlcanciasRow = ((BuscarSelect_AlcanciasRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         Id,
                         Direccion,
                         Descripcion,
+                        Telefono,
                         Fecha,
                         Recurrencia};
                 rowBuscarSelect_AlcanciasRow.ItemArray = columnValuesArray;
@@ -1734,6 +1745,7 @@ namespace PantallaInicio {
                 this.columnId = base.Columns["Id"];
                 this.columnDireccion = base.Columns["Direccion"];
                 this.columnDescripcion = base.Columns["Descripcion"];
+                this.columnTelefono = base.Columns["Telefono"];
                 this.columnFecha = base.Columns["Fecha"];
                 this.columnRecurrencia = base.Columns["Recurrencia"];
             }
@@ -1747,6 +1759,8 @@ namespace PantallaInicio {
                 base.Columns.Add(this.columnDireccion);
                 this.columnDescripcion = new global::System.Data.DataColumn("Descripcion", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnDescripcion);
+                this.columnTelefono = new global::System.Data.DataColumn("Telefono", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTelefono);
                 this.columnFecha = new global::System.Data.DataColumn("Fecha", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnFecha);
                 this.columnRecurrencia = new global::System.Data.DataColumn("Recurrencia", typeof(string), null, global::System.Data.MappingType.Element);
@@ -1758,6 +1772,7 @@ namespace PantallaInicio {
                 this.columnId.MaxLength = 15;
                 this.columnDireccion.MaxLength = 255;
                 this.columnDescripcion.MaxLength = 255;
+                this.columnTelefono.MaxLength = 15;
                 this.columnRecurrencia.ReadOnly = true;
                 this.columnRecurrencia.MaxLength = 25;
             }
@@ -13534,6 +13549,23 @@ namespace PantallaInicio {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Telefono {
+                get {
+                    try {
+                        return ((string)(this[this.tableBuscarSelect_Alcancias.TelefonoColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Telefono\' de la tabla \'BuscarSelect_Alcancias\' es DBNull." +
+                                "", e);
+                    }
+                }
+                set {
+                    this[this.tableBuscarSelect_Alcancias.TelefonoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public System.DateTime Fecha {
                 get {
                     try {
@@ -13587,6 +13619,18 @@ namespace PantallaInicio {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetDescripcionNull() {
                 this[this.tableBuscarSelect_Alcancias.DescripcionColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsTelefonoNull() {
+                return this.IsNull(this.tableBuscarSelect_Alcancias.TelefonoColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetTelefonoNull() {
+                this[this.tableBuscarSelect_Alcancias.TelefonoColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -19732,6 +19776,7 @@ namespace PantallaInicio.BencalethDataSetTableAdapters {
             tableMapping.ColumnMappings.Add("Id", "Id");
             tableMapping.ColumnMappings.Add("Direccion", "Direccion");
             tableMapping.ColumnMappings.Add("Descripcion", "Descripcion");
+            tableMapping.ColumnMappings.Add("Telefono", "Telefono");
             tableMapping.ColumnMappings.Add("Fecha", "Fecha");
             tableMapping.ColumnMappings.Add("Recurrencia", "Recurrencia");
             this._adapter.TableMappings.Add(tableMapping);
@@ -26798,20 +26843,22 @@ namespace PantallaInicio.BencalethDataSetTableAdapters {
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[24])).CommandType = global::System.Data.CommandType.StoredProcedure;
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[24])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[24])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Id", global::System.Data.SqlDbType.NVarChar, 15, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[24])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Direccion", global::System.Data.SqlDbType.NVarChar, 255, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[24])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Descripcion", global::System.Data.SqlDbType.NVarChar, 255, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[24])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Direccion", global::System.Data.SqlDbType.NVarChar, 30, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[24])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Descripcion", global::System.Data.SqlDbType.NVarChar, 30, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[24])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Fecha", global::System.Data.SqlDbType.Date, 3, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[24])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Recurrencia", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[24])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Telefono", global::System.Data.SqlDbType.NVarChar, 15, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[25] = new global::System.Data.SqlClient.SqlCommand();
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[25])).Connection = new global::System.Data.SqlClient.SqlConnection(global::PantallaInicio.Properties.Settings.Default.BencalethConnectionString);
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[25])).CommandText = "dbo.Insert_Alcancias2";
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[25])).CommandType = global::System.Data.CommandType.StoredProcedure;
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[25])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[25])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Id", global::System.Data.SqlDbType.NVarChar, 15, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[25])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Direccion", global::System.Data.SqlDbType.NVarChar, 255, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[25])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Descripcion", global::System.Data.SqlDbType.NVarChar, 255, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[25])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Direccion", global::System.Data.SqlDbType.NVarChar, 30, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[25])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Descripcion", global::System.Data.SqlDbType.NVarChar, 30, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[25])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Fecha", global::System.Data.SqlDbType.Date, 3, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[25])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Recurrencia", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[25])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Telefono", global::System.Data.SqlDbType.NVarChar, 15, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[26] = new global::System.Data.SqlClient.SqlCommand();
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[26])).Connection = new global::System.Data.SqlClient.SqlConnection(global::PantallaInicio.Properties.Settings.Default.BencalethConnectionString);
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[26])).CommandText = "dbo.Update_Ninos2";
@@ -28345,7 +28392,7 @@ namespace PantallaInicio.BencalethDataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update_alcancias(string Id, string Direccion, string Descripcion, global::System.Nullable<global::System.DateTime> Fecha, global::System.Nullable<int> Recurrencia) {
+        public virtual object Update_alcancias(string Id, string Direccion, string Descripcion, global::System.Nullable<global::System.DateTime> Fecha, global::System.Nullable<int> Recurrencia, string Telefono) {
             global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[24]));
             if ((Id == null)) {
                 command.Parameters[1].Value = global::System.DBNull.Value;
@@ -28377,27 +28424,39 @@ namespace PantallaInicio.BencalethDataSetTableAdapters {
             else {
                 command.Parameters[5].Value = global::System.DBNull.Value;
             }
+            if ((Telefono == null)) {
+                command.Parameters[6].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[6].Value = ((string)(Telefono));
+            }
             global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
             if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
                 command.Connection.Open();
             }
-            int returnValue;
+            object returnValue;
             try {
-                returnValue = command.ExecuteNonQuery();
+                returnValue = command.ExecuteScalar();
             }
             finally {
                 if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
                     command.Connection.Close();
                 }
             }
-            return returnValue;
+            if (((returnValue == null) 
+                        || (returnValue.GetType() == typeof(global::System.DBNull)))) {
+                return null;
+            }
+            else {
+                return ((object)(returnValue));
+            }
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Insert_Alcancias2(string Id, string Direccion, string Descripcion, global::System.Nullable<global::System.DateTime> Fecha, global::System.Nullable<int> Recurrencia) {
+        public virtual object Insert_Alcancias2(string Id, string Direccion, string Descripcion, global::System.Nullable<global::System.DateTime> Fecha, global::System.Nullable<int> Recurrencia, string Telefono) {
             global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[25]));
             if ((Id == null)) {
                 command.Parameters[1].Value = global::System.DBNull.Value;
@@ -28429,21 +28488,33 @@ namespace PantallaInicio.BencalethDataSetTableAdapters {
             else {
                 command.Parameters[5].Value = global::System.DBNull.Value;
             }
+            if ((Telefono == null)) {
+                command.Parameters[6].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[6].Value = ((string)(Telefono));
+            }
             global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
             if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
                 command.Connection.Open();
             }
-            int returnValue;
+            object returnValue;
             try {
-                returnValue = command.ExecuteNonQuery();
+                returnValue = command.ExecuteScalar();
             }
             finally {
                 if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
                     command.Connection.Close();
                 }
             }
-            return returnValue;
+            if (((returnValue == null) 
+                        || (returnValue.GetType() == typeof(global::System.DBNull)))) {
+                return null;
+            }
+            else {
+                return ((object)(returnValue));
+            }
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]

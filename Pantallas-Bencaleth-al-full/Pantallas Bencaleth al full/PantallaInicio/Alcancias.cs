@@ -4,26 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using System.Data.SqlClient;
-using PantallaInicio.BencalethDataSet1TableAdapters;
+using PantallaInicio.BencalethDataSetTableAdapters;
 
 namespace PantallaInicio
 {
     public class Alcancias
     {
         QueriesTableAdapter BDAlcancias = new QueriesTableAdapter();
-        
-        private string _IdOrganizacion;
-        public string IdOrganizacion
-        {
-            get
-            {
-                return _IdOrganizacion;
-            }
-            set
-            {
-                _IdOrganizacion = value;
-            }
-        }
 
         private int _Codigo_Alcancias;
         public string Codigo_Alcancias
@@ -39,45 +26,11 @@ namespace PantallaInicio
             }
         }
 
-        private string _Direccion;
-        public string Direccion
-        {
-            get
-            {
-                return _Direccion;
-            }
-            set
-            {
-                _Direccion = value;
-            }
-        }
+        private string Direccion;
 
-        private string _Descripcion;
-        public string Descripcion
-        {
-            get
-            {
-                return _Descripcion;
-            }
-            set
-            {
-                _Descripcion = value;
-            }
-        }
+        private string Descripcion;
 
-        private int _Telefono;
-        public string Telefono
-        {
-            get
-            {
-                return _Telefono.ToString();
-            }
-            set
-            {
-                if (Herramientas.IsNumeric(value))
-                    _Telefono = Convert.ToInt16(value);
-            }
-        }
+        private string _Telefono;
 
         private object ValueCombobox=null;
 
@@ -87,16 +40,18 @@ namespace PantallaInicio
             this.Descripcion = controles.Parent.Controls["txtbDes"].Text;
             System.DateTime? Fecha = Convert.ToDateTime(controles.Parent.Controls["dtpFecha"].Text);
             int combo = Convert.ToInt32(((ComboBox)controles.Parent.Controls["mostrarRecurenciasComboBox"]).SelectedValue.ToString());
+            this._Telefono = controles.Parent.Controls["txtbTel"].Text;
 
             if (!Herramientas.HayCamposNull(controles))
             {
                 try
                 {
-                    BDAlcancias.Insert_Alcancias2(this.Codigo_Alcancias, this.Direccion, this.Descripcion, Fecha, combo);
+                    BDAlcancias.Insert_Alcancias2(this.Codigo_Alcancias, this.Direccion, this.Descripcion, Fecha, combo,this._Telefono);
                     MessageBox.Show("Ingresado");
                     controles.Parent.Controls["textBox1"].Text = "";
                     controles.Parent.Controls["txtbDir"].Text = "";
                     controles.Parent.Controls["txtbDes"].Text = "";
+                    controles.Parent.Controls["txtbTel"].Text = "";
                 }
                 catch (SqlException e)
                 {
@@ -120,12 +75,13 @@ namespace PantallaInicio
             this.Descripcion = controles.Parent.Controls["txtbDes"].Text;
             System.DateTime? Fecha = Convert.ToDateTime(controles.Parent.Controls["dtpFecha"].Text);
             int combo = Convert.ToInt32(((ComboBox)controles.Parent.Controls["mostrarRecurenciasComboBox"]).SelectedValue.ToString());
+            this._Telefono = controles.Parent.Controls["txtbTel"].Text;
 
             if (!(Herramientas.HayCamposNull(controles)))
             {
                 try
                 {
-                    BDAlcancias.Update_alcancias(this.Codigo_Alcancias, this.Direccion, this.Descripcion, Fecha, combo); 
+                    BDAlcancias.Update_alcancias(this.Codigo_Alcancias, this.Direccion, this.Descripcion, Fecha, combo, _Telefono); 
                     MessageBox.Show("Actualizado");
                 }
                 catch (SqlException e)
@@ -151,8 +107,8 @@ namespace PantallaInicio
             dtgrdvw.DataSource = null;
             dtgrdvw.Update();
 
-            BencalethDataSet1 dtset = new BencalethDataSet1();
-            BencalethDataSet1TableAdapters.BuscarSelect_AlcanciasTableAdapter tblAdptEmp = new BuscarSelect_AlcanciasTableAdapter();
+            BencalethDataSet dtset = new BencalethDataSet();
+            BencalethDataSetTableAdapters.BuscarSelect_AlcanciasTableAdapter tblAdptEmp = new BuscarSelect_AlcanciasTableAdapter();
 
             if (!(string.IsNullOrEmpty(txtbBuscado.Text)))
             {
@@ -173,9 +129,10 @@ namespace PantallaInicio
             dtgrdvw.DataSource = dtset.BuscarSelect_Alcancias.DefaultView;
             dtgrdvw.Columns[0].HeaderText = "ID";
             dtgrdvw.Columns[1].HeaderText = "Dirección";
-            dtgrdvw.Columns[2].HeaderText = "Descripción";
-            dtgrdvw.Columns[3].HeaderText = "Fecha";
-            dtgrdvw.Columns[4].HeaderText = "Recurrencia";
+            dtgrdvw.Columns[2].HeaderText = "Local";
+            dtgrdvw.Columns[3].HeaderText = "Teléfono";
+            dtgrdvw.Columns[4].HeaderText = "Fecha";
+            dtgrdvw.Columns[5].HeaderText = "Recurrencia";
             dtgrdvw.Update();
         }
 
@@ -183,7 +140,7 @@ namespace PantallaInicio
             controles.Parent.Controls["textBox1"].Text = fila.Cells[0].Value.ToString();
             controles.Parent.Controls["txtbDir"].Text = fila.Cells[1].Value.ToString();
             controles.Parent.Controls["txtbDes"].Text = fila.Cells[2].Value.ToString();
-
+            controles.Parent.Controls["txtbTel"].Text = fila.Cells[3].Value.ToString();
             controles.Parent.Controls["dtpFecha"].Text = fila.Cells["Fecha"].Value.ToString();
             
             this.ValueCombobox = BDAlcancias.GetIDToComboBoxRecur_Alcancias(fila.Cells["Recurrencia"].Value.ToString());
