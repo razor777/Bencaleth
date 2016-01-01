@@ -161,6 +161,7 @@
             this.date_FechN_Emple.Name = "date_FechN_Emple";
             this.date_FechN_Emple.Size = new System.Drawing.Size(195, 26);
             this.date_FechN_Emple.TabIndex = 5;
+            this.date_FechN_Emple.Value = new System.DateTime(2015, 12, 31, 0, 0, 0, 0);
             this.date_FechN_Emple.ValueChanged += new System.EventHandler(this.date_FechN_Emple_ValueChanged);
             this.date_FechN_Emple.Leave += new System.EventHandler(this.date_FechN_Emple_Leave);
             // 
@@ -277,6 +278,7 @@
             this.Date_FechIn_Emple.Name = "Date_FechIn_Emple";
             this.Date_FechIn_Emple.Size = new System.Drawing.Size(195, 26);
             this.Date_FechIn_Emple.TabIndex = 6;
+            this.Date_FechIn_Emple.Value = new System.DateTime(2015, 12, 31, 0, 0, 0, 0);
             this.Date_FechIn_Emple.ValueChanged += new System.EventHandler(this.Date_FechIn_Emple_ValueChanged);
             // 
             // radio_fem_Emple
@@ -313,11 +315,11 @@
             // 
             this.btn_save_Emple.BackColor = System.Drawing.Color.White;
             this.btn_save_Emple.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_save_Emple.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_save_Emple.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_save_Emple.ForeColor = System.Drawing.Color.SteelBlue;
-            this.btn_save_Emple.Location = new System.Drawing.Point(551, 653);
+            this.btn_save_Emple.Location = new System.Drawing.Point(517, 637);
             this.btn_save_Emple.Name = "btn_save_Emple";
-            this.btn_save_Emple.Size = new System.Drawing.Size(130, 50);
+            this.btn_save_Emple.Size = new System.Drawing.Size(164, 64);
             this.btn_save_Emple.TabIndex = 11;
             this.btn_save_Emple.Text = "Guardar";
             this.btn_save_Emple.UseVisualStyleBackColor = false;
@@ -421,7 +423,6 @@
             this.ClientSize = new System.Drawing.Size(1008, 756);
             this.ControlBox = false;
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.maskedTextBox1);
             this.Controls.Add(this.combobox_CargoTipoComboBox);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.btn_save_Emple);
@@ -445,6 +446,7 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.maskedTextBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "IngresoEmpleados";
             this.Tag = "m";

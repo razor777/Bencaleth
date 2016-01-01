@@ -72,8 +72,8 @@
             this.splitContainer1.Panel2.Controls.Add(this.btn_emp);
             this.splitContainer1.Panel2.Controls.Add(this.btn_niños);
             this.splitContainer1.Panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer1_Panel2_Paint);
-            this.splitContainer1.Size = new System.Drawing.Size(1352, 754);
-            this.splitContainer1.SplitterDistance = 877;
+            this.splitContainer1.Size = new System.Drawing.Size(1276, 754);
+            this.splitContainer1.SplitterDistance = 827;
             this.splitContainer1.TabIndex = 0;
             // 
             // pictureBox1
@@ -89,7 +89,7 @@
             // 
             this.btn_mant.BackColor = System.Drawing.Color.SteelBlue;
             this.btn_mant.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_mant.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_mant.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_mant.ForeColor = System.Drawing.Color.White;
             this.btn_mant.Location = new System.Drawing.Point(91, 505);
             this.btn_mant.Name = "btn_mant";
@@ -103,9 +103,9 @@
             // 
             this.btn_menu.BackColor = System.Drawing.Color.SteelBlue;
             this.btn_menu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_menu.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_menu.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_menu.ForeColor = System.Drawing.Color.White;
-            this.btn_menu.Location = new System.Drawing.Point(91, 607);
+            this.btn_menu.Location = new System.Drawing.Point(91, 642);
             this.btn_menu.Name = "btn_menu";
             this.btn_menu.Size = new System.Drawing.Size(245, 80);
             this.btn_menu.TabIndex = 12;
@@ -117,7 +117,7 @@
             // 
             this.btn_vol.BackColor = System.Drawing.Color.SteelBlue;
             this.btn_vol.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_vol.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_vol.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_vol.ForeColor = System.Drawing.Color.White;
             this.btn_vol.Location = new System.Drawing.Point(91, 205);
             this.btn_vol.Name = "btn_vol";
@@ -131,7 +131,7 @@
             // 
             this.btn_empresas.BackColor = System.Drawing.Color.SteelBlue;
             this.btn_empresas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_empresas.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_empresas.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_empresas.ForeColor = System.Drawing.Color.White;
             this.btn_empresas.Location = new System.Drawing.Point(91, 434);
             this.btn_empresas.Name = "btn_empresas";
@@ -145,7 +145,7 @@
             // 
             this.btn_alcancias.BackColor = System.Drawing.Color.SteelBlue;
             this.btn_alcancias.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_alcancias.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_alcancias.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_alcancias.ForeColor = System.Drawing.Color.White;
             this.btn_alcancias.Location = new System.Drawing.Point(91, 359);
             this.btn_alcancias.Name = "btn_alcancias";
@@ -159,7 +159,7 @@
             // 
             this.btn_pad.BackColor = System.Drawing.Color.SteelBlue;
             this.btn_pad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_pad.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_pad.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_pad.ForeColor = System.Drawing.Color.White;
             this.btn_pad.Location = new System.Drawing.Point(91, 282);
             this.btn_pad.Name = "btn_pad";
@@ -173,7 +173,7 @@
             // 
             this.btn_emp.BackColor = System.Drawing.Color.SteelBlue;
             this.btn_emp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_emp.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_emp.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_emp.ForeColor = System.Drawing.Color.White;
             this.btn_emp.Location = new System.Drawing.Point(91, 130);
             this.btn_emp.Name = "btn_emp";
@@ -187,7 +187,7 @@
             // 
             this.btn_niños.BackColor = System.Drawing.Color.SteelBlue;
             this.btn_niños.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_niños.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_niños.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_niños.ForeColor = System.Drawing.Color.White;
             this.btn_niños.Location = new System.Drawing.Point(91, 52);
             this.btn_niños.Name = "btn_niños";
@@ -201,7 +201,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1352, 754);
+            this.ClientSize = new System.Drawing.Size(1276, 754);
             this.ControlBox = false;
             this.Controls.Add(this.splitContainer1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));

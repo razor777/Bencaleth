@@ -312,11 +312,11 @@
             // 
             this.btn_save_Voluntario.BackColor = System.Drawing.Color.White;
             this.btn_save_Voluntario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_save_Voluntario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_save_Voluntario.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_save_Voluntario.ForeColor = System.Drawing.Color.SteelBlue;
-            this.btn_save_Voluntario.Location = new System.Drawing.Point(554, 669);
+            this.btn_save_Voluntario.Location = new System.Drawing.Point(520, 669);
             this.btn_save_Voluntario.Name = "btn_save_Voluntario";
-            this.btn_save_Voluntario.Size = new System.Drawing.Size(130, 50);
+            this.btn_save_Voluntario.Size = new System.Drawing.Size(164, 64);
             this.btn_save_Voluntario.TabIndex = 114;
             this.btn_save_Voluntario.Text = "Guardar";
             this.btn_save_Voluntario.UseVisualStyleBackColor = false;
@@ -389,11 +389,11 @@
             // 
             this.btnPagar.BackColor = System.Drawing.Color.White;
             this.btnPagar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPagar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPagar.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPagar.ForeColor = System.Drawing.Color.SteelBlue;
-            this.btnPagar.Location = new System.Drawing.Point(418, 669);
+            this.btnPagar.Location = new System.Drawing.Point(232, 669);
             this.btnPagar.Name = "btnPagar";
-            this.btnPagar.Size = new System.Drawing.Size(130, 50);
+            this.btnPagar.Size = new System.Drawing.Size(164, 64);
             this.btnPagar.TabIndex = 119;
             this.btnPagar.Text = "Pago";
             this.btnPagar.UseVisualStyleBackColor = false;

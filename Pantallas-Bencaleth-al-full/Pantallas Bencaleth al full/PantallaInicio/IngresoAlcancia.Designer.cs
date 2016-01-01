@@ -141,11 +141,11 @@
             // 
             this.btn_save_Alcancias.BackColor = System.Drawing.Color.AliceBlue;
             this.btn_save_Alcancias.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_save_Alcancias.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_save_Alcancias.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_save_Alcancias.ForeColor = System.Drawing.Color.SteelBlue;
-            this.btn_save_Alcancias.Location = new System.Drawing.Point(557, 641);
+            this.btn_save_Alcancias.Location = new System.Drawing.Point(523, 619);
             this.btn_save_Alcancias.Name = "btn_save_Alcancias";
-            this.btn_save_Alcancias.Size = new System.Drawing.Size(130, 50);
+            this.btn_save_Alcancias.Size = new System.Drawing.Size(164, 64);
             this.btn_save_Alcancias.TabIndex = 5;
             this.btn_save_Alcancias.Text = "Guardar";
             this.btn_save_Alcancias.UseVisualStyleBackColor = false;

@@ -129,7 +129,7 @@
             // 
             this.button2.BackColor = System.Drawing.Color.AliceBlue;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.SteelBlue;
             this.button2.Location = new System.Drawing.Point(572, 451);
             this.button2.Name = "button2";
@@ -229,7 +229,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 43);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(930, 689);
+            this.tabPage2.Size = new System.Drawing.Size(939, 717);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Inventario Terapia";
             // 
@@ -343,7 +343,7 @@
             // 
             this.btn_Home.BackColor = System.Drawing.Color.SteelBlue;
             this.btn_Home.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Home.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Home.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Home.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.btn_Home.Location = new System.Drawing.Point(1017, 401);
             this.btn_Home.Name = "btn_Home";
@@ -357,7 +357,7 @@
             // 
             this.btn_Show_Invs.BackColor = System.Drawing.Color.SteelBlue;
             this.btn_Show_Invs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Show_Invs.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Show_Invs.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Show_Invs.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.btn_Show_Invs.Location = new System.Drawing.Point(1017, 273);
             this.btn_Show_Invs.Name = "btn_Show_Invs";
@@ -396,7 +396,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(1352, 754);
+            this.ClientSize = new System.Drawing.Size(1276, 754);
             this.ControlBox = false;
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btn_Show_Invs);

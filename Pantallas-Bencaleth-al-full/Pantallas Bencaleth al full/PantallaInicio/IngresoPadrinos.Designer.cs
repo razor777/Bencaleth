@@ -288,11 +288,11 @@
             // 
             this.btn_save.BackColor = System.Drawing.Color.AliceBlue;
             this.btn_save.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_save.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_save.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_save.ForeColor = System.Drawing.Color.SteelBlue;
-            this.btn_save.Location = new System.Drawing.Point(540, 667);
+            this.btn_save.Location = new System.Drawing.Point(506, 664);
             this.btn_save.Name = "btn_save";
-            this.btn_save.Size = new System.Drawing.Size(130, 50);
+            this.btn_save.Size = new System.Drawing.Size(164, 64);
             this.btn_save.TabIndex = 12;
             this.btn_save.Text = "Guardar";
             this.btn_save.UseVisualStyleBackColor = false;
@@ -358,11 +358,11 @@
             // 
             this.btnPago.BackColor = System.Drawing.Color.AliceBlue;
             this.btnPago.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPago.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPago.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPago.ForeColor = System.Drawing.Color.SteelBlue;
-            this.btnPago.Location = new System.Drawing.Point(404, 667);
+            this.btnPago.Location = new System.Drawing.Point(229, 664);
             this.btnPago.Name = "btnPago";
-            this.btnPago.Size = new System.Drawing.Size(130, 50);
+            this.btnPago.Size = new System.Drawing.Size(164, 64);
             this.btnPago.TabIndex = 89;
             this.btnPago.Text = "Pago";
             this.btnPago.UseVisualStyleBackColor = false;

@@ -48,74 +48,84 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(144, 87);
+            this.label1.Location = new System.Drawing.Point(150, 96);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(79, 24);
+            this.label1.Size = new System.Drawing.Size(87, 24);
             this.label1.TabIndex = 0;
             this.label1.Text = " Usuario";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label3.Location = new System.Drawing.Point(57, 142);
+            this.label3.Location = new System.Drawing.Point(55, 148);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(166, 24);
+            this.label3.Size = new System.Drawing.Size(182, 24);
             this.label3.TabIndex = 2;
             this.label3.Text = "Nueva Contraseña";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label4.Location = new System.Drawing.Point(31, 199);
+            this.label4.Location = new System.Drawing.Point(25, 205);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(192, 24);
+            this.label4.Size = new System.Drawing.Size(212, 24);
             this.label4.TabIndex = 3;
             this.label4.Text = "Confirmar Contraseña";
             // 
             // txt_Newpassw
             // 
-            this.txt_Newpassw.Location = new System.Drawing.Point(245, 146);
+            this.txt_Newpassw.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_Newpassw.Location = new System.Drawing.Point(258, 146);
             this.txt_Newpassw.MaxLength = 30;
             this.txt_Newpassw.Name = "txt_Newpassw";
-            this.txt_Newpassw.Size = new System.Drawing.Size(157, 20);
+            this.txt_Newpassw.Size = new System.Drawing.Size(157, 26);
             this.txt_Newpassw.TabIndex = 6;
             this.txt_Newpassw.TextChanged += new System.EventHandler(this.txt_Newpassw_TextChanged_1);
             this.txt_Newpassw.Leave += new System.EventHandler(this.txt_Newpassw_Leave);
             // 
             // txt_Confimpassw
             // 
-            this.txt_Confimpassw.Location = new System.Drawing.Point(245, 203);
+            this.txt_Confimpassw.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_Confimpassw.Location = new System.Drawing.Point(258, 203);
             this.txt_Confimpassw.MaxLength = 30;
             this.txt_Confimpassw.Name = "txt_Confimpassw";
-            this.txt_Confimpassw.Size = new System.Drawing.Size(157, 20);
+            this.txt_Confimpassw.Size = new System.Drawing.Size(157, 26);
             this.txt_Confimpassw.TabIndex = 7;
             this.txt_Confimpassw.TextChanged += new System.EventHandler(this.txt_Confimpassw_TextChanged_1);
             this.txt_Confimpassw.Leave += new System.EventHandler(this.txt_Confimpassw_Leave);
             // 
             // btn_Acep
             // 
-            this.btn_Acep.Location = new System.Drawing.Point(245, 272);
+            this.btn_Acep.BackColor = System.Drawing.Color.White;
+            this.btn_Acep.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Acep.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Acep.ForeColor = System.Drawing.Color.SteelBlue;
+            this.btn_Acep.Location = new System.Drawing.Point(107, 261);
             this.btn_Acep.Name = "btn_Acep";
-            this.btn_Acep.Size = new System.Drawing.Size(75, 23);
+            this.btn_Acep.Size = new System.Drawing.Size(130, 50);
             this.btn_Acep.TabIndex = 8;
             this.btn_Acep.Text = "Aceptar";
-            this.btn_Acep.UseVisualStyleBackColor = true;
+            this.btn_Acep.UseVisualStyleBackColor = false;
             this.btn_Acep.Click += new System.EventHandler(this.btn_Acep_Click_1);
             // 
             // btn_Cancel
             // 
-            this.btn_Cancel.Location = new System.Drawing.Point(327, 272);
+            this.btn_Cancel.BackColor = System.Drawing.Color.White;
+            this.btn_Cancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Cancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Cancel.ForeColor = System.Drawing.Color.SteelBlue;
+            this.btn_Cancel.Location = new System.Drawing.Point(285, 261);
             this.btn_Cancel.Name = "btn_Cancel";
-            this.btn_Cancel.Size = new System.Drawing.Size(75, 23);
+            this.btn_Cancel.Size = new System.Drawing.Size(130, 50);
             this.btn_Cancel.TabIndex = 9;
             this.btn_Cancel.Text = "Cancelar";
-            this.btn_Cancel.UseVisualStyleBackColor = true;
+            this.btn_Cancel.UseVisualStyleBackColor = false;
             this.btn_Cancel.Click += new System.EventHandler(this.btn_Cancel_Click);
             // 
             // bencalethDataSet
@@ -143,10 +153,11 @@
             this.mostarUsuariosComboBox.DataSource = this.mostarUsuariosBindingSource;
             this.mostarUsuariosComboBox.DisplayMember = "Nombre";
             this.mostarUsuariosComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.mostarUsuariosComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mostarUsuariosComboBox.FormattingEnabled = true;
-            this.mostarUsuariosComboBox.Location = new System.Drawing.Point(245, 92);
+            this.mostarUsuariosComboBox.Location = new System.Drawing.Point(258, 92);
             this.mostarUsuariosComboBox.Name = "mostarUsuariosComboBox";
-            this.mostarUsuariosComboBox.Size = new System.Drawing.Size(157, 21);
+            this.mostarUsuariosComboBox.Size = new System.Drawing.Size(157, 28);
             this.mostarUsuariosComboBox.TabIndex = 10;
             this.mostarUsuariosComboBox.ValueMember = "Nombre";
             // 

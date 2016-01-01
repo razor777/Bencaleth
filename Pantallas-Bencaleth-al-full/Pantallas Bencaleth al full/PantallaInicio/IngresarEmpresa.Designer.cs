@@ -287,11 +287,11 @@
             // 
             this.btn_save_empresa.BackColor = System.Drawing.Color.AliceBlue;
             this.btn_save_empresa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_save_empresa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_save_empresa.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_save_empresa.ForeColor = System.Drawing.Color.SteelBlue;
-            this.btn_save_empresa.Location = new System.Drawing.Point(551, 646);
+            this.btn_save_empresa.Location = new System.Drawing.Point(517, 625);
             this.btn_save_empresa.Name = "btn_save_empresa";
-            this.btn_save_empresa.Size = new System.Drawing.Size(130, 50);
+            this.btn_save_empresa.Size = new System.Drawing.Size(164, 64);
             this.btn_save_empresa.TabIndex = 9;
             this.btn_save_empresa.Text = "Guardar";
             this.btn_save_empresa.UseVisualStyleBackColor = false;

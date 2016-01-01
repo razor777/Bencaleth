@@ -201,11 +201,11 @@
             // 
             this.btn_saveNiños.BackColor = System.Drawing.Color.White;
             this.btn_saveNiños.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_saveNiños.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_saveNiños.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_saveNiños.ForeColor = System.Drawing.Color.SteelBlue;
-            this.btn_saveNiños.Location = new System.Drawing.Point(544, 659);
+            this.btn_saveNiños.Location = new System.Drawing.Point(510, 631);
             this.btn_saveNiños.Name = "btn_saveNiños";
-            this.btn_saveNiños.Size = new System.Drawing.Size(130, 50);
+            this.btn_saveNiños.Size = new System.Drawing.Size(164, 64);
             this.btn_saveNiños.TabIndex = 8;
             this.btn_saveNiños.Text = "Guardar";
             this.btn_saveNiños.UseVisualStyleBackColor = false;

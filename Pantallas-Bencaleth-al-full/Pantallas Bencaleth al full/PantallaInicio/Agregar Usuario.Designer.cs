@@ -50,11 +50,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label1.Location = new System.Drawing.Point(129, 73);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(79, 24);
+            this.label1.Size = new System.Drawing.Size(85, 24);
             this.label1.TabIndex = 0;
             this.label1.Text = "Nombre";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -62,11 +62,11 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label2.Location = new System.Drawing.Point(102, 122);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(106, 24);
+            this.label2.Size = new System.Drawing.Size(116, 24);
             this.label2.TabIndex = 1;
             this.label2.Text = "Contraseña";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -74,11 +74,11 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label3.Location = new System.Drawing.Point(16, 173);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(192, 24);
+            this.label3.Size = new System.Drawing.Size(212, 24);
             this.label3.TabIndex = 2;
             this.label3.Text = "Confirmar Contraseña";
             this.label3.Click += new System.EventHandler(this.label3_Click);
@@ -86,64 +86,75 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label4.Location = new System.Drawing.Point(147, 220);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(61, 24);
+            this.label4.Size = new System.Drawing.Size(66, 24);
             this.label4.TabIndex = 4;
             this.label4.Text = "Cargo";
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // txt_Nom_Adduser
             // 
-            this.txt_Nom_Adduser.Location = new System.Drawing.Point(242, 77);
+            this.txt_Nom_Adduser.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_Nom_Adduser.Location = new System.Drawing.Point(242, 71);
             this.txt_Nom_Adduser.MaxLength = 30;
             this.txt_Nom_Adduser.Name = "txt_Nom_Adduser";
-            this.txt_Nom_Adduser.Size = new System.Drawing.Size(157, 20);
+            this.txt_Nom_Adduser.Size = new System.Drawing.Size(157, 26);
             this.txt_Nom_Adduser.TabIndex = 5;
             this.txt_Nom_Adduser.TextChanged += new System.EventHandler(this.txt_Nom_Adduser_TextChanged);
             this.txt_Nom_Adduser.Leave += new System.EventHandler(this.txt_Nom_Adduser_Leave);
             // 
             // txt_Pass_Adduser
             // 
-            this.txt_Pass_Adduser.Location = new System.Drawing.Point(242, 127);
+            this.txt_Pass_Adduser.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_Pass_Adduser.Location = new System.Drawing.Point(242, 120);
             this.txt_Pass_Adduser.MaxLength = 30;
             this.txt_Pass_Adduser.Name = "txt_Pass_Adduser";
-            this.txt_Pass_Adduser.Size = new System.Drawing.Size(157, 20);
+            this.txt_Pass_Adduser.Size = new System.Drawing.Size(157, 26);
             this.txt_Pass_Adduser.TabIndex = 6;
             this.txt_Pass_Adduser.TextChanged += new System.EventHandler(this.txt_Pass_Adduser_TextChanged);
             this.txt_Pass_Adduser.Leave += new System.EventHandler(this.txt_Pass_Adduser_Leave);
             // 
             // txt_Confir_Adduser
             // 
-            this.txt_Confir_Adduser.Location = new System.Drawing.Point(242, 176);
+            this.txt_Confir_Adduser.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_Confir_Adduser.Location = new System.Drawing.Point(242, 171);
             this.txt_Confir_Adduser.MaxLength = 30;
             this.txt_Confir_Adduser.Name = "txt_Confir_Adduser";
-            this.txt_Confir_Adduser.Size = new System.Drawing.Size(157, 20);
+            this.txt_Confir_Adduser.Size = new System.Drawing.Size(157, 26);
             this.txt_Confir_Adduser.TabIndex = 7;
             this.txt_Confir_Adduser.TextChanged += new System.EventHandler(this.txt_Confir_Adduser_TextChanged);
             this.txt_Confir_Adduser.Leave += new System.EventHandler(this.txt_Confir_Adduser_Leave);
             // 
             // btn_Cancel_Adduser
             // 
+            this.btn_Cancel_Adduser.BackColor = System.Drawing.Color.White;
             this.btn_Cancel_Adduser.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btn_Cancel_Adduser.Location = new System.Drawing.Point(324, 280);
+            this.btn_Cancel_Adduser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Cancel_Adduser.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Cancel_Adduser.ForeColor = System.Drawing.Color.SteelBlue;
+            this.btn_Cancel_Adduser.Location = new System.Drawing.Point(269, 280);
             this.btn_Cancel_Adduser.Name = "btn_Cancel_Adduser";
-            this.btn_Cancel_Adduser.Size = new System.Drawing.Size(75, 23);
+            this.btn_Cancel_Adduser.Size = new System.Drawing.Size(130, 50);
             this.btn_Cancel_Adduser.TabIndex = 11;
             this.btn_Cancel_Adduser.Text = "Cancelar";
-            this.btn_Cancel_Adduser.UseVisualStyleBackColor = true;
+            this.btn_Cancel_Adduser.UseVisualStyleBackColor = false;
             this.btn_Cancel_Adduser.Click += new System.EventHandler(this.btn_Cancel_Adduser_Click);
             // 
             // btn_Acep_Adduseer
             // 
-            this.btn_Acep_Adduseer.Location = new System.Drawing.Point(242, 280);
+            this.btn_Acep_Adduseer.BackColor = System.Drawing.Color.White;
+            this.btn_Acep_Adduseer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Acep_Adduseer.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Acep_Adduseer.ForeColor = System.Drawing.Color.SteelBlue;
+            this.btn_Acep_Adduseer.Location = new System.Drawing.Point(78, 280);
             this.btn_Acep_Adduseer.Name = "btn_Acep_Adduseer";
-            this.btn_Acep_Adduseer.Size = new System.Drawing.Size(75, 23);
+            this.btn_Acep_Adduseer.Size = new System.Drawing.Size(130, 50);
             this.btn_Acep_Adduseer.TabIndex = 10;
             this.btn_Acep_Adduseer.Text = "Aceptar";
-            this.btn_Acep_Adduseer.UseVisualStyleBackColor = true;
+            this.btn_Acep_Adduseer.UseVisualStyleBackColor = false;
             this.btn_Acep_Adduseer.Click += new System.EventHandler(this.btn_Acep_Adduseer_Click);
             // 
             // bencalethDataSet
@@ -171,10 +182,11 @@
             this.mostarCargoComboBox.DataSource = this.mostarCargoBindingSource;
             this.mostarCargoComboBox.DisplayMember = "descripcion";
             this.mostarCargoComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.mostarCargoComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mostarCargoComboBox.FormattingEnabled = true;
-            this.mostarCargoComboBox.Location = new System.Drawing.Point(242, 220);
+            this.mostarCargoComboBox.Location = new System.Drawing.Point(242, 216);
             this.mostarCargoComboBox.Name = "mostarCargoComboBox";
-            this.mostarCargoComboBox.Size = new System.Drawing.Size(157, 21);
+            this.mostarCargoComboBox.Size = new System.Drawing.Size(157, 28);
             this.mostarCargoComboBox.TabIndex = 12;
             this.mostarCargoComboBox.ValueMember = "id";
             this.mostarCargoComboBox.SelectedIndexChanged += new System.EventHandler(this.mostarCargoComboBox_SelectedIndexChanged);

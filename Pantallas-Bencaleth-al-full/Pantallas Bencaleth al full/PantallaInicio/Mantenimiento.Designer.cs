@@ -50,6 +50,7 @@
             // 
             // Cbb_Mantenimiento
             // 
+            this.Cbb_Mantenimiento.BackColor = System.Drawing.SystemColors.Window;
             this.Cbb_Mantenimiento.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.Cbb_Mantenimiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Cbb_Mantenimiento.FormattingEnabled = true;
@@ -60,9 +61,9 @@
             "Niños",
             "Padrinos",
             "Voluntarios"});
-            this.Cbb_Mantenimiento.Location = new System.Drawing.Point(442, 54);
+            this.Cbb_Mantenimiento.Location = new System.Drawing.Point(731, 74);
             this.Cbb_Mantenimiento.Name = "Cbb_Mantenimiento";
-            this.Cbb_Mantenimiento.Size = new System.Drawing.Size(157, 28);
+            this.Cbb_Mantenimiento.Size = new System.Drawing.Size(176, 28);
             this.Cbb_Mantenimiento.TabIndex = 0;
             this.Cbb_Mantenimiento.SelectedIndexChanged += new System.EventHandler(this.Cbb_Mantenimiento_SelectedIndexChanged);
             // 
@@ -101,7 +102,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(7, 18);
+            this.label1.Location = new System.Drawing.Point(7, 41);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(137, 29);
             this.label1.TabIndex = 2;
@@ -113,7 +114,7 @@
             this.rdbtnID.AutoSize = true;
             this.rdbtnID.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdbtnID.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.rdbtnID.Location = new System.Drawing.Point(12, 50);
+            this.rdbtnID.Location = new System.Drawing.Point(198, 41);
             this.rdbtnID.Name = "rdbtnID";
             this.rdbtnID.Size = new System.Drawing.Size(52, 30);
             this.rdbtnID.TabIndex = 8;
@@ -128,7 +129,7 @@
             this.radioButton7.Checked = true;
             this.radioButton7.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton7.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.radioButton7.Location = new System.Drawing.Point(84, 50);
+            this.radioButton7.Location = new System.Drawing.Point(296, 41);
             this.radioButton7.Name = "radioButton7";
             this.radioButton7.Size = new System.Drawing.Size(184, 30);
             this.radioButton7.TabIndex = 10;
@@ -141,9 +142,9 @@
             // txtbABuscar
             // 
             this.txtbABuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbABuscar.Location = new System.Drawing.Point(12, 86);
+            this.txtbABuscar.Location = new System.Drawing.Point(12, 74);
             this.txtbABuscar.Name = "txtbABuscar";
-            this.txtbABuscar.Size = new System.Drawing.Size(295, 26);
+            this.txtbABuscar.Size = new System.Drawing.Size(468, 26);
             this.txtbABuscar.TabIndex = 11;
             this.txtbABuscar.TextChanged += new System.EventHandler(this.txtbABuscar_TextChanged);
             // 
@@ -151,7 +152,7 @@
             // 
             this.btn_Edit.BackColor = System.Drawing.Color.SteelBlue;
             this.btn_Edit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Edit.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Edit.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Edit.ForeColor = System.Drawing.Color.White;
             this.btn_Edit.Location = new System.Drawing.Point(83, 265);
             this.btn_Edit.Name = "btn_Edit";
@@ -165,7 +166,7 @@
             // 
             this.btn_Delete.BackColor = System.Drawing.Color.SteelBlue;
             this.btn_Delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Delete.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Delete.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Delete.ForeColor = System.Drawing.Color.White;
             this.btn_Delete.Location = new System.Drawing.Point(83, 380);
             this.btn_Delete.Name = "btn_Delete";
@@ -179,7 +180,7 @@
             // 
             this.btn_menu.BackColor = System.Drawing.Color.SteelBlue;
             this.btn_menu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_menu.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_menu.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_menu.ForeColor = System.Drawing.Color.White;
             this.btn_menu.Location = new System.Drawing.Point(83, 495);
             this.btn_menu.Name = "btn_menu";
@@ -218,18 +219,18 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label2.Location = new System.Drawing.Point(437, 18);
+            this.label2.Location = new System.Drawing.Point(726, 41);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(106, 29);
             this.label2.TabIndex = 19;
-            this.label2.Text = "Modulos";
+            this.label2.Text = "Módulos";
             // 
             // Mantenimiento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
-            this.ClientSize = new System.Drawing.Size(1352, 754);
+            this.ClientSize = new System.Drawing.Size(1276, 754);
             this.ControlBox = false;
             this.Controls.Add(this.label2);
             this.Controls.Add(this.dataGridView1);
