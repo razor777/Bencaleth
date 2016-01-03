@@ -109,7 +109,7 @@
             this.combobox_nomempresaComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.combobox_nomempresaComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.combobox_nomempresaComboBox.FormattingEnabled = true;
-            this.combobox_nomempresaComboBox.Location = new System.Drawing.Point(256, 337);
+            this.combobox_nomempresaComboBox.Location = new System.Drawing.Point(264, 337);
             this.combobox_nomempresaComboBox.Name = "combobox_nomempresaComboBox";
             this.combobox_nomempresaComboBox.Size = new System.Drawing.Size(193, 28);
             this.combobox_nomempresaComboBox.TabIndex = 92;
@@ -129,11 +129,11 @@
             // 
             this.button2.BackColor = System.Drawing.Color.AliceBlue;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.SteelBlue;
-            this.button2.Location = new System.Drawing.Point(572, 451);
+            this.button2.Location = new System.Drawing.Point(517, 419);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(130, 50);
+            this.button2.Size = new System.Drawing.Size(193, 80);
             this.button2.TabIndex = 92;
             this.button2.Text = "Guardar";
             this.button2.UseVisualStyleBackColor = false;
@@ -144,7 +144,7 @@
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label12.Location = new System.Drawing.Point(250, 303);
+            this.label12.Location = new System.Drawing.Point(258, 303);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(124, 31);
             this.label12.TabIndex = 90;
@@ -155,7 +155,7 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label11.Location = new System.Drawing.Point(503, 208);
+            this.label11.Location = new System.Drawing.Point(511, 208);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(131, 31);
             this.label11.TabIndex = 89;
@@ -166,7 +166,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label6.Location = new System.Drawing.Point(250, 208);
+            this.label6.Location = new System.Drawing.Point(258, 208);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(168, 31);
             this.label6.TabIndex = 88;
@@ -175,7 +175,7 @@
             // txt_Can_Invd
             // 
             this.txt_Can_Invd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Can_Invd.Location = new System.Drawing.Point(509, 242);
+            this.txt_Can_Invd.Location = new System.Drawing.Point(517, 242);
             this.txt_Can_Invd.MaxLength = 8;
             this.txt_Can_Invd.Name = "txt_Can_Invd";
             this.txt_Can_Invd.Size = new System.Drawing.Size(193, 26);
@@ -185,7 +185,7 @@
             // txt_Des_Invd
             // 
             this.txt_Des_Invd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Des_Invd.Location = new System.Drawing.Point(256, 242);
+            this.txt_Des_Invd.Location = new System.Drawing.Point(264, 242);
             this.txt_Des_Invd.MaxLength = 30;
             this.txt_Des_Invd.Name = "txt_Des_Invd";
             this.txt_Des_Invd.Size = new System.Drawing.Size(193, 26);
@@ -206,7 +206,7 @@
             // txt_Id_Invd
             // 
             this.txt_Id_Invd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Id_Invd.Location = new System.Drawing.Point(256, 153);
+            this.txt_Id_Invd.Location = new System.Drawing.Point(264, 153);
             this.txt_Id_Invd.MaxLength = 30;
             this.txt_Id_Invd.Name = "txt_Id_Invd";
             this.txt_Id_Invd.Size = new System.Drawing.Size(193, 26);
@@ -255,11 +255,11 @@
             // 
             this.btn_save_InTF.BackColor = System.Drawing.Color.AliceBlue;
             this.btn_save_InTF.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_save_InTF.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_save_InTF.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_save_InTF.ForeColor = System.Drawing.Color.SteelBlue;
-            this.btn_save_InTF.Location = new System.Drawing.Point(562, 475);
+            this.btn_save_InTF.Location = new System.Drawing.Point(517, 419);
             this.btn_save_InTF.Name = "btn_save_InTF";
-            this.btn_save_InTF.Size = new System.Drawing.Size(130, 50);
+            this.btn_save_InTF.Size = new System.Drawing.Size(193, 80);
             this.btn_save_InTF.TabIndex = 86;
             this.btn_save_InTF.Text = "Guardar";
             this.btn_save_InTF.UseVisualStyleBackColor = false;

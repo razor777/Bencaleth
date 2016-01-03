@@ -36,6 +36,7 @@
             this.btn_Menu = new System.Windows.Forms.Button();
             this.btn_back = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -77,7 +78,7 @@
             this.Cbb_Mantenimiento.Items.AddRange(new object[] {
             "Donaciones",
             "Terapia Física"});
-            this.Cbb_Mantenimiento.Location = new System.Drawing.Point(110, 46);
+            this.Cbb_Mantenimiento.Location = new System.Drawing.Point(425, 48);
             this.Cbb_Mantenimiento.Name = "Cbb_Mantenimiento";
             this.Cbb_Mantenimiento.Size = new System.Drawing.Size(236, 28);
             this.Cbb_Mantenimiento.TabIndex = 2;
@@ -87,11 +88,11 @@
             // 
             this.btn_Menu.BackColor = System.Drawing.Color.LightCyan;
             this.btn_Menu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Menu.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Menu.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Menu.ForeColor = System.Drawing.Color.SteelBlue;
-            this.btn_Menu.Location = new System.Drawing.Point(1054, 200);
+            this.btn_Menu.Location = new System.Drawing.Point(1038, 244);
             this.btn_Menu.Name = "btn_Menu";
-            this.btn_Menu.Size = new System.Drawing.Size(150, 45);
+            this.btn_Menu.Size = new System.Drawing.Size(209, 80);
             this.btn_Menu.TabIndex = 17;
             this.btn_Menu.Text = "Menú";
             this.btn_Menu.UseVisualStyleBackColor = false;
@@ -101,11 +102,11 @@
             // 
             this.btn_back.BackColor = System.Drawing.Color.LightCyan;
             this.btn_back.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_back.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_back.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_back.ForeColor = System.Drawing.Color.SteelBlue;
-            this.btn_back.Location = new System.Drawing.Point(1054, 116);
+            this.btn_back.Location = new System.Drawing.Point(1038, 116);
             this.btn_back.Name = "btn_back";
-            this.btn_back.Size = new System.Drawing.Size(150, 45);
+            this.btn_back.Size = new System.Drawing.Size(209, 80);
             this.btn_back.TabIndex = 18;
             this.btn_back.Text = "Regresar";
             this.btn_back.UseVisualStyleBackColor = false;
@@ -114,12 +115,23 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::PantallaInicio.Properties.Resources.Sin_nombre_EN_BLANCO;
-            this.pictureBox1.Location = new System.Drawing.Point(1011, 327);
+            this.pictureBox1.Location = new System.Drawing.Point(1020, 400);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(253, 261);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 122;
             this.pictureBox1.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label1.Location = new System.Drawing.Point(182, 47);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(213, 29);
+            this.label1.TabIndex = 123;
+            this.label1.Text = "Tipo de Inventario:";
             // 
             // Vista_Inventarios
             // 
@@ -128,11 +140,13 @@
             this.BackColor = System.Drawing.Color.SteelBlue;
             this.ClientSize = new System.Drawing.Size(1276, 733);
             this.ControlBox = false;
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btn_back);
             this.Controls.Add(this.btn_Menu);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.Cbb_Mantenimiento);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Vista_Inventarios";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -143,6 +157,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -153,5 +168,6 @@
         private System.Windows.Forms.Button btn_Menu;
         private System.Windows.Forms.Button btn_back;
         public System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label1;
     }
 }

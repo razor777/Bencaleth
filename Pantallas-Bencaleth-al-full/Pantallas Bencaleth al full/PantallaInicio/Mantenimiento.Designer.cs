@@ -61,7 +61,7 @@
             "Niños",
             "Padrinos",
             "Voluntarios"});
-            this.Cbb_Mantenimiento.Location = new System.Drawing.Point(731, 74);
+            this.Cbb_Mantenimiento.Location = new System.Drawing.Point(652, 74);
             this.Cbb_Mantenimiento.Name = "Cbb_Mantenimiento";
             this.Cbb_Mantenimiento.Size = new System.Drawing.Size(176, 28);
             this.Cbb_Mantenimiento.TabIndex = 0;
@@ -102,7 +102,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(7, 41);
+            this.label1.Location = new System.Drawing.Point(94, 43);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(137, 29);
             this.label1.TabIndex = 2;
@@ -114,7 +114,7 @@
             this.rdbtnID.AutoSize = true;
             this.rdbtnID.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdbtnID.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.rdbtnID.Location = new System.Drawing.Point(198, 41);
+            this.rdbtnID.Location = new System.Drawing.Point(285, 43);
             this.rdbtnID.Name = "rdbtnID";
             this.rdbtnID.Size = new System.Drawing.Size(52, 30);
             this.rdbtnID.TabIndex = 8;
@@ -129,7 +129,7 @@
             this.radioButton7.Checked = true;
             this.radioButton7.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton7.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.radioButton7.Location = new System.Drawing.Point(296, 41);
+            this.radioButton7.Location = new System.Drawing.Point(383, 43);
             this.radioButton7.Name = "radioButton7";
             this.radioButton7.Size = new System.Drawing.Size(184, 30);
             this.radioButton7.TabIndex = 10;
@@ -142,7 +142,7 @@
             // txtbABuscar
             // 
             this.txtbABuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbABuscar.Location = new System.Drawing.Point(12, 74);
+            this.txtbABuscar.Location = new System.Drawing.Point(99, 76);
             this.txtbABuscar.Name = "txtbABuscar";
             this.txtbABuscar.Size = new System.Drawing.Size(468, 26);
             this.txtbABuscar.TabIndex = 11;
@@ -219,7 +219,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label2.Location = new System.Drawing.Point(726, 41);
+            this.label2.Location = new System.Drawing.Point(647, 41);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(106, 29);
             this.label2.TabIndex = 19;

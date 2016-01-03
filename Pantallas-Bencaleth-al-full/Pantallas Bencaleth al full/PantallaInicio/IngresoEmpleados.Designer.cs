@@ -78,7 +78,7 @@
             // txt_Dir_Emple
             // 
             this.txt_Dir_Emple.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Dir_Emple.Location = new System.Drawing.Point(486, 573);
+            this.txt_Dir_Emple.Location = new System.Drawing.Point(488, 573);
             this.txt_Dir_Emple.MaxLength = 30;
             this.txt_Dir_Emple.Name = "txt_Dir_Emple";
             this.txt_Dir_Emple.Size = new System.Drawing.Size(195, 26);
@@ -88,7 +88,7 @@
             // txt_Email_Emple
             // 
             this.txt_Email_Emple.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Email_Emple.Location = new System.Drawing.Point(231, 573);
+            this.txt_Email_Emple.Location = new System.Drawing.Point(232, 573);
             this.txt_Email_Emple.MaxLength = 30;
             this.txt_Email_Emple.Name = "txt_Email_Emple";
             this.txt_Email_Emple.Size = new System.Drawing.Size(195, 26);
@@ -101,7 +101,7 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(480, 463);
+            this.label11.Location = new System.Drawing.Point(482, 454);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(120, 31);
             this.label11.TabIndex = 79;
@@ -113,7 +113,7 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(480, 539);
+            this.label10.Location = new System.Drawing.Point(482, 539);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(128, 31);
             this.label10.TabIndex = 78;
@@ -123,7 +123,7 @@
             // txt_Tel_Emple
             // 
             this.txt_Tel_Emple.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Tel_Emple.Location = new System.Drawing.Point(486, 497);
+            this.txt_Tel_Emple.Location = new System.Drawing.Point(486, 488);
             this.txt_Tel_Emple.MaxLength = 15;
             this.txt_Tel_Emple.Name = "txt_Tel_Emple";
             this.txt_Tel_Emple.Size = new System.Drawing.Size(195, 26);
@@ -155,7 +155,7 @@
             // date_FechN_Emple
             // 
             this.date_FechN_Emple.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.date_FechN_Emple.Location = new System.Drawing.Point(231, 408);
+            this.date_FechN_Emple.Location = new System.Drawing.Point(232, 408);
             this.date_FechN_Emple.MaxDate = new System.DateTime(2015, 12, 31, 0, 0, 0, 0);
             this.date_FechN_Emple.MinDate = new System.DateTime(1995, 1, 1, 0, 0, 0, 0);
             this.date_FechN_Emple.Name = "date_FechN_Emple";
@@ -226,7 +226,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(226, 291);
+            this.label6.Location = new System.Drawing.Point(225, 291);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(104, 31);
             this.label6.TabIndex = 64;
