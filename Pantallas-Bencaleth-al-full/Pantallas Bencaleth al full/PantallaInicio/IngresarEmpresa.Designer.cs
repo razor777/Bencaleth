@@ -390,7 +390,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::PantallaInicio.Properties.Resources.Logo_Bencaleth_Blanco;
+            this.pictureBox1.Image = global::PantallaInicio.Properties.Resources.Sin_nombre_EN_BLANCO;
             this.pictureBox1.Location = new System.Drawing.Point(1, 1);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(154, 159);
