@@ -63,10 +63,6 @@
             this.errorProvider8 = new System.Windows.Forms.ErrorProvider(this.components);
             this.errorProvider9 = new System.Windows.Forms.ErrorProvider(this.components);
             this.btnPagar = new System.Windows.Forms.Button();
-            this.label11 = new System.Windows.Forms.Label();
-            this.txtbMensualidad = new System.Windows.Forms.TextBox();
-            this.txt_Iden_Voluntarios = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.epERROR)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
@@ -85,7 +81,7 @@
             // 
             this.txt_Id_Voluntarios.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_Id_Voluntarios.Location = new System.Drawing.Point(229, 131);
-            this.txt_Id_Voluntarios.MaxLength = 35;
+            this.txt_Id_Voluntarios.MaxLength = 15;
             this.txt_Id_Voluntarios.Name = "txt_Id_Voluntarios";
             this.txt_Id_Voluntarios.Size = new System.Drawing.Size(195, 26);
             this.txt_Id_Voluntarios.TabIndex = 53;
@@ -105,7 +101,7 @@
             // 
             this.txt_Apelli_Voluntarios.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_Apelli_Voluntarios.Location = new System.Drawing.Point(489, 215);
-            this.txt_Apelli_Voluntarios.MaxLength = 35;
+            this.txt_Apelli_Voluntarios.MaxLength = 30;
             this.txt_Apelli_Voluntarios.Name = "txt_Apelli_Voluntarios";
             this.txt_Apelli_Voluntarios.Size = new System.Drawing.Size(195, 26);
             this.txt_Apelli_Voluntarios.TabIndex = 46;
@@ -116,7 +112,7 @@
             // 
             this.txt_Nom_Voluntarios.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_Nom_Voluntarios.Location = new System.Drawing.Point(229, 215);
-            this.txt_Nom_Voluntarios.MaxLength = 35;
+            this.txt_Nom_Voluntarios.MaxLength = 30;
             this.txt_Nom_Voluntarios.Name = "txt_Nom_Voluntarios";
             this.txt_Nom_Voluntarios.Size = new System.Drawing.Size(195, 26);
             this.txt_Nom_Voluntarios.TabIndex = 45;
@@ -167,7 +163,6 @@
             this.label6.Size = new System.Drawing.Size(104, 31);
             this.label6.TabIndex = 41;
             this.label6.Text = "Género";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label5
             // 
@@ -217,7 +212,7 @@
             // 
             this.txt_Tel_Voluntarios.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_Tel_Voluntarios.Location = new System.Drawing.Point(231, 373);
-            this.txt_Tel_Voluntarios.MaxLength = 35;
+            this.txt_Tel_Voluntarios.MaxLength = 15;
             this.txt_Tel_Voluntarios.Name = "txt_Tel_Voluntarios";
             this.txt_Tel_Voluntarios.Size = new System.Drawing.Size(195, 26);
             this.txt_Tel_Voluntarios.TabIndex = 55;
@@ -239,7 +234,7 @@
             // 
             this.txt_Email_Voluntarios.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_Email_Voluntarios.Location = new System.Drawing.Point(231, 452);
-            this.txt_Email_Voluntarios.MaxLength = 35;
+            this.txt_Email_Voluntarios.MaxLength = 30;
             this.txt_Email_Voluntarios.Name = "txt_Email_Voluntarios";
             this.txt_Email_Voluntarios.Size = new System.Drawing.Size(195, 26);
             this.txt_Email_Voluntarios.TabIndex = 58;
@@ -250,7 +245,7 @@
             // 
             this.txt_Info_Voluntarios.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_Info_Voluntarios.Location = new System.Drawing.Point(234, 534);
-            this.txt_Info_Voluntarios.MaxLength = 35;
+            this.txt_Info_Voluntarios.MaxLength = 255;
             this.txt_Info_Voluntarios.Multiline = true;
             this.txt_Info_Voluntarios.Name = "txt_Info_Voluntarios";
             this.txt_Info_Voluntarios.Size = new System.Drawing.Size(192, 111);
@@ -290,7 +285,6 @@
             this.radio_fem_Voluntarios.Tag = "f";
             this.radio_fem_Voluntarios.Text = "Femenino";
             this.radio_fem_Voluntarios.UseVisualStyleBackColor = true;
-            this.radio_fem_Voluntarios.CheckedChanged += new System.EventHandler(this.radio_fem_Voluntarios_CheckedChanged);
             // 
             // radio_mas_Voluntarios
             // 
@@ -306,7 +300,6 @@
             this.radio_mas_Voluntarios.Tag = "m";
             this.radio_mas_Voluntarios.Text = "Masculino";
             this.radio_mas_Voluntarios.UseVisualStyleBackColor = true;
-            this.radio_mas_Voluntarios.CheckedChanged += new System.EventHandler(this.radio_mas_Voluntarios_CheckedChanged);
             // 
             // btn_save_Voluntario
             // 
@@ -332,13 +325,12 @@
             this.label13.Size = new System.Drawing.Size(87, 31);
             this.label13.TabIndex = 115;
             this.label13.Text = "Horas";
-            this.label13.Click += new System.EventHandler(this.label13_Click);
             // 
             // txtHoras
             // 
             this.txtHoras.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtHoras.Location = new System.Drawing.Point(489, 534);
-            this.txtHoras.MaxLength = 35;
+            this.txtHoras.MaxLength = 30;
             this.txtHoras.Name = "txtHoras";
             this.txtHoras.Size = new System.Drawing.Size(195, 26);
             this.txtHoras.TabIndex = 116;
@@ -399,52 +391,6 @@
             this.btnPagar.UseVisualStyleBackColor = false;
             this.btnPagar.Click += new System.EventHandler(this.btnPagar_Click);
             // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(483, 585);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(167, 31);
-            this.label11.TabIndex = 123;
-            this.label11.Text = "Mensualidad";
-            this.label11.Visible = false;
-            // 
-            // txtbMensualidad
-            // 
-            this.txtbMensualidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbMensualidad.Location = new System.Drawing.Point(489, 619);
-            this.txtbMensualidad.MaxLength = 35;
-            this.txtbMensualidad.Name = "txtbMensualidad";
-            this.txtbMensualidad.Size = new System.Drawing.Size(195, 26);
-            this.txtbMensualidad.TabIndex = 122;
-            this.txtbMensualidad.Text = "42";
-            this.txtbMensualidad.Visible = false;
-            // 
-            // txt_Iden_Voluntarios
-            // 
-            this.txt_Iden_Voluntarios.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Iden_Voluntarios.Location = new System.Drawing.Point(487, 131);
-            this.txt_Iden_Voluntarios.MaxLength = 35;
-            this.txt_Iden_Voluntarios.Name = "txt_Iden_Voluntarios";
-            this.txt_Iden_Voluntarios.Size = new System.Drawing.Size(195, 26);
-            this.txt_Iden_Voluntarios.TabIndex = 121;
-            this.txt_Iden_Voluntarios.Text = "1234567812345";
-            this.txt_Iden_Voluntarios.Visible = false;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(481, 97);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(126, 31);
-            this.label3.TabIndex = 120;
-            this.label3.Text = "Identidad";
-            this.label3.Visible = false;
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::PantallaInicio.Properties.Resources.Sin_nombre_EN_BLANCO;
@@ -463,10 +409,6 @@
             this.ClientSize = new System.Drawing.Size(1008, 756);
             this.ControlBox = false;
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.txtbMensualidad);
-            this.Controls.Add(this.txt_Iden_Voluntarios);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.btnPagar);
             this.Controls.Add(this.txtHoras);
             this.Controls.Add(this.label13);
@@ -545,10 +487,6 @@
         private System.Windows.Forms.ErrorProvider errorProvider8;
         private System.Windows.Forms.ErrorProvider errorProvider9;
         private System.Windows.Forms.Button btnPagar;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox txtbMensualidad;
-        private System.Windows.Forms.TextBox txt_Iden_Voluntarios;
-        private System.Windows.Forms.Label label3;
         public System.Windows.Forms.PictureBox pictureBox1;
     }
 }

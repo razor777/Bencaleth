@@ -140,7 +140,7 @@
             this.txt_dire_empresa.BackColor = System.Drawing.Color.White;
             this.txt_dire_empresa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_dire_empresa.Location = new System.Drawing.Point(488, 302);
-            this.txt_dire_empresa.MaxLength = 30;
+            this.txt_dire_empresa.MaxLength = 50;
             this.txt_dire_empresa.Name = "txt_dire_empresa";
             this.txt_dire_empresa.Size = new System.Drawing.Size(193, 26);
             this.txt_dire_empresa.TabIndex = 3;
@@ -208,7 +208,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(371, 26);
+            this.label1.Location = new System.Drawing.Point(362, 26);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(174, 42);
             this.label1.TabIndex = 86;
@@ -276,7 +276,7 @@
             this.txt_id_empresa.Enabled = false;
             this.txt_id_empresa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_id_empresa.Location = new System.Drawing.Point(233, 131);
-            this.txt_id_empresa.MaxLength = 30;
+            this.txt_id_empresa.MaxLength = 15;
             this.txt_id_empresa.Name = "txt_id_empresa";
             this.txt_id_empresa.ReadOnly = true;
             this.txt_id_empresa.Size = new System.Drawing.Size(193, 26);
@@ -390,8 +390,8 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::PantallaInicio.Properties.Resources.Sin_nombre_EN_BLANCO;
-            this.pictureBox1.Location = new System.Drawing.Point(-1, 0);
+            this.pictureBox1.Image = global::PantallaInicio.Properties.Resources.Logo_Bencaleth_Blanco;
+            this.pictureBox1.Location = new System.Drawing.Point(1, 1);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(154, 159);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;

@@ -24,11 +24,7 @@ namespace PantallaInicio
             link_cambiarpas.Visible = false;
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            
-        }
-
+   
         private void btn_registro_Click(object sender, EventArgs e)
         {
             Herramientas.AbrirNuevoForm(new Registro());

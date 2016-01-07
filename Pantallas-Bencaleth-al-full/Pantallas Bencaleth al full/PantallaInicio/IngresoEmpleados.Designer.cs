@@ -62,7 +62,6 @@
             this.errorProvider4 = new System.Windows.Forms.ErrorProvider(this.components);
             this.errorProvider5 = new System.Windows.Forms.ErrorProvider(this.components);
             this.errorProvider6 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.bencalethDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.combobox_CargoTipoBindingSource)).BeginInit();
@@ -79,7 +78,7 @@
             // 
             this.txt_Dir_Emple.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_Dir_Emple.Location = new System.Drawing.Point(488, 573);
-            this.txt_Dir_Emple.MaxLength = 30;
+            this.txt_Dir_Emple.MaxLength = 50;
             this.txt_Dir_Emple.Name = "txt_Dir_Emple";
             this.txt_Dir_Emple.Size = new System.Drawing.Size(195, 26);
             this.txt_Dir_Emple.TabIndex = 10;
@@ -146,7 +145,7 @@
             // 
             this.txt_Id_Emple.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_Id_Emple.Location = new System.Drawing.Point(232, 162);
-            this.txt_Id_Emple.MaxLength = 30;
+            this.txt_Id_Emple.MaxLength = 15;
             this.txt_Id_Emple.Name = "txt_Id_Emple";
             this.txt_Id_Emple.Size = new System.Drawing.Size(195, 26);
             this.txt_Id_Emple.TabIndex = 0;
@@ -262,7 +261,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(388, 32);
+            this.label1.Location = new System.Drawing.Point(360, 32);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(214, 42);
             this.label1.TabIndex = 60;
@@ -395,20 +394,10 @@
             // 
             this.errorProvider6.ContainerControl = this;
             // 
-            // maskedTextBox1
-            // 
-            this.maskedTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskedTextBox1.Location = new System.Drawing.Point(486, 621);
-            this.maskedTextBox1.Mask = "0000-0000";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(195, 26);
-            this.maskedTextBox1.TabIndex = 94;
-            this.maskedTextBox1.Visible = false;
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::PantallaInicio.Properties.Resources.Sin_nombre_EN_BLANCO;
-            this.pictureBox1.Location = new System.Drawing.Point(-4, -2);
+            this.pictureBox1.Location = new System.Drawing.Point(1, 1);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(154, 159);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -446,7 +435,6 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.maskedTextBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "IngresoEmpleados";
             this.Tag = "m";
@@ -500,7 +488,6 @@
         private System.Windows.Forms.ErrorProvider errorProvider4;
         private System.Windows.Forms.ErrorProvider errorProvider5;
         private System.Windows.Forms.ErrorProvider errorProvider6;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
         public System.Windows.Forms.PictureBox pictureBox1;
     }
 }

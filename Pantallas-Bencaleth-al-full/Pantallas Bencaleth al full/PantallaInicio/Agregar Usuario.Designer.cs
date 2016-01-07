@@ -57,7 +57,7 @@
             this.label1.Size = new System.Drawing.Size(85, 24);
             this.label1.TabIndex = 0;
             this.label1.Text = "Nombre";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+        
             // 
             // label2
             // 
@@ -69,7 +69,7 @@
             this.label2.Size = new System.Drawing.Size(116, 24);
             this.label2.TabIndex = 1;
             this.label2.Text = "Contraseña";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            
             // 
             // label3
             // 
@@ -81,7 +81,7 @@
             this.label3.Size = new System.Drawing.Size(212, 24);
             this.label3.TabIndex = 2;
             this.label3.Text = "Confirmar Contraseña";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
+            
             // 
             // label4
             // 
@@ -93,7 +93,7 @@
             this.label4.Size = new System.Drawing.Size(66, 24);
             this.label4.TabIndex = 4;
             this.label4.Text = "Cargo";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
+         
             // 
             // txt_Nom_Adduser
             // 
@@ -104,7 +104,7 @@
             this.txt_Nom_Adduser.Size = new System.Drawing.Size(157, 26);
             this.txt_Nom_Adduser.TabIndex = 5;
             this.txt_Nom_Adduser.TextChanged += new System.EventHandler(this.txt_Nom_Adduser_TextChanged);
-            this.txt_Nom_Adduser.Leave += new System.EventHandler(this.txt_Nom_Adduser_Leave);
+          
             // 
             // txt_Pass_Adduser
             // 
@@ -115,7 +115,7 @@
             this.txt_Pass_Adduser.Size = new System.Drawing.Size(157, 26);
             this.txt_Pass_Adduser.TabIndex = 6;
             this.txt_Pass_Adduser.TextChanged += new System.EventHandler(this.txt_Pass_Adduser_TextChanged);
-            this.txt_Pass_Adduser.Leave += new System.EventHandler(this.txt_Pass_Adduser_Leave);
+           
             // 
             // txt_Confir_Adduser
             // 
@@ -126,7 +126,7 @@
             this.txt_Confir_Adduser.Size = new System.Drawing.Size(157, 26);
             this.txt_Confir_Adduser.TabIndex = 7;
             this.txt_Confir_Adduser.TextChanged += new System.EventHandler(this.txt_Confir_Adduser_TextChanged);
-            this.txt_Confir_Adduser.Leave += new System.EventHandler(this.txt_Confir_Adduser_Leave);
+          
             // 
             // btn_Cancel_Adduser
             // 
@@ -189,7 +189,7 @@
             this.mostarCargoComboBox.Size = new System.Drawing.Size(157, 28);
             this.mostarCargoComboBox.TabIndex = 12;
             this.mostarCargoComboBox.ValueMember = "id";
-            this.mostarCargoComboBox.SelectedIndexChanged += new System.EventHandler(this.mostarCargoComboBox_SelectedIndexChanged);
+           
             // 
             // Agregar_Usuario
             // 

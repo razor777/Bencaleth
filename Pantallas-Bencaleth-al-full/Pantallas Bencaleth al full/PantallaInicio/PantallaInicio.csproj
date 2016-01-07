@@ -302,6 +302,7 @@
     <None Include="Resources\Sin nombre EN BLANCO.png" />
     <None Include="Resources\Logo Bencaleth 2.gif" />
     <None Include="Resources\Bencaleth 21.jpg" />
+    <None Include="Resources\Logo-Bencaleth-Blanco.gif" />
     <Content Include="Sin nombre.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

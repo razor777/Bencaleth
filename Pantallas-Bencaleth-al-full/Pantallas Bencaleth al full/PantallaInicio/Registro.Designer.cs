@@ -72,8 +72,8 @@
             this.splitContainer1.Panel2.Controls.Add(this.btn_emp);
             this.splitContainer1.Panel2.Controls.Add(this.btn_niños);
             this.splitContainer1.Panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer1_Panel2_Paint);
-            this.splitContainer1.Size = new System.Drawing.Size(1276, 754);
-            this.splitContainer1.SplitterDistance = 827;
+            this.splitContainer1.Size = new System.Drawing.Size(1352, 754);
+            this.splitContainer1.SplitterDistance = 876;
             this.splitContainer1.TabIndex = 0;
             // 
             // pictureBox1
@@ -91,7 +91,7 @@
             this.btn_mant.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_mant.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_mant.ForeColor = System.Drawing.Color.White;
-            this.btn_mant.Location = new System.Drawing.Point(91, 505);
+            this.btn_mant.Location = new System.Drawing.Point(123, 505);
             this.btn_mant.Name = "btn_mant";
             this.btn_mant.Size = new System.Drawing.Size(245, 80);
             this.btn_mant.TabIndex = 13;
@@ -105,7 +105,7 @@
             this.btn_menu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_menu.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_menu.ForeColor = System.Drawing.Color.White;
-            this.btn_menu.Location = new System.Drawing.Point(91, 642);
+            this.btn_menu.Location = new System.Drawing.Point(123, 642);
             this.btn_menu.Name = "btn_menu";
             this.btn_menu.Size = new System.Drawing.Size(245, 80);
             this.btn_menu.TabIndex = 12;
@@ -119,7 +119,7 @@
             this.btn_vol.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_vol.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_vol.ForeColor = System.Drawing.Color.White;
-            this.btn_vol.Location = new System.Drawing.Point(91, 205);
+            this.btn_vol.Location = new System.Drawing.Point(123, 205);
             this.btn_vol.Name = "btn_vol";
             this.btn_vol.Size = new System.Drawing.Size(245, 80);
             this.btn_vol.TabIndex = 11;
@@ -133,7 +133,7 @@
             this.btn_empresas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_empresas.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_empresas.ForeColor = System.Drawing.Color.White;
-            this.btn_empresas.Location = new System.Drawing.Point(91, 434);
+            this.btn_empresas.Location = new System.Drawing.Point(123, 434);
             this.btn_empresas.Name = "btn_empresas";
             this.btn_empresas.Size = new System.Drawing.Size(245, 80);
             this.btn_empresas.TabIndex = 10;
@@ -147,7 +147,7 @@
             this.btn_alcancias.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_alcancias.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_alcancias.ForeColor = System.Drawing.Color.White;
-            this.btn_alcancias.Location = new System.Drawing.Point(91, 359);
+            this.btn_alcancias.Location = new System.Drawing.Point(123, 359);
             this.btn_alcancias.Name = "btn_alcancias";
             this.btn_alcancias.Size = new System.Drawing.Size(245, 80);
             this.btn_alcancias.TabIndex = 9;
@@ -161,7 +161,7 @@
             this.btn_pad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_pad.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_pad.ForeColor = System.Drawing.Color.White;
-            this.btn_pad.Location = new System.Drawing.Point(91, 282);
+            this.btn_pad.Location = new System.Drawing.Point(123, 282);
             this.btn_pad.Name = "btn_pad";
             this.btn_pad.Size = new System.Drawing.Size(245, 80);
             this.btn_pad.TabIndex = 8;
@@ -175,7 +175,7 @@
             this.btn_emp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_emp.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_emp.ForeColor = System.Drawing.Color.White;
-            this.btn_emp.Location = new System.Drawing.Point(91, 130);
+            this.btn_emp.Location = new System.Drawing.Point(123, 130);
             this.btn_emp.Name = "btn_emp";
             this.btn_emp.Size = new System.Drawing.Size(245, 80);
             this.btn_emp.TabIndex = 7;
@@ -189,7 +189,7 @@
             this.btn_niños.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_niños.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_niños.ForeColor = System.Drawing.Color.White;
-            this.btn_niños.Location = new System.Drawing.Point(91, 52);
+            this.btn_niños.Location = new System.Drawing.Point(123, 52);
             this.btn_niños.Name = "btn_niños";
             this.btn_niños.Size = new System.Drawing.Size(245, 80);
             this.btn_niños.TabIndex = 6;
@@ -201,7 +201,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1276, 754);
+            this.ClientSize = new System.Drawing.Size(1352, 754);
             this.ControlBox = false;
             this.Controls.Add(this.splitContainer1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));

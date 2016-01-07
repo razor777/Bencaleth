@@ -21,9 +21,8 @@ namespace PantallaInicio
         {
             // TODO: esta línea de código carga datos en la tabla 'bencalethDataSet.mostarCargo' Puede moverla o quitarla según sea necesario.
             this.mostarCargoTableAdapter.Fill(this.bencalethDataSet.mostarCargo);
-
         }
-
+        
         private void btn_Acep_Adduseer_Click(object sender, EventArgs e)
         {
             bool boolPuedeCambiar = true;
@@ -61,7 +60,7 @@ namespace PantallaInicio
         private void txt_Nom_Adduser_TextChanged(object sender, EventArgs e)
         {
             txt_Nom_Adduser.Text = Herramientas.NingunEspacioEnBlanco(txt_Nom_Adduser);
-
+            txt_Nom_Adduser.Text = Herramientas.NingunCaracterEspecial(txt_Nom_Adduser);
         }
 
         private void txt_Pass_Adduser_TextChanged(object sender, EventArgs e)
@@ -73,50 +72,9 @@ namespace PantallaInicio
         {
             txt_Confir_Adduser.Text = Herramientas.NingunEspacioEnBlanco(txt_Confir_Adduser);
         }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void mostarCargoComboBox_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btn_Cancel_Adduser_Click(object sender, EventArgs e)
-        {
+       private void btn_Cancel_Adduser_Click(object sender, EventArgs e)
+         {
             this.Close();
         }
-
-        private void txt_Confir_Adduser_Leave(object sender, EventArgs e)
-        {
-            
         }
-
-        private void txt_Pass_Adduser_Leave(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void txt_Nom_Adduser_Leave(object sender, EventArgs e)
-        {
-            
-        }
-    }
 }

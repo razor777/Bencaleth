@@ -89,10 +89,10 @@ namespace PantallaInicio
             {
                 errorProvider3.SetError(txt_Apelli_Voluntarios, "Falta llenar Campo");
             }
-            if (string.IsNullOrEmpty(txt_Iden_Voluntarios.Text))
+            /*if (string.IsNullOrEmpty(txt_Iden_Voluntarios.Text))
             {
                 errorProvider4.SetError(txt_Iden_Voluntarios, "Falta llenar Campo");
-            }
+            }*/
             if (string.IsNullOrEmpty(txt_Tel_Voluntarios.Text))
             {
                 errorProvider5.SetError(txt_Tel_Voluntarios, "Falta llenar Campo");
@@ -104,11 +104,11 @@ namespace PantallaInicio
             if (string.IsNullOrEmpty(txt_Info_Voluntarios.Text))
             {
                 errorProvider7.SetError(txt_Info_Voluntarios, "Falta llenar Campo");
-            }
+            }/*
             if (string.IsNullOrEmpty(txtbMensualidad.Text))
             {
                 errorProvider8.SetError(txtbMensualidad, "Falta llenar Campo");
-            }
+            }*/
             if (string.IsNullOrEmpty(txtHoras.Text))
             {
                 errorProvider9.SetError(txtHoras, "Falta llenar Campo");
@@ -142,12 +142,6 @@ namespace PantallaInicio
         {
             txt_Apelli_Voluntarios.Text = Herramientas.SoloLetrasYEspaciosSec(txt_Apelli_Voluntarios);
             errorProvider3.Clear();
-        }
-
-        private void txt_Iden_Voluntarios_TextChanged(object sender, EventArgs e)
-        {
-            txt_Iden_Voluntarios.Text = Herramientas.SoloNumeros(txt_Iden_Voluntarios);
-            errorProvider4.Clear();
         }
 
         private void txt_Email_Voluntarios_TextChanged(object sender, EventArgs e)
@@ -296,12 +290,6 @@ namespace PantallaInicio
             }
         }
 
-        private void txtbMensualidad_TextChanged(object sender, EventArgs e)
-        {
-            Herramientas.SoloNumeros(txtbMensualidad);
-            errorProvider8.Clear();
-        }
-
         private void btnPagar_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("¿Esta seguro que desea ingresar pago?", "Pagar", MessageBoxButtons.YesNo) == DialogResult.Yes)
@@ -309,26 +297,6 @@ namespace PantallaInicio
 
                 voluntario.PagarMensualidad(txt_Id_Voluntarios);
             }
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void radio_mas_Voluntarios_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void radio_fem_Voluntarios_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label13_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

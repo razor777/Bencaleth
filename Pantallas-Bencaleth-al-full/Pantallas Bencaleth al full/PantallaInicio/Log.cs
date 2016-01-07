@@ -32,7 +32,6 @@ namespace PantallaInicio
                     {
                         case 2627:
                             return "El Nombre de usuario ya esta en uso.";
-                            break;
                         default:
                             throw;
                     }
