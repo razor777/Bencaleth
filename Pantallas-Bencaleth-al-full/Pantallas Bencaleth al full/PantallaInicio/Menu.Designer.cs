@@ -38,16 +38,16 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.link_Newuser = new System.Windows.Forms.LinkLabel();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Asunto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Autor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Tipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.link_Newuser = new System.Windows.Forms.LinkLabel();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -62,7 +62,7 @@
             this.link_cambiarpas.AutoSize = true;
             this.link_cambiarpas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.link_cambiarpas.LinkColor = System.Drawing.Color.SteelBlue;
-            this.link_cambiarpas.Location = new System.Drawing.Point(1118, 130);
+            this.link_cambiarpas.Location = new System.Drawing.Point(1066, 130);
             this.link_cambiarpas.Name = "link_cambiarpas";
             this.link_cambiarpas.Size = new System.Drawing.Size(173, 20);
             this.link_cambiarpas.TabIndex = 1;
@@ -75,7 +75,7 @@
             this.link_logout.AutoSize = true;
             this.link_logout.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.link_logout.LinkColor = System.Drawing.Color.SteelBlue;
-            this.link_logout.Location = new System.Drawing.Point(1154, 614);
+            this.link_logout.Location = new System.Drawing.Point(1102, 614);
             this.link_logout.Name = "link_logout";
             this.link_logout.Size = new System.Drawing.Size(137, 20);
             this.link_logout.TabIndex = 3;
@@ -89,7 +89,7 @@
             this.btn_registro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_registro.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_registro.ForeColor = System.Drawing.Color.White;
-            this.btn_registro.Location = new System.Drawing.Point(1082, 260);
+            this.btn_registro.Location = new System.Drawing.Point(1030, 260);
             this.btn_registro.Name = "btn_registro";
             this.btn_registro.Size = new System.Drawing.Size(209, 80);
             this.btn_registro.TabIndex = 5;
@@ -103,7 +103,7 @@
             this.btn_mantenimiento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_mantenimiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_mantenimiento.ForeColor = System.Drawing.Color.White;
-            this.btn_mantenimiento.Location = new System.Drawing.Point(1082, 371);
+            this.btn_mantenimiento.Location = new System.Drawing.Point(1030, 371);
             this.btn_mantenimiento.Name = "btn_mantenimiento";
             this.btn_mantenimiento.Size = new System.Drawing.Size(209, 80);
             this.btn_mantenimiento.TabIndex = 6;
@@ -117,7 +117,7 @@
             this.btn_inv.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_inv.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_inv.ForeColor = System.Drawing.Color.White;
-            this.btn_inv.Location = new System.Drawing.Point(1082, 480);
+            this.btn_inv.Location = new System.Drawing.Point(1030, 480);
             this.btn_inv.Name = "btn_inv";
             this.btn_inv.Size = new System.Drawing.Size(209, 80);
             this.btn_inv.TabIndex = 7;
@@ -176,60 +176,6 @@
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
-            // link_Newuser
-            // 
-            this.link_Newuser.AutoSize = true;
-            this.link_Newuser.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.link_Newuser.LinkColor = System.Drawing.Color.SteelBlue;
-            this.link_Newuser.Location = new System.Drawing.Point(1128, 95);
-            this.link_Newuser.Name = "link_Newuser";
-            this.link_Newuser.Size = new System.Drawing.Size(140, 20);
-            this.link_Newuser.TabIndex = 11;
-            this.link_Newuser.TabStop = true;
-            this.link_Newuser.Text = "Agregar Usuario";
-            this.link_Newuser.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.link_Newuser_LinkClicked);
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(973, 480);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(80, 80);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 10;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(973, 371);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(80, 80);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 9;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(973, 260);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(80, 80);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 8;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(941, 48);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(155, 155);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
             // Asunto
             // 
             this.Asunto.HeaderText = "Asunto";
@@ -264,12 +210,66 @@
             this.ID.Name = "ID";
             this.ID.ReadOnly = true;
             // 
+            // link_Newuser
+            // 
+            this.link_Newuser.AutoSize = true;
+            this.link_Newuser.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.link_Newuser.LinkColor = System.Drawing.Color.SteelBlue;
+            this.link_Newuser.Location = new System.Drawing.Point(1076, 95);
+            this.link_Newuser.Name = "link_Newuser";
+            this.link_Newuser.Size = new System.Drawing.Size(140, 20);
+            this.link_Newuser.TabIndex = 11;
+            this.link_Newuser.TabStop = true;
+            this.link_Newuser.Text = "Agregar Usuario";
+            this.link_Newuser.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.link_Newuser_LinkClicked);
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(921, 480);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(80, 80);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 10;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(921, 371);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(80, 80);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 9;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(921, 260);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(80, 80);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 8;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(889, 48);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(155, 155);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1352, 754);
+            this.ClientSize = new System.Drawing.Size(1264, 764);
             this.ControlBox = false;
             this.Controls.Add(this.link_Newuser);
             this.Controls.Add(this.pictureBox4);

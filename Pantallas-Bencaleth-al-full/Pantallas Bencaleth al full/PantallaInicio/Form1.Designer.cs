@@ -49,7 +49,7 @@
             this.label2.BackColor = System.Drawing.Color.SteelBlue;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(133, 196);
+            this.label2.Location = new System.Drawing.Point(93, 196);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(267, 33);
             this.label2.TabIndex = 1;
@@ -62,7 +62,7 @@
             this.label3.BackColor = System.Drawing.Color.SteelBlue;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(134, 304);
+            this.label3.Location = new System.Drawing.Point(94, 304);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(93, 25);
             this.label3.TabIndex = 2;
@@ -75,16 +75,17 @@
             this.label4.BackColor = System.Drawing.Color.SteelBlue;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(134, 392);
+            this.label4.Location = new System.Drawing.Point(94, 392);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(133, 25);
             this.label4.TabIndex = 3;
             this.label4.Text = "Contraseña";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // txt_user
             // 
             this.txt_user.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_user.Location = new System.Drawing.Point(139, 332);
+            this.txt_user.Location = new System.Drawing.Point(99, 332);
             this.txt_user.MaxLength = 30;
             this.txt_user.Name = "txt_user";
             this.txt_user.Size = new System.Drawing.Size(245, 26);
@@ -94,7 +95,7 @@
             // txt_pasw
             // 
             this.txt_pasw.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_pasw.Location = new System.Drawing.Point(139, 420);
+            this.txt_pasw.Location = new System.Drawing.Point(99, 420);
             this.txt_pasw.MaxLength = 30;
             this.txt_pasw.Name = "txt_pasw";
             this.txt_pasw.PasswordChar = '*';
@@ -108,7 +109,7 @@
             this.btn_Ing.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Ing.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Ing.ForeColor = System.Drawing.Color.SteelBlue;
-            this.btn_Ing.Location = new System.Drawing.Point(196, 510);
+            this.btn_Ing.Location = new System.Drawing.Point(156, 510);
             this.btn_Ing.Name = "btn_Ing";
             this.btn_Ing.Size = new System.Drawing.Size(130, 50);
             this.btn_Ing.TabIndex = 8;
@@ -125,9 +126,9 @@
             this.groupBox1.Controls.Add(this.txt_pasw);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.txt_user);
-            this.groupBox1.Location = new System.Drawing.Point(859, -9);
+            this.groupBox1.Location = new System.Drawing.Point(859, -8);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(498, 743);
+            this.groupBox1.Size = new System.Drawing.Size(408, 755);
             this.groupBox1.TabIndex = 9;
             this.groupBox1.TabStop = false;
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
@@ -158,14 +159,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1352, 732);
+            this.ClientSize = new System.Drawing.Size(1264, 742);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.groupBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximumSize = new System.Drawing.Size(1368, 770);
             this.Name = "login";
             this.Text = "BENCALETH";
+            this.Load += new System.EventHandler(this.login_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

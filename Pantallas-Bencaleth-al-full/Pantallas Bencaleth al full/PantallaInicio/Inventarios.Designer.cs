@@ -351,7 +351,7 @@
             this.btn_Home.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Home.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Home.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.btn_Home.Location = new System.Drawing.Point(1043, 401);
+            this.btn_Home.Location = new System.Drawing.Point(990, 401);
             this.btn_Home.Name = "btn_Home";
             this.btn_Home.Size = new System.Drawing.Size(209, 80);
             this.btn_Home.TabIndex = 6;
@@ -365,7 +365,7 @@
             this.btn_Show_Invs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Show_Invs.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Show_Invs.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.btn_Show_Invs.Location = new System.Drawing.Point(1043, 273);
+            this.btn_Show_Invs.Location = new System.Drawing.Point(990, 273);
             this.btn_Show_Invs.Name = "btn_Show_Invs";
             this.btn_Show_Invs.Size = new System.Drawing.Size(209, 80);
             this.btn_Show_Invs.TabIndex = 7;
@@ -390,7 +390,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::PantallaInicio.Properties.Resources.Logo_Bencaleth_2;
-            this.pictureBox1.Location = new System.Drawing.Point(970, 43);
+            this.pictureBox1.Location = new System.Drawing.Point(917, 43);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(150, 150);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -402,7 +402,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(1352, 754);
+            this.ClientSize = new System.Drawing.Size(1264, 764);
             this.ControlBox = false;
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btn_Show_Invs);

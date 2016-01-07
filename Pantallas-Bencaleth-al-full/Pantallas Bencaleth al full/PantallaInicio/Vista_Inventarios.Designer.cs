@@ -92,7 +92,7 @@
             this.btn_back.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_back.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_back.ForeColor = System.Drawing.Color.White;
-            this.btn_back.Location = new System.Drawing.Point(137, 278);
+            this.btn_back.Location = new System.Drawing.Point(86, 278);
             this.btn_back.Name = "btn_back";
             this.btn_back.Size = new System.Drawing.Size(209, 80);
             this.btn_back.TabIndex = 18;
@@ -127,7 +127,7 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.White;
             this.pictureBox1.Image = global::PantallaInicio.Properties.Resources.Logo_Bencaleth_2;
-            this.pictureBox1.Location = new System.Drawing.Point(70, 43);
+            this.pictureBox1.Location = new System.Drawing.Point(19, 43);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(150, 150);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -140,7 +140,7 @@
             this.btn_Delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Delete.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Delete.ForeColor = System.Drawing.Color.White;
-            this.btn_Delete.Location = new System.Drawing.Point(137, 388);
+            this.btn_Delete.Location = new System.Drawing.Point(86, 388);
             this.btn_Delete.Name = "btn_Delete";
             this.btn_Delete.Size = new System.Drawing.Size(209, 80);
             this.btn_Delete.TabIndex = 20;
@@ -152,7 +152,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
-            this.ClientSize = new System.Drawing.Size(1368, 770);
+            this.ClientSize = new System.Drawing.Size(1280, 780);
             this.ControlBox = false;
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);

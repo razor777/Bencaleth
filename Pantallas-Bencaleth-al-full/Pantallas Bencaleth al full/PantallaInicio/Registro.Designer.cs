@@ -72,8 +72,8 @@
             this.splitContainer1.Panel2.Controls.Add(this.btn_emp);
             this.splitContainer1.Panel2.Controls.Add(this.btn_niños);
             this.splitContainer1.Panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer1_Panel2_Paint);
-            this.splitContainer1.Size = new System.Drawing.Size(1352, 754);
-            this.splitContainer1.SplitterDistance = 876;
+            this.splitContainer1.Size = new System.Drawing.Size(1264, 764);
+            this.splitContainer1.SplitterDistance = 818;
             this.splitContainer1.TabIndex = 0;
             // 
             // pictureBox1
@@ -201,7 +201,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1352, 754);
+            this.ClientSize = new System.Drawing.Size(1264, 764);
             this.ControlBox = false;
             this.Controls.Add(this.splitContainer1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
